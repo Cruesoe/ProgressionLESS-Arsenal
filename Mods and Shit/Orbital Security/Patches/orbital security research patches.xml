@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_FlechetteSMG"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_FlechetteSMG</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MagnumPistol"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MagnumPistol</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MultiAssaultRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MultiCombatRifle</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_DualLauncher"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_DualRocketLauncher</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_SMG"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_FlechetteSMG"]/prerequisites</xpath>
+      <value><prerequisites><li>Ferny_SMG</li></prerequisites></value>
+    </match>
+  </Operation>
+</Patch>

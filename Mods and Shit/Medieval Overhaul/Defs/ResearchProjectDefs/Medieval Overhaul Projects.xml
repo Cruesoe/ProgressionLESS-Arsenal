@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_ButchersCleaver</defName>
+    <label>butcher's cleaver</label>
+    <description>Craft heavy chopping blades that split meat, bone, and lightly armored targets.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>3.70</researchViewX>
+    <researchViewY>6.80</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+      <li>Ferny_Knife</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_Handaxe</defName>
+    <label>handaxe</label>
+    <description>Craft longer one-handed axes with extra leverage for stronger chopping swings.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>4.80</researchViewX>
+    <researchViewY>4.10</researchViewY>
+    <prerequisites>
+      <li>Ferny_Axe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_Longaxe</defName>
+    <label>longaxe</label>
+    <description>Craft two-handed axes with long hafts for sweeping, high-force strikes.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.40</researchViewX>
+    <researchViewY>4.10</researchViewY>
+    <prerequisites>
+      <li>Ferny_Axe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_MOLongsword</defName>
+    <label>bastard sword</label>
+    <description>Craft long, two-handed war swords with the reach, leverage, and armor penetration for decisive cuts.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.90</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li>Ferny_Longsword</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_FencingSword</defName>
+    <label>fencing sword</label>
+    <description>Craft light dueling blades built for quick, accurate thrusts through openings.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.10</researchViewX>
+    <researchViewY>6.80</researchViewY>
+    <prerequisites>
+      <li>Ferny_Gladius</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_FightingAxe</defName>
+    <label>fighting axe</label>
+    <description>Craft reinforced war axes made for repeated battlefield impacts.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.80</researchViewX>
+    <researchViewY>4.60</researchViewY>
+    <prerequisites>
+      <li>Ferny_Handaxe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_GreatAxe</defName>
+    <label>great axe</label>
+    <description>Craft heavy two-handed axes that trade speed for brutal cleaving power.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>6.40</researchViewX>
+    <researchViewY>4.10</researchViewY>
+    <prerequisites>
+      <li>Ferny_Longaxe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Ferny_NobleSword</defName>
+    <label>noble sword</label>
+    <description>Craft finely balanced arming blades with ornate fittings and superior finish.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.90</researchViewX>
+    <researchViewY>6.80</researchViewY>
+    <prerequisites>
+      <li>Ferny_Gladius</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

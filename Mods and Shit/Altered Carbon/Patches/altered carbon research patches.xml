@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AC_Gun_Autorevolver"]/recipeMaker</xpath>
+    <value>
+      <researchPrerequisite>Ferny_Autorevolver</researchPrerequisite>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_DoubleActionRevolver"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Autorevolver"]/prerequisites</xpath>
+      <value><prerequisites><li>Ferny_DoubleActionRevolver</li></prerequisites></value>
+    </match>
+  </Operation>
+</Patch>

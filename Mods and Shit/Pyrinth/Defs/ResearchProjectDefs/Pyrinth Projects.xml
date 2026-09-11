@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="det.epochspyrinth">
+    <defName>Ferny_PyrinthBlade</defName>
+    <label>pyrinth blade</label>
+    <description>Craft crystalline-edged blades that channel the strange sharpness of pyrinth.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.30</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li>Ferny_Longsword</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurret"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_AncientMiniShotgunTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurretN"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_MiniShotgunTurret</li></researchPrerequisites></value></Operation>
+</Patch>

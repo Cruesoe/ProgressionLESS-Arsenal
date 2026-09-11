@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef MayRequire="tug.Satyr">
+    <defName>Ferny_Lute</defName>
+    <label>lute</label>
+    <description>Craft plucked wooden instruments favored by entertainers and sturdy enough for desperate melee.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>2.30</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li MayRequire="OskarPotocki.VFE.Tribals">VFET_Culture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="tug.Satyr">
+    <defName>Ferny_Lyre</defName>
+    <label>lyre</label>
+    <description>Craft elegant string instruments for poetry, artistry, and very poor emergency self-defense.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>2.90</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li MayRequire="OskarPotocki.VFE.Tribals">VFET_Culture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_ConcealedShotgunTurret</defName>
+    <label>concealed shotgun turret</label>
+    <description>Build hidden close-range emplacements that rise from the floor to ambush nearby attackers.</description>
+    <baseCost>800</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
+    <researchViewX>12.5</researchViewX><researchViewY>22.3</researchViewY>
+    <prerequisites><li>Ferny_ShotgunTurret</li><li>VFES_ConcealedDefenses</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef><defName>Ferny_ConcealedFlamerTurret</defName><label>concealed flamer turret</label><description>Build retractable incendiary emplacements that rise from hiding to engulf nearby attackers in flame.</description><baseCost>700</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab><researchViewX>8</researchViewX><researchViewY>4.1</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><prerequisites><li>VFES_ConcealedDefenses</li><li>Ferny_FlamerTurret</li></prerequisites></ResearchProjectDef>
+  <ResearchProjectDef><defName>Ferny_ConcealedAutocannonTurret</defName><label>concealed autocannon turret</label><description>Build retractable heavy emplacements that conceal armored autocannons beneath reinforced floor plates.</description><baseCost>1000</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab><researchViewX>9</researchViewX><researchViewY>3.1</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><prerequisites><li>VFES_ConcealedDefenses</li><li>HeavyTurrets</li></prerequisites></ResearchProjectDef>
+  <ResearchProjectDef><defName>Ferny_ConcealedChargeTurret</defName><label>concealed charge turret</label><description>Build retractable pulse-charged emplacements that ambush armored targets with advanced energy fire.</description><baseCost>1400</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab><researchViewX>9</researchViewX><researchViewY>4.1</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities><prerequisites><li>VFES_ConcealedDefenses</li><li>ChargedShot</li></prerequisites></ResearchProjectDef>
+</Defs>

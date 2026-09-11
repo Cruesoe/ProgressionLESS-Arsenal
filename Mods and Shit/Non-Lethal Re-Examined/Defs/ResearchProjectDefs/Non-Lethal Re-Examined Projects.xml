@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="Smxrez.nonlethalreexamined">
+    <defName>Ferny_RubberShotgun</defName>
+    <label>rubber shotgun</label>
+    <description>Craft close-range scatterguns adapted to fire volleys of rubber projectiles.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <prerequisites><li>Ferny_PumpShotgun</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

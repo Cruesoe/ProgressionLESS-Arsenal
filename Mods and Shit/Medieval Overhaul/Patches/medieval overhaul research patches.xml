@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_HuntingBow"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Neolithic</techLevel>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_HuntingBow"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3.10</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_HuntingBow"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.80</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ResearchProjectDef[defName="DankPyon_Crossbow"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>Ferny_Crossbow</li>
+                            </prerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>Defs/ResearchProjectDef[defName="DankPyon_Crossbow"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>RecurveBow</li>
+                            </prerequisites>
+                        </value>
+                    </nomatch>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_Crossbow"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4.00</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_Crossbow"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.00</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_HeavyCrossbow"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5.00</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_HeavyCrossbow"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.00</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_Ballista"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>DankPyon_HeavyCrossbow</li>
+                            <li>DankPyon_Engineering</li>
+                        </prerequisites>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_Ballista"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6.00</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_Ballista"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.00</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_RepeaterBallista"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>7.00</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_RepeaterBallista"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.00</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/label</xpath>
+                    <value>
+                        <label>Recurve bow</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/description</xpath>
+                    <value>
+                        <description>Build the recurve bow, an effective and inexpensive ranged weapon.</description>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]/label</xpath>
+                    <value>
+                        <label>falchion</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]/description</xpath>
+                    <value>
+                        <description>Craft broad, stout single-edged blades for militia close combat.</description>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4.50</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>6.80</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]/label</xpath>
+                    <value>
+                        <label>arming sword</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]/description</xpath>
+                    <value>
+                        <description>Craft reliable one-handed swords suited to soldiers, guards, and shield formations.</description>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5.30</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>6.80</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/label</xpath>
+                    <value>
+                        <label>greatsword</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/description</xpath>
+                    <value>
+                        <description>Craft immense two-handed blades that cleave through enemies with long, committed swings.</description>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Ferny_Longsword</li>
+                        </prerequisites>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6.50</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>6.20</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicPolearms"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Ferny_Spear</li>
+                        </prerequisites>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicPolearms"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4.50</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicPolearms"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.50</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryPolearms"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5.40</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryPolearms"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.50</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_NoblePolearms"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6.30</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_NoblePolearms"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.50</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Ferny_Mace</li>
+                        </prerequisites>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4.30</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.60</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5.10</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.60</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5.90</researchViewX>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.60</researchViewY>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Hatchet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_Axe</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_WoodcuttersAxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_Axe</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_ButcherCleaver"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_ButchersCleaver</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Handaxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_Handaxe</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longaxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_Longaxe</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_MOLongsword</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_FencingSword</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingAxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_FightingAxe</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greataxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_GreatAxe</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>Ferny_NobleSword</researchPrerequisite>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Factions Expanded - Tribals</li>
+                    </mods>
+                    <match Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="DankPyon_RawhideRack"]/researchPrerequisites</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[defName="DankPyon_RawhideRack"]/researchPrerequisites</xpath>
+                            <value>
+                                <researchPrerequisites>
+                                    <li>Ferny_RawhideRack</li>
+                                </researchPrerequisites>
+                            </value>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="DankPyon_RawhideRack"]</xpath>
+                            <value>
+                                <researchPrerequisites>
+                                    <li>Ferny_RawhideRack</li>
+                                </researchPrerequisites>
+                            </value>
+                        </nomatch>
+                    </match>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/label</xpath>
+                    <value>
+                        <label>bastard sword</label>
+                    </value>
+                </Operation>
+</Patch>

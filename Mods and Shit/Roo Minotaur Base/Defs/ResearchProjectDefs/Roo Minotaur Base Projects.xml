@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef MayRequire="tug.Minotaur">
+    <defName>Ferny_EpsilonAxe</defName>
+    <label>epsilon axe</label>
+    <description>Craft oversized herculean axes that can cleave through enemies with brutal, slow swings.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>4.80</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <prerequisites>
+      <li>Ferny_Axe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="tug.Minotaur">
+    <defName>Ferny_Pelekys</defName>
+    <label>pelekys</label>
+    <description>Study massive double-headed ceremonial axes carried as symbols of minotaur strength.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.40</researchViewX>
+    <researchViewY>2.90</researchViewY>
+    <prerequisites>
+      <li>Ferny_EpsilonAxe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

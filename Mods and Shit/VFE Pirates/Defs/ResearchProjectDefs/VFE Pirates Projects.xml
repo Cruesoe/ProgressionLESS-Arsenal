@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates,OskarPotocki.VFE.Medieval2">
+    <defName>Ferny_Cannon</defName>
+    <label>cannon</label>
+    <description>Build early gunpowder artillery that hurls heavy shot from a fixed carriage.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>3.30</researchViewX>
+    <researchViewY>1.10</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>Ferny_FieldGun</defName>
+    <label>field gun</label>
+    <description>Build manned direct-fire cannons that trade high-angle fire for a faster rate of shell delivery.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>11.61</researchViewX>
+    <researchViewY>25.31</researchViewY>
+    <prerequisites><li>Mortars</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates,VanillaExpanded.VWEL">
+    <defName>Ferny_SalvagedLaserEradicator</defName>
+    <label>warcasket salvaged laser eradicator</label>
+    <description>Craft shoulder-mounted pulse emitters that trigger destructive explosions inside hardened targets.</description>
+    <baseCost>2400</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>21</researchViewX>
+    <researchViewY>11</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+    <prerequisites><li>Ferny_SalvagedLaserShotgun</li><li>VFEP_SpacerWarcasketWeaponry</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

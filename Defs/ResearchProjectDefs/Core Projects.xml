@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Knife</defName>
+    <label>knife</label>
+    <description>Craft small metal blades with handles, useful for quick cuts and close-range stabbing.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>2.30</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <prerequisites>
+      <li MayRequire="VanillaExpanded.VWETB">Ferny_Shiv</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_BreachAxe</defName>
+    <label>breach axe</label>
+    <description>Craft sturdy hafted tool-heads built to tear through doors, walls, and other structures.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>4.60</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <prerequisites>
+      <li>Ferny_Axe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Ikwa</defName>
+    <label>ikwa</label>
+    <description>Craft short spear-handled blades designed for quick thrusts into vital organs.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>3.70</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+      <li>Ferny_Knife</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Mace</defName>
+    <label>mace</label>
+    <description>Craft refined impact weapons with weighted heads for efficient, armor-crushing swings.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>3.70</researchViewX>
+    <researchViewY>5.10</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Gladius</defName>
+    <label>gladius</label>
+    <description>Craft short ancient-style swords balanced for fast stabbing and close slashing.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>4.30</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+      <li>Ferny_Knife</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Spear</defName>
+    <label>spear</label>
+    <description>Craft metal-tipped polearms for controlled thrusting from safer reach.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>3.70</researchViewX>
+    <researchViewY>3.10</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+      <li>Ferny_Knife</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Axe</defName>
+    <label>axe</label>
+    <description>Craft metal chopping heads mounted on hafts for combat and practical field work.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.10</researchViewY>
+    <prerequisites>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Ferny_Tomahawk</li>
+      <li MayRequire="VanillaExpanded.VWE">Ferny_Hatchet</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_Longsword</defName>
+    <label>longsword</label>
+    <description>Craft balanced two-handed blades capable of strong cuts and precise thrusts.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.10</researchViewX>
+    <researchViewY>6.20</researchViewY>
+    <prerequisites>
+      <li>Ferny_Gladius</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_BoltActionRifle</defName>
+    <label>bolt-action rifle</label>
+    <description>Craft long-barreled manually-cycled rifles for accurate hunting and careful long-range fire.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>2.90</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_PumpShotgun</defName>
+    <label>pump shotgun</label>
+    <description>Craft manually-cycled scatterguns that throw tight spreads of pellets at short range.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>3.90</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_SmokeLauncher</defName>
+    <label>smoke launcher</label>
+    <description>Craft wide-barreled launchers that lob smoke shells to screen movement and break turret locks.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_IncendiaryLauncher</defName>
+    <label>incendiary launcher</label>
+    <description>Craft wide-barreled launchers that hurl volatile fire bolts into clustered targets.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
+    <prerequisites>
+      <li>Ferny_SmokeLauncher</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_MolotovCocktails</defName>
+    <label>molotov cocktails</label>
+    <description>Craft improvised incendiary weapons from glass bottles, flammable fuel, and cloth wicks.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.37</researchViewX>
+    <researchViewY>8.13</researchViewY>
+    <prerequisites><li>Brewing</li></prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Ferny_FragGrenades</defName>
+    <label>frag grenades</label>
+    <description>Craft hand-thrown explosive charges in fragmenting casings for attacking clustered targets.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>6.37</researchViewX>
+    <researchViewY>8.13</researchViewY>
+    <prerequisites><li>Machining</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_ChainShotgun</defName>
+    <label>chain shotgun</label>
+    <description>Craft magazine-fed automatic scatterguns for rapid close-range volleys.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>10.47</researchViewX>
+    <researchViewY>16.19</researchViewY>
+    <prerequisites><li>GasOperation</li><li>Ferny_PumpShotgun</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_LMG</defName>
+    <label>LMG</label>
+    <description>Craft gas-operated support weapons with long bursts for suppressing groups at medium range.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>11.47</researchViewX>
+    <researchViewY>16.19</researchViewY>
+    <prerequisites><li>GasOperation</li><li>Ferny_BoltActionRifle</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_SmokeShell</defName>
+    <label>smoke shell</label>
+    <description>Craft artillery canisters that release dense smoke to obscure targets and interrupt turret tracking.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>10.61</researchViewX>
+    <researchViewY>24.31</researchViewY>
+    <prerequisites><li>Mortars</li><li>Ferny_SmokeLauncher</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_IncendiaryShell</defName>
+    <label>incendiary shell</label>
+    <description>Craft artillery rounds filled with flammable gel and a bursting charge to ignite an impact area.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>11.61</researchViewX>
+    <researchViewY>24.31</researchViewY>
+    <prerequisites><li>Mortars</li><li>Ferny_IncendiaryLauncher</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_SniperRifle</defName>
+    <label>sniper rifle</label>
+    <description>Craft long-range rifles with high-powered optics and carefully machined actions for deliberate precision fire.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>3.60</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Ferny_BoltActionRifle</li>
+      <li MayRequire="VanillaExpanded.VWE">Ferny_MarksmanRifle</li>
+      <li MayRequire="det.vanillaarsenal">Ferny_DMR</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Ferny_ChargeLance</defName>
+    <label>charge lance</label>
+    <description>Craft rail-assisted weapons that propel a single pulse-charged projectile at extreme velocity.</description>
+    <baseCost>1500</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab>
+    <researchViewX>18.00</researchViewX><researchViewY>4.50</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+    <prerequisites><li>ChargedShot</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

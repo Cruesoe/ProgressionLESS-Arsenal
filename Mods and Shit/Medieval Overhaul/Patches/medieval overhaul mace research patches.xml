@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/label</xpath><value><label>bludgeon</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/description</xpath><value><description>Craft simple weighted clubs that deliver dependable crushing blows.</description></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]/label</xpath><value><label>nomad mace</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]/description</xpath><value><description>Craft balanced one-handed bludgeons designed for sustained military combat.</description></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]/label</xpath><value><label>one-handed warhammer</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]/description</xpath><value><description>Craft compact noble hammers that concentrate force against armored opponents.</description></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warhammer"]/label</xpath><value><label>one-handed warhammer</label></value></Operation>
+  <Operation Class="PatchOperationSequence"><operations>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Goedendag"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Goedendag</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_TwoHandedMace"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TwoHandedMace</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_TwoHandedMallet"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TwoHandedMallet</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_MorningStar"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MorningStar</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_WingedMace"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_WingedMace</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_BlacksmithHammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_BlacksmithHammer</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pickaxe"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Pickaxe</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitaryPick"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MilitaryPick</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Polehammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Polehammer</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_TwoHandedHammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TwoHandedHammer</researchPrerequisite></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_TwoHandedFlangedMace"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TwoHandedFlangedMace</researchPrerequisite></value></li>
+  </operations></Operation>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]</xpath><match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Warhammer</researchPrerequisite></value></match></Operation>
+</Patch>

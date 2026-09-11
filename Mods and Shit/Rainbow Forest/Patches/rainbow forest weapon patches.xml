@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><Patch>
+  <Operation Class="PatchOperationRemove"><xpath>Defs/ThingDef[defName="TWRL_Gun_RainbowMinimi"]/recipeMaker</xpath></Operation>
+  <Operation Class="PatchOperationRemove"><xpath>Defs/ThingDef[defName="TWRL_Gun_RainbowRevolver"]/recipeMaker</xpath></Operation>
+  <Operation Class="PatchOperationRemove"><xpath>Defs/ThingDef[defName="TWRL_Gun_RainbowShotgun"]/recipeMaker</xpath></Operation>
+</Patch>

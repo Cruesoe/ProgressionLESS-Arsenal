@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWEFT_FrontierWeapons"]/label</xpath><value><label>frontier pistol</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWEFT_FrontierWeapons"]/description</xpath><value><description>Craft dependable short-barreled sidearms suited to close and medium-range frontier fighting.</description></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWEFT_Gun_HeavyRevolver"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_HeavyFrontierRevolver</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWEFT_Gun_VolcanicPistol"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_VolcanicPistol</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWEFT_Gun_RollingBlockRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_RollingBlockRifle</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWEFT_Gun_RepeatingShotgun"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_RepeatingShotgun</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded - Quickdraw</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VWEFT_Gun_LeverActionShotgun"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite>Ferny_FrontierLeverActionShotgun</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Vanilla Weapons Expanded - Quickdraw</li></mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VWEFT_Gun_LeverActionShotgun"]/label</xpath>
+      <value><label>quickdraw shotgun</label></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Vanilla Weapons Expanded - Quickdraw</li></mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VWEFT_Gun_Derringer"]/recipeMaker/researchPrerequisite</xpath>
+      <value><researchPrerequisite>Ferny_Derringer</researchPrerequisite></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod"><mods><li>Vanilla Weapons Expanded - Laser</li></mods><match Class="PatchOperationSequence"><operations>
+    <li Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="VWEFT_Gun_SalvagedLaserRevolver"]</xpath><value><recipeMaker><researchPrerequisite>Ferny_SalvagedLaserRevolver</researchPrerequisite></recipeMaker></value></li>
+    <li Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="VWEFT_Gun_SalvagedLaserRepeater"]</xpath><value><recipeMaker><researchPrerequisite>Ferny_SalvagedLaserRepeater</researchPrerequisite></recipeMaker></value></li>
+    <li Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="VWEFT_Gun_SalvagedLaserHuntingRifle"]</xpath><value><recipeMaker><researchPrerequisite>Ferny_SalvagedLaserHuntingRifle</researchPrerequisite></recipeMaker></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Ferny_SalvagedLaserSniperRifle"]/prerequisites</xpath><value><prerequisites><li>Ferny_SalvagedLaserHuntingRifle</li></prerequisites></value></li>
+  </operations></match></Operation>
+</Patch>

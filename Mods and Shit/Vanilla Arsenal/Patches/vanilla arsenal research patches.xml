@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DV_Gun_LeverShotgun"]/recipeMaker</xpath>
+    <value><researchPrerequisite>Ferny_LeverActionShotgun</researchPrerequisite></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="DV_Gun_BurstPistol"]/recipeMaker/researchPrerequisite</xpath>
+    <value><researchPrerequisite>Ferny_BurstPistol</researchPrerequisite></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_CombatShotgun"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_CombatShotgun</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_LightCarbine"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_LightCarbine</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_GrenadeLauncher"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_GrenadeThrower</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_DMR"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_DMR</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_ThermoRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Thermorifle</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_GrenadeLauncher"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_GrenadeThrower"]/prerequisites</xpath>
+      <value><prerequisites><li>Ferny_GrenadeLauncher</li></prerequisites></value>
+    </match>
+  </Operation>
+</Patch>

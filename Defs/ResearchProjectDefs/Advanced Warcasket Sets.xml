@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>Ferny_ReconWarcaskets</defName>
+    <label>recon warcaskets</label>
+    <description>Construct lightweight advanced warcaskets optimized for speed, mobility, and environmental protection.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>VFEP_Warcaskets</li></prerequisites>
+    <researchViewX>8.0</researchViewX><researchViewY>4.65</researchViewY>
+    <tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>Ferny_CataphractWarcaskets</defName>
+    <label>cataphract warcaskets</label>
+    <description>Construct heavily reinforced advanced warcaskets optimized for maximum protection.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>VFEP_Warcaskets</li></prerequisites>
+    <researchViewX>8.0</researchViewX><researchViewY>5.65</researchViewY>
+    <tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>Ferny_BarrageWarcaskets</defName>
+    <label>barrage warcaskets</label>
+    <description>Construct exceptionally heavy warcaskets fitted with stabilizers and integrated fire-support systems.</description>
+    <baseCost>1200</baseCost><techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>Ferny_CataphractWarcaskets</li></prerequisites>
+    <researchViewX>10.0</researchViewX><researchViewY>5.65</researchViewY><tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>Ferny_HazardWarcaskets</defName>
+    <label>hazard warcaskets</label>
+    <description>Construct sealed warcaskets fitted for extreme heat, radiation, and other environmental hazards.</description>
+    <baseCost>1200</baseCost><techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>Ferny_ReconWarcaskets</li></prerequisites>
+    <researchViewX>10.0</researchViewX><researchViewY>4.65</researchViewY><tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>Ferny_ShockWarcaskets</defName>
+    <label>shock warcaskets</label>
+    <description>Construct assault warcaskets equipped with impact mitigation and powerful propulsion systems.</description>
+    <baseCost>1200</baseCost><techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>VFEP_SpecialisedWarcaskets</li></prerequisites>
+    <researchViewX>11.0</researchViewX><researchViewY>3.65</researchViewY><tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+</Defs>

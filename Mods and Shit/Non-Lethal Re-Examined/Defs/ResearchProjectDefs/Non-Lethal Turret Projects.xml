@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="Smxrez.nonlethalreexamined,VanillaExpanded.VWENL">
+    <defName>Ferny_WallTaserTurret</defName>
+    <label>wall taser turret</label>
+    <description>Build wall-mounted electrical weapons that automatically intercept nearby intruders.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>8.43</researchViewX>
+    <researchViewY>15.17</researchViewY>
+    <prerequisites><li>Ferny_TaserGun</li><li>GunTurrets</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="Smxrez.nonlethalreexamined,VanillaExpanded.VWENL">
+    <defName>Ferny_TearGasTurret</defName>
+    <label>tear gas turret</label>
+    <description>Build automated launchers that disperse irritant canisters across approaching groups.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>9.43</researchViewX>
+    <researchViewY>15.17</researchViewY>
+    <prerequisites><li>Ferny_TearGasLauncher</li><li>GunTurrets</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

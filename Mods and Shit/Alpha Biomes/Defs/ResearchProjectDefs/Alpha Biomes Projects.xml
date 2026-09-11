@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="sarg.alphabiomes">
+    <defName>Ferny_TarShell</defName>
+    <label>tar shell</label>
+    <description>Craft artillery canisters that spread concentrated asphalt to obstruct movement across the impact area.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>10.61</researchViewX>
+    <researchViewY>25.31</researchViewY>
+    <prerequisites><li>Mortars</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

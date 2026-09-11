@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><Patch>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="RM_Gun_ChargePistol"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ChargeHandgun</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="RM_Gun_ChargeLancePistol"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ChargeLancePistol</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="RM_Gun_ChargeLanceRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ChargeLanceRifle</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="Ferny_ChargePistol"]</xpath><match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Ferny_ChargeHandgun"]/prerequisites</xpath><value><prerequisites><li>Ferny_ChargePistol</li></prerequisites></value></match></Operation>
+</Patch>

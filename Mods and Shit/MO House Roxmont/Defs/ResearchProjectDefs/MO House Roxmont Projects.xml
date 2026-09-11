@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul.House.Roxmont">
+    <defName>Ferny_RoxWaraxe</defName>
+    <label>rox waraxe</label>
+    <description>Craft massive two-handed war axes weighted for brutal royal cleaving strikes.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.20</researchViewX>
+    <researchViewY>4.10</researchViewY>
+    <prerequisites>
+      <li MayRequire="DankPyon.Medieval.Overhaul">Ferny_GreatAxe</li>
+      <li>Ferny_Axe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

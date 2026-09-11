@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+                <Operation Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker/researchPrerequisite</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker/researchPrerequisite</xpath>
+                        <value>
+                            <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker</xpath>
+                        <value>
+                            <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                        </value>
+                    </nomatch>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFET_AnimalTrap"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Ferny_Traps</li>
+                        </researchPrerequisites>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="TrapSpike"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="TrapSpike"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>Ferny_Traps</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="TrapSpike"]</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>Ferny_Traps</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
+                </Operation>
+</Patch>

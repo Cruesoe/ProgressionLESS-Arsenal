@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_LeverActionShotgun</defName>
+    <label>lever-action shotgun</label>
+    <description>Craft repeating scatterguns that cycle fresh shells with an underlever and fire paired volleys.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>Ferny_PumpShotgun</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_BurstPistol</defName>
+    <label>burst pistol</label>
+    <description>Craft compact automatic handguns that fire tightly spaced three-round bursts.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>8</researchViewX>
+    <researchViewY>7</researchViewY>
+    <prerequisites><li>BlowbackOperation</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_CombatShotgun</defName>
+    <label>combat shotgun</label>
+    <description>Craft automatic scatterguns with revolving magazines for sustained fire at extended shotgun ranges.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>10.47</researchViewX>
+    <researchViewY>17.19</researchViewY>
+    <prerequisites><li>Ferny_ChainShotgun</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_LightCarbine</defName>
+    <label>light carbine</label>
+    <description>Craft compact gas-operated rifles that trade long-range precision for rapid handling and bursts.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>11.47</researchViewX>
+    <researchViewY>17.19</researchViewY>
+    <prerequisites><li>GasOperation</li><li>Ferny_BoltActionRifle</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_GrenadeThrower</defName>
+    <label>grenade thrower</label>
+    <description>Craft single-shot break-action weapons that launch small impact-detonated explosive rounds.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>12.47</researchViewX>
+    <researchViewY>17.19</researchViewY>
+    <prerequisites><li>Ferny_FragGrenades</li><li>Ferny_SmokeLauncher</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_DMR</defName>
+    <label>DMR</label>
+    <description>Craft scoped semi-automatic rifles for accurate medium and long-range follow-up fire.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>PrecisionRifling</li><li>Ferny_BoltActionRifle</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="det.vanillaarsenal">
+    <defName>Ferny_Thermorifle</defName>
+    <label>thermorifle</label>
+    <description>Craft heavy scoped rifles that detonate thermobaric charges against hardened and mechanical targets.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites><li>Ferny_DMR</li><li>Ferny_IncendiaryLauncher</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

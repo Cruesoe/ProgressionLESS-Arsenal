@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="det.keshig">
+    <defName>Ferny_SerratedScimitar</defName>
+    <label>serrated scimitar</label>
+    <description>Craft curved Keshig blades with jagged edges that tear through exposed flesh.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>6.70</researchViewX>
+    <researchViewY>7.40</researchViewY>
+    <prerequisites>
+      <li MayRequire="VexedTrees980.RimElvesBiotech">Ferny_Scimitar</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="det.keshig">
+    <defName>Ferny_CeremonialBlade</defName>
+    <label>ceremonial blade</label>
+    <description>Craft heavy traditional serrated swords for elite ritual combat.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.30</researchViewX>
+    <researchViewY>7.40</researchViewY>
+    <prerequisites>
+      <li>Ferny_SerratedScimitar</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

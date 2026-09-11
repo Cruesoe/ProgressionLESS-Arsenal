@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="mosi.FirefoamThings">
+    <defName>Ferny_FirefoamLauncher</defName>
+    <label>firefoam launcher</label>
+    <description>Craft wide-barreled devices that launch foam-filled shells to extinguish distant fires.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.37</researchViewX>
+    <researchViewY>10.23</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+      <li>Firefoam</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="mosi.FirefoamThings">
+    <defName>Ferny_FirefoamSprayer</defName>
+    <label>firefoam sprayer</label>
+    <description>Craft pressurized tools that blanket nearby flames and create temporary firebreaks with fire-retardant foam.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>7.37</researchViewX>
+    <researchViewY>11.23</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+      <li>Firefoam</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

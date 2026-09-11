@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT,VanillaExpanded.VWEQ">
+    <defName>Ferny_FrontierLeverActionShotgun</defName>
+    <label>quickdraw shotgun</label>
+    <description>Craft ornate frontier scatterguns tuned for an exceptionally fast draw and immediate close-range fire.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>8.80</researchViewX>
+    <researchViewY>4.40</researchViewY>
+    <prerequisites>
+      <li>Ferny_PumpShotgun</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT,VanillaExpanded.VWEQ">
+    <defName>Ferny_Derringer</defName>
+    <label>derringer</label>
+    <description>Craft tiny pocket pistols with minimal actions for discreet, immediate close-range defense.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>12.5</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <prerequisites><li>Gunsmithing</li></prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT,VanillaExpanded.VWEL"><defName>Ferny_SalvagedLaserRevolver</defName><label>salvaged laser revolver</label><description>Craft rotating-cell beam sidearms whose separate microbatteries accelerate repeated fire.</description><baseCost>1400</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab><researchViewX>19</researchViewX><researchViewY>9</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities><prerequisites><li>VWE_LaserWeapons</li></prerequisites></ResearchProjectDef>
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT,VanillaExpanded.VWEL"><defName>Ferny_SalvagedLaserRepeater</defName><label>salvaged laser repeater</label><description>Craft rapidly cycling beam rifles effective across close and medium engagement ranges.</description><baseCost>1600</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab><researchViewX>20</researchViewX><researchViewY>9</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities><prerequisites><li>Ferny_SalvagedLaserRifle</li></prerequisites></ResearchProjectDef>
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT,VanillaExpanded.VWEL"><defName>Ferny_SalvagedLaserHuntingRifle</defName><label>salvaged laser hunting rifle</label><description>Craft scoped beam rifles tuned for accurate fire across extreme frontier distances.</description><baseCost>1800</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab><researchViewX>20</researchViewX><researchViewY>10.5</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities><prerequisites><li>Ferny_SalvagedLaserRifle</li></prerequisites></ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT">
+    <defName>Ferny_HeavyFrontierRevolver</defName><label>heavy revolver</label>
+    <description>Craft reinforced large-frame revolvers chambered for powerful cartridges and deliberate long-range shots.</description>
+    <baseCost>500</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
+    <researchViewX>10</researchViewX><researchViewY>4.3</researchViewY>
+    <prerequisites><li>VWEFT_FrontierWeapons</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT">
+    <defName>Ferny_VolcanicPistol</defName><label>volcanic pistol</label>
+    <description>Craft lever-action repeating pistols that combine compact handling with unusually large ammunition capacity.</description>
+    <baseCost>500</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
+    <researchViewX>10</researchViewX><researchViewY>5.3</researchViewY>
+    <prerequisites><li>VWEFT_FrontierWeapons</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT">
+    <defName>Ferny_RollingBlockRifle</defName><label>rolling block rifle</label>
+    <description>Craft strong single-shot rifles with simple rotating breechblocks for accurate high-powered fire.</description>
+    <baseCost>500</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
+    <researchViewX>10</researchViewX><researchViewY>6.3</researchViewY>
+    <prerequisites><li>VWEFT_FrontierWeapons</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT">
+    <defName>Ferny_RepeatingShotgun</defName><label>repeating shotgun</label>
+    <description>Craft compact repeating scatterguns designed for rapid one-handed fire from mounted positions.</description>
+    <baseCost>600</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
+    <researchViewX>10</researchViewX><researchViewY>7.3</researchViewY>
+    <prerequisites><li>VWEFT_FrontierWeapons</li><li>Ferny_PumpShotgun</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>

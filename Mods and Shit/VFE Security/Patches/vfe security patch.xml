@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>          
+<Patch>       
+                <Operation Class="PatchOperationFindMod">
+                  <mods>
+                    <li>Medieval Overhaul</li>
+                  </mods>
+                  <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs</xpath>
+                            <value>
+                                <VEF.Buildings.HiddenDesignatorsDef>
+                                    <defName>FernyMOVFESecurityProgWarfare_HiddenDesignators</defName>
+                                    <hiddenDesignators>			
+                                        <li>VFES_CavalrySpikes</li>
+                                        <li>DankPyon_RTrench</li>
+                                        <li>DankPyon_Trench</li>
+                                    </hiddenDesignators>							
+                                </VEF.Buildings.HiddenDesignatorsDef>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/label</xpath>
+                            <value>
+                            <label>Advanced tactics</label>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/description</xpath>
+                            <value>
+                            <description>Adapt advanced battlefield tactics with a selection of weapons for close-quarters combat.</description>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult" or defName="VFES_CavalrySpikes"]/building/buildingTags</xpath>
+                        </li>
+                        
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult" or defName="VFES_CavalrySpikes"]/designationCategory</xpath>
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult" or defName="VFES_CavalrySpikes"]/researchPrerequisites</xpath>
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ResearchProjectDef[defName="VFES_SiegeEquipment"]</xpath>
+                        </li>
+
+                    </operations>
+                  </match>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFES_BearTrap"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Ferny_BearTrap</li>
+                        </researchPrerequisites>
+                    </value>
+                </Operation>
+    
+
+
+
+
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_ArmoredTurret"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_ArmoredTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]/prerequisites</xpath><value><prerequisites><li>GunTurrets</li><li>GasOperation</li></prerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VFES_Railgun"]/label</xpath><value><label>charge railgun</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VFES_EMPCannon"]/label</xpath><value><label>tesla blaster</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_AutocannonDouble"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_DoubleAutocannonTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Impact Weaponry - Reloaded</li></mods>
+    <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Turret_Impact"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_ImpactCatapult</li></researchPrerequisites></value></match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Ancient mining industry</li></mods>
+    <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="BreadMoAM_Turret_LargeShotgun"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_LargeCaliberShotgunTurret</li></researchPrerequisites></value></match>
+  </Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VFES_ConcealedDefenses"]/label</xpath><value><label>concealed barrier</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VFES_ConcealedDefenses"]/description</xpath><value><description>Build retractable waist-high barriers that provide strong cover and disappear into the floor when lowered.</description></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="VFES_Turret_Concealed"]</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_ConcealedTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_Flame"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_FlamerTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_MilitaryTurret"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_MilitaryTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_ShotgunTurret"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_ShotgunTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Vanilla Weapons Expanded - Non-Lethal</li></mods>
+    <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_NonLethalTurret"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_NonLethalTurret</li></researchPrerequisites></value></match>
+  </Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_Searchlight"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Searchlight</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Progression: Furniture</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Biomes! Fossils</li>
+      </mods>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Searchlight"]/prerequisites</xpath>
+        <value><prerequisites><li>Ferny_DisplayLight</li></prerequisites></value>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_Artillery"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Artillery</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_FieldGun"]</xpath>
+    <match Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Ferny_Artillery"]/prerequisites</xpath><value><prerequisites><li>Ferny_FieldGun</li></prerequisites></value></match>
+  </Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_BarbedWire"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_RazorWire</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Dugout"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Dugout</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Platform"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Platform</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Complex_Hmg"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_HMGComplex</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_BarbedWire"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_RazorWire</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Dugout"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Dugout</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Platform"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Platform</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Complex_Hmg"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_HMGComplex</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/label</xpath><value><label>trench</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/description</xpath><value><description>Build fortified firing positions and defensive earthworks for prolonged battlefield engagements.</description></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Trench"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>VWE_TrenchWarfare</li></researchPrerequisites></value></Operation>
+</Patch>

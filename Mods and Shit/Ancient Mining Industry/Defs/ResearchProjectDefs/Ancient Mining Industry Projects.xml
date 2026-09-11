@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef MayRequire="XMB.AncientMiningIndustry.MO">
+    <defName>Ferny_AncientMiniShotgunTurret</defName>
+    <label>ancient mini shotgun turret</label>
+    <description>Reconstruct compact automated scattergun emplacements based on salvaged ancient designs.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>9.53</researchViewX>
+    <researchViewY>21.27</researchViewY>
+    <prerequisites><li>GunTurrets</li><li>Ferny_PumpShotgun</li></prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef MayRequire="XMB.AncientMiningIndustry.MO">
+    <defName>Ferny_MiniShotgunTurret</defName>
+    <label>mini shotgun turret</label>
+    <description>Build newly manufactured compact scattergun emplacements for automated close-range defense.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>10.53</researchViewX>
+    <researchViewY>21.27</researchViewY>
+    <prerequisites><li>Ferny_AncientMiniShotgunTurret</li></prerequisites>
+  </ResearchProjectDef>
+</Defs>
