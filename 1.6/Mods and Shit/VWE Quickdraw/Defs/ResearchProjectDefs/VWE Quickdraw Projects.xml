@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ResearchProjectDef MayRequire="VanillaExpanded.VWEQ">
-    <defName>Ferny_PDW</defName>
-    <label>PDW</label>
-    <description>Craft compact automatic defense weapons optimized for rapid deployment and close-range bursts.</description>
-    <baseCost>700</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>13.5</researchViewX>
-    <researchViewY>4.5</researchViewY>
-    <prerequisites><li>VWE_Quickdraw</li></prerequisites>
-  </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VWEQ">
-    <defName>Ferny_BullpupRifle</defName>
-    <label>bullpup rifle</label>
-    <description>Craft shortened service rifles with their actions behind the trigger for exceptional handling.</description>
-    <baseCost>900</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>14.5</researchViewX>
-    <researchViewY>4.5</researchViewY>
-    <prerequisites><li>Ferny_PDW</li></prerequisites>
-  </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VWEQ">
     <defName>Ferny_BullpupDMR</defName>
     <label>bullpup DMR</label>
     <description>Craft compact marksman rifles combining long-range precision with fast handling.</description>
@@ -31,6 +9,6 @@
     <tab>Ferny_Arsenal</tab>
     <researchViewX>15.5</researchViewX>
     <researchViewY>4.5</researchViewY>
-    <prerequisites><li>Ferny_BullpupRifle</li></prerequisites>
+    <prerequisites><li>Ferny_PDW</li></prerequisites>
   </ResearchProjectDef>
 </Defs>

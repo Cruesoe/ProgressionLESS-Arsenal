@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>          
 
   <Operation Class="PatchOperationFindMod">
@@ -29,14 +29,14 @@
 
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="VFEP_Turret_FieldGun"]/researchPrerequisites</xpath>
-    <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFEP_Turret_FieldGun"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_FieldGun</li></researchPrerequisites></value></match>
-    <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="VFEP_Turret_FieldGun"]</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_FieldGun</li></researchPrerequisites></value></nomatch>
+    <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFEP_Turret_FieldGun"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Artillery</li></researchPrerequisites></value></match>
+    <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="VFEP_Turret_FieldGun"]</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_Artillery</li></researchPrerequisites></value></nomatch>
   </Operation>
   <Operation Class="PatchOperationFindMod">
     <mods><li>Vanilla Weapons Expanded - Laser</li></mods>
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="VFEP_Box_SalvagedLaserEradicator"]/researchPrerequisites</xpath>
-      <value><researchPrerequisites><li>Ferny_SalvagedLaserEradicator</li></researchPrerequisites></value>
+      <value><researchPrerequisites><li>Ferny_SalvagedLaserSniperRifle</li><li>VFEP_SpacerWarcasketWeaponry</li></researchPrerequisites></value>
     </match>
   </Operation>
 </Patch>

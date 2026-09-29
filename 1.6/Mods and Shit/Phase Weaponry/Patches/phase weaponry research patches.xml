@@ -18,6 +18,6 @@
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="DV_Gun_PhasePrecisionRifle"]/recipeMaker/researchPrerequisite</xpath>
-    <value><researchPrerequisite>Ferny_PhaseScalpel</researchPrerequisite></value>
+    <value><researchPrerequisite>Ferny_PhaseSaw</researchPrerequisite></value>
   </Operation>
 </Patch>

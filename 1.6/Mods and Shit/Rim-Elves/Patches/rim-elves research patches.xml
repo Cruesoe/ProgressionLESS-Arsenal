@@ -3,13 +3,13 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Bow_ElvenLong"]/recipeMaker/researchPrerequisite</xpath>
     <value>
-      <researchPrerequisite>Ferny_CompositeBow</researchPrerequisite>
+      <researchPrerequisite>Ferny_Crossbow</researchPrerequisite>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="MeleeWeapon_ElvenScimitar"]/recipeMaker/researchPrerequisite</xpath>
     <value>
-      <researchPrerequisite>Ferny_Scimitar</researchPrerequisite>
+      <researchPrerequisite>Ferny_Longsword</researchPrerequisite>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">

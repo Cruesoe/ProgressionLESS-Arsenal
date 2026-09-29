@@ -15,40 +15,4 @@
     </prerequisites>
   </ResearchProjectDef>
 
-  <ResearchProjectDef MayRequire="Ludeon.Rimworld.Biotech">
-    <defName>Ferny_ToxPack</defName>
-    <label>tox pack</label>
-    <description>Craft reusable backpack canisters that disperse a close-range cloud of tox gas.</description>
-    <baseCost>300</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>9.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
-    <prerequisites><li>ToxGas</li></prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="Ludeon.Rimworld.Biotech">
-    <defName>Ferny_ToxShell</defName>
-    <label>tox shell</label>
-    <description>Craft artillery shells that blanket distant targets in a lingering cloud of tox gas.</description>
-    <baseCost>400</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>9.00</researchViewX>
-    <researchViewY>5.80</researchViewY>
-    <prerequisites><li>ToxGas</li><li>Mortars</li></prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="Ludeon.Rimworld.Biotech">
-    <defName>Ferny_ToxbombLauncher</defName>
-    <label>toxbomb launcher</label>
-    <description>Craft self-loading launchers that fire canisters which spread tox gas across the battlefield.</description>
-    <baseCost>500</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>10.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
-    <prerequisites><li>ToxGas</li><li>Ferny_IncendiaryLauncher</li></prerequisites>
-  </ResearchProjectDef>
-
 </Defs>

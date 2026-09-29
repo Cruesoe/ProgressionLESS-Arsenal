@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>          
+<?xml version="1.0" encoding="utf-8"?>          
 <Patch>       
           <Operation Class="PatchOperationFindMod">
             <mods>
@@ -46,19 +46,19 @@
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Flail"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite>Ferny_Flail</researchPrerequisite>
+              <researchPrerequisite>Ferny_HeavyMace</researchPrerequisite>
             </value>
           </Operation>
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_ThrowingAxe"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite>Ferny_BreachAxe</researchPrerequisite>
+              <researchPrerequisite>Ferny_Axe</researchPrerequisite>
             </value>
           </Operation>
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_Warbow"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite>Ferny_Warbow</researchPrerequisite>
+              <researchPrerequisite>Ferny_Longbow</researchPrerequisite>
             </value>
           </Operation>
           <Operation Class="PatchOperationReplace">
@@ -84,11 +84,11 @@
             <value>
               <generalRules>
                 <rulesStrings>
-                  <li>subject->hand cannons</li>
-                  <li>subject_story->made crude handheld gunpowder weapons reliable enough for the field</li>
-                  <li>subject_story->brought thunderous short-range firearms into battle</li>
-                  <li>subject_story->learned to cast and brace early portable gun barrels</li>
-                  <li>subject_gerund->crafting hand cannons</li>
+                  <li>subject-&gt;hand cannons</li>
+                  <li>subject_story-&gt;made crude handheld gunpowder weapons reliable enough for the field</li>
+                  <li>subject_story-&gt;brought thunderous short-range firearms into battle</li>
+                  <li>subject_story-&gt;learned to cast and brace early portable gun barrels</li>
+                  <li>subject_gerund-&gt;crafting hand cannons</li>
                 </rulesStrings>
               </generalRules>
             </value>
@@ -108,7 +108,7 @@
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_Gun_Musket"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite>Ferny_Musket</researchPrerequisite>
+              <researchPrerequisite>Ferny_Arquebus</researchPrerequisite>
             </value>
           </Operation>
           <Operation Class="PatchOperationReplace">
@@ -128,7 +128,7 @@
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Claymore"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite>Ferny_Claymore</researchPrerequisite>
+              <researchPrerequisite>Ferny_MOLongsword</researchPrerequisite>
             </value>
           </Operation>
           <Operation Class="PatchOperationReplace">
@@ -146,7 +146,7 @@
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
             <value>
-              <researchPrerequisite>Ferny_Pike</researchPrerequisite>
+              <researchPrerequisite>Ferny_BattleAxe</researchPrerequisite>
             </value>
           </Operation>
 </Patch>

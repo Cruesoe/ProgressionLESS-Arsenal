@@ -9,7 +9,7 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="RBSF_Lyre"]/recipeMaker/researchPrerequisite</xpath>
     <value>
-      <researchPrerequisite>Ferny_Lyre</researchPrerequisite>
+      <researchPrerequisite>Ferny_Lute</researchPrerequisite>
     </value>
   </Operation>
 </Patch>

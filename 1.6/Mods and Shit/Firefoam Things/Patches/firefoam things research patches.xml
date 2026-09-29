@@ -23,11 +23,11 @@
     <xpath>Defs/ThingDef[defName="Mosi_FirefoamSprayer"]/recipeMaker/researchPrerequisite</xpath>
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="Mosi_FirefoamSprayer"]/recipeMaker/researchPrerequisite</xpath>
-      <value><researchPrerequisite>Ferny_FirefoamSprayer</researchPrerequisite></value>
+      <value><researchPrerequisite>Ferny_FirefoamLauncher</researchPrerequisite></value>
     </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="Mosi_FirefoamSprayer"]/recipeMaker</xpath>
-      <value><researchPrerequisite>Ferny_FirefoamSprayer</researchPrerequisite></value>
+      <value><researchPrerequisite>Ferny_FirefoamLauncher</researchPrerequisite></value>
     </nomatch>
   </Operation>
 </Patch>

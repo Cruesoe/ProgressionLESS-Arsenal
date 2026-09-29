@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
                 <Operation Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/recipeMaker/researchPrerequisite</xpath>
@@ -18,13 +18,13 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="MeleeWeapon_BreachAxe"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_BreachAxe</researchPrerequisite>
+                        <researchPrerequisite>Ferny_Axe</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_Ikwa</researchPrerequisite>
+                        <researchPrerequisite>Ferny_Spear</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
@@ -197,13 +197,6 @@
                         <researchPrerequisite>Ferny_IncendiaryLauncher</researchPrerequisite>
                     </value>
                 </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_DoubleBarreledShotgun"]</xpath>
-    <match Class="PatchOperationReplace">
-      <xpath>Defs/ResearchProjectDef[defName="Ferny_PumpShotgun"]/prerequisites</xpath>
-      <value><prerequisites><li>Ferny_DoubleBarreledShotgun</li></prerequisites></value>
-    </match>
-  </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/label</xpath>
     <value><label>autopistol</label></value>
@@ -230,17 +223,17 @@
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="GasOperation"]/description</xpath><value><description>Craft compact automatic weapons that fire powerful wide-caliber rounds in controlled bursts.</description></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="GasOperation"]/generalRules/rulesStrings</xpath><value><rulesStrings><li>subject-&gt;heavy submachine guns</li><li>subject_story-&gt;equipped its troops with compact large-caliber automatic weapons</li><li>subject_gerund-&gt;crafting heavy submachine guns</li></rulesStrings></value></Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="Ferny_LightSMG"]</xpath>
+    <xpath>Defs/ThingDef[defName="VWE_Gun_LightSMG"]</xpath>
     <match Class="PatchOperationReplace">
       <xpath>Defs/ResearchProjectDef[defName="GasOperation"]/prerequisites</xpath>
-      <value><prerequisites><li>Ferny_LightSMG</li></prerequisites></value>
+      <value><prerequisites><li>Ferny_CombatHandgun</li></prerequisites></value>
     </match>
   </Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/label</xpath><value><label>mini-turret</label></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/description</xpath><value><description>Build compact automated gun emplacements that track and fire upon nearby threats.</description></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="GunTurrets"]/generalRules/rulesStrings</xpath><value><rulesStrings><li>subject-&gt;mini-turrets</li><li>subject_story-&gt;deployed compact automated guns to guard its perimeter</li><li>subject_gerund-&gt;constructing mini-turrets</li></rulesStrings></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Shell_Smoke"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_SmokeShell</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Shell_Incendiary"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IncendiaryShell</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Shell_Incendiary"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_SmokeShell</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Mortars"]/label</xpath><value><label>mortar</label></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Mortars"]/description</xpath><value><description>Build high-angle launchers that lob explosive rounds over obstacles, and manufacture high-explosive shells for bombardment.</description></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]/label</xpath><value><label>assault rifle</label></value></Operation>

@@ -291,19 +291,19 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_ButcherCleaver"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_ButchersCleaver</researchPrerequisite>
+                        <researchPrerequisite>Ferny_Spear</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Handaxe"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_Handaxe</researchPrerequisite>
+                        <researchPrerequisite>Ferny_BattleAxe</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longaxe"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_Longaxe</researchPrerequisite>
+                        <researchPrerequisite>Ferny_BattleAxe</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
@@ -315,25 +315,25 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_FencingSword</researchPrerequisite>
+                        <researchPrerequisite>Ferny_Longsword</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingAxe"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_FightingAxe</researchPrerequisite>
+                        <researchPrerequisite>Ferny_DaneAxe</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greataxe"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_GreatAxe</researchPrerequisite>
+                        <researchPrerequisite>Ferny_DaneAxe</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <researchPrerequisite>Ferny_NobleSword</researchPrerequisite>
+                        <researchPrerequisite>Ferny_Longsword</researchPrerequisite>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationFindMod">

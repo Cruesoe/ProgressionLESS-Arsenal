@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_RoxWaraxe"]/recipeMaker/researchPrerequisite</xpath>
     <value>
-      <researchPrerequisite>Ferny_RoxWaraxe</researchPrerequisite>
+      <researchPrerequisite>Ferny_Halberd</researchPrerequisite>
     </value>
   </Operation>
 </Patch>

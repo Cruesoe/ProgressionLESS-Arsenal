@@ -2,77 +2,6 @@
 <Defs>
 
   <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_HeavyMace</defName>
-    <label>heavy mace</label>
-    <description>Craft heavier spiked impact weapons made to pierce plate and punish armored targets.</description>
-    <baseCost>150</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.10</researchViewX>
-    <researchViewY>5.10</researchViewY>
-    <prerequisites>
-      <li>Ferny_Mace</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Flail</defName>
-    <label>flail</label>
-    <description>Craft chained spiked heads that swing unpredictably and land devastating blunt impacts.</description>
-    <baseCost>150</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.70</researchViewX>
-    <researchViewY>5.10</researchViewY>
-    <prerequisites>
-      <li>Ferny_Mace</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Warbow</defName>
-    <label>warbow</label>
-    <description>Craft powerful long bows that arc heavy shots over cover at extreme range.</description>
-    <baseCost>200</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.10</researchViewX>
-    <researchViewY>1.80</researchViewY>
-    <prerequisites>
-      <li>Greatbow</li>
-      <li MayRequire="VanillaExpanded.VWE">Ferny_Longbow</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Arquebus</defName>
-    <label>arquebus</label>
-    <description>Craft long smoothbore firearms that fire heavy chempowder shots from a shoulder stock.</description>
-    <baseCost>500</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.30</researchViewX>
-    <researchViewY>1.10</researchViewY>
-    <prerequisites>
-      <li>VFEM2_Matchlocks</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Musket</defName>
-    <label>musket</label>
-    <description>Craft longer barreled smoothbore firearms for stronger volleys at battlefield ranges.</description>
-    <baseCost>600</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.30</researchViewX>
-    <researchViewY>1.10</researchViewY>
-    <prerequisites>
-      <li>Ferny_Arquebus</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
     <defName>Ferny_Flintlock</defName>
     <label>flintlock</label>
     <description>Craft compact firearms with spark-lock mechanisms for faster close-range shots.</description>
@@ -82,65 +11,7 @@
     <researchViewX>7.30</researchViewX>
     <researchViewY>0.70</researchViewY>
     <prerequisites>
-      <li>Ferny_Musket</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Claymore</defName>
-    <label>claymore</label>
-    <description>Craft brutal knightly two-handers that cleave with heavy, sweeping cuts.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.50</researchViewX>
-    <researchViewY>6.20</researchViewY>
-    <prerequisites>
-      <li>Ferny_Longsword</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_DaneAxe</defName>
-    <label>dane axe</label>
-    <description>Craft broad two-handed axes made for devastating, armor-splitting blows.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.60</researchViewX>
-    <researchViewY>3.50</researchViewY>
-    <prerequisites>
-      <li MayRequire="VanillaExpanded.VWE">Ferny_BattleAxe</li>
-      <li>Ferny_Axe</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Halberd</defName>
-    <label>halberd</label>
-    <description>Craft heavy polearms combining axe blades, hooks, and stabbing points.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.60</researchViewX>
-    <researchViewY>2.90</researchViewY>
-    <prerequisites>
-      <li>Ferny_DaneAxe</li>
-      <li>Ferny_Spear</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="OskarPotocki.VFE.Medieval2">
-    <defName>Ferny_Pike</defName>
-    <label>pike</label>
-    <description>Craft very long thrusting polearms for disciplined anti-melee reach.</description>
-    <baseCost>200</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>4.70</researchViewX>
-    <researchViewY>3.10</researchViewY>
-    <prerequisites>
-      <li>Ferny_Spear</li>
+      <li>Ferny_Arquebus</li>
     </prerequisites>
   </ResearchProjectDef>
 

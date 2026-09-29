@@ -13,15 +13,4 @@
     <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
     <prerequisites><li>SniperTurret</li></prerequisites>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VWEHW">
-    <defName>Ferny_HandheldMortar</defName>
-    <label>handheld mortar</label>
-    <description>Craft portable high-angle bomb launchers with limited ammunition for bombardment over obstacles.</description>
-    <baseCost>500</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>11.61</researchViewX>
-    <researchViewY>26.31</researchViewY>
-    <prerequisites><li>Mortars</li></prerequisites>
-  </ResearchProjectDef>
 </Defs>

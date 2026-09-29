@@ -5,8 +5,8 @@
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="IW_IonChargeWeaponry"]/baseCost</xpath><value><baseCost>800</baseCost></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonPDW"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonPDW</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonLMG"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonLMG</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonRifle</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonDMR"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonDMR</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonPDW</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonDMR"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonLMG</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_IonSlugthrower"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonSlugthrower</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_HeavyIonLance"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_HeavyIonLance</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="IW_Gun_HeavyIonLance"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_IonSlugthrower</researchPrerequisite></value></Operation>
 </Patch>

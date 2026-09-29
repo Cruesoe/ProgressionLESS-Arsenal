@@ -63,7 +63,7 @@
     <xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftRifle"]</xpath>
     <value>
       <recipeMaker>
-        <researchPrerequisite>Ferny_MakeshiftRifle</researchPrerequisite>
+        <researchPrerequisite>Ferny_SMG</researchPrerequisite>
       </recipeMaker>
     </value>
   </Operation>
@@ -71,7 +71,7 @@
     <xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftSMG"]</xpath>
     <value>
       <recipeMaker>
-        <researchPrerequisite>Ferny_MakeshiftSMG</researchPrerequisite>
+        <researchPrerequisite>Ferny_CombatHandgun</researchPrerequisite>
       </recipeMaker>
     </value>
   </Operation>
@@ -79,7 +79,7 @@
     <xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftLMG"]</xpath>
     <value>
       <recipeMaker>
-        <researchPrerequisite>Ferny_MakeshiftLMG</researchPrerequisite>
+        <researchPrerequisite>Ferny_LMG</researchPrerequisite>
       </recipeMaker>
     </value>
   </Operation>

@@ -2,34 +2,6 @@
 <Defs>
 
   <ResearchProjectDef MayRequire="VexedTrees980.RimElvesBiotech">
-    <defName>Ferny_CompositeBow</defName>
-    <label>composite bow</label>
-    <description>Craft elven long-range bows built from carefully worked natural materials.</description>
-    <baseCost>150</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>3.10</researchViewX>
-    <researchViewY>1.10</researchViewY>
-    <prerequisites>
-      <li>RecurveBow</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="VexedTrees980.RimElvesBiotech">
-    <defName>Ferny_Scimitar</defName>
-    <label>scimitar</label>
-    <description>Craft curved slashing blades with cruel draw-cutting edges.</description>
-    <baseCost>200</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.10</researchViewX>
-    <researchViewY>7.40</researchViewY>
-    <prerequisites>
-      <li>Ferny_Gladius</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef MayRequire="VexedTrees980.RimElvesBiotech">
     <defName>Ferny_ChargeBow</defName>
     <label>charge bow</label>
     <description>Craft composite bows that energize arrows with unstable pulse-charged fields as they are drawn.</description>

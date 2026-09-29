@@ -5,8 +5,8 @@
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_NonLethal"]/baseCost</xpath><value><baseCost>300</baseCost></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_NonLethal"]/generalRules/rulesStrings</xpath><value><rulesStrings><li>subject-&gt;stun batons</li><li>subject_story-&gt;equipped its guards with electrical contact prods</li><li>subject_gerund-&gt;crafting stun batons</li></rulesStrings></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_RubberBulletPistol"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_RubberPistol</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_DartGun"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_DartGun</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_Taser"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TaserGun</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TearGasGrenades</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_DartGun"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_RubberPistol</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_Taser"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_RubberPistol</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_SmokeGrenades</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_TearGasLauncher"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TearGasLauncher</researchPrerequisite></value></Operation>
 </Patch>

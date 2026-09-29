@@ -1,52 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef MayRequire="det.vanillaarsenal">
-    <defName>Ferny_Chaingun</defName><label>chaingun</label>
-    <description>Assemble heavy chain-driven machine guns capable of sustained automatic fire.</description>
-    <baseCost>700</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>15</researchViewX><researchViewY>18</researchViewY>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites><li>MultibarrelWeapons</li></prerequisites>
-  </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VWEFT">
-    <defName>Ferny_HandheldGatlingGun</defName><label>handheld gatling gun</label>
-    <description>Adapt hand-cranked Gatling mechanisms into portable weapons for exceptionally strong operators.</description>
-    <baseCost>700</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>15</researchViewX><researchViewY>19</researchViewY>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites><li>MultibarrelWeapons</li></prerequisites>
-  </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VFESecurity">
-    <defName>Ferny_AntiAirTurret</defName><label>anti-air turret</label>
-    <description>Build rapid-firing defensive emplacements designed to intercept incoming aerial threats.</description>
-    <baseCost>800</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>15</researchViewX><researchViewY>20</researchViewY>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites><li>MultibarrelWeapons</li><li>HeavyTurrets</li></prerequisites>
-  </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VFESecurity">
-    <defName>Ferny_MinigunTurret</defName><label>minigun turret</label>
-    <description>Mount electrically driven rotary guns in automated defensive emplacements.</description>
-    <baseCost>900</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>16</researchViewX><researchViewY>20</researchViewY>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites><li>MultibarrelWeapons</li><li>HeavyTurrets</li></prerequisites>
-  </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VFESecurity">
-    <defName>Ferny_MinigunComplex</defName><label>minigun complex</label>
-    <description>Build fortified, crew-served minigun positions for sustained defensive fire.</description>
-    <baseCost>800</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>17</researchViewX><researchViewY>20</researchViewY>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites><li>Ferny_MinigunTurret</li></prerequisites>
-  </ResearchProjectDef>
   <ResearchProjectDef MayRequire="VanillaExpanded.VWEHW">
     <defName>Ferny_SwarmMissileLauncher</defName><label>swarm missile launcher</label>
     <description>Assemble multi-projectile launchers that distribute guided missiles across groups of targets.</description>
     <baseCost>1000</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
     <researchViewX>16</researchViewX><researchViewY>18</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites><li>MultibarrelWeapons</li><li>Ferny_RocketLauncher</li></prerequisites>
+    <prerequisites><li>MultibarrelWeapons</li><li MayRequire="VanillaExpanded.VWE">Ferny_RocketLauncher</li></prerequisites>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequire="MRK.rimpackjoyride">
     <defName>Ferny_TwinMinigunBackpack</defName><label>twin minigun backpack</label>
