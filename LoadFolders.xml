@@ -1,5 +1,7 @@
 <loadFolders>
   <v1.6>
+    <!-- Listed first so its patches run after every other folder's -->
+    <li>1.6/Merged</li>
     <li>/</li>
     <li>1.6</li>
     <li IfModActive="oskarpotocki.vfe.classical">1.6/Mods and Shit/VFE Classical</li>
@@ -60,6 +62,5 @@
     <li IfModActive="Smxrez.securityreexamined">1.6/Mods and Shit/Security Re-Examined</li>
     <li IfModActive="ferny.progressionfurniture,cruesoe.progressionlessfurniture">1.6/Mods and Shit/Progression Furniture</li>
     <li IfModActive="astryl.AsAboveSoBelow2">1.6/Mods and Shit/As Above So Below 2</li>
-    <li>1.6/Merged</li>
   </v1.6>
 </loadFolders>
