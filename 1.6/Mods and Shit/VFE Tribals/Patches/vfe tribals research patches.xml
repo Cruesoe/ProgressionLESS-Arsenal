@@ -15,21 +15,13 @@
                         </value>
                     </nomatch>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="VFET_AnimalTrap"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>Ferny_Traps</li>
-                        </researchPrerequisites>
-                    </value>
-                </Operation>
                 <Operation Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="TrapSpike"]/researchPrerequisites</xpath>
                     <match Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="TrapSpike"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>Ferny_Traps</li>
+                                <li>VFET_Weapons</li>
                             </researchPrerequisites>
                         </value>
                     </match>
@@ -37,7 +29,7 @@
                         <xpath>Defs/ThingDef[defName="TrapSpike"]</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>Ferny_Traps</li>
+                                <li>VFET_Weapons</li>
                             </researchPrerequisites>
                         </value>
                     </nomatch>

@@ -3,7 +3,7 @@
 
   <VFETribals.TribalResearchProjectDef MayRequire="oskarpotocki.vfe.tribals">
     <defName>Ferny_Club</defName>
-    <label>tribal melee weapons</label>
+    <label>melee weapons</label>
     <description>Craft simple clubs, shivs, axes, maces and spears from wood, bone and stone.</description>
     <baseCost>15</baseCost>
     <techLevel>Animal</techLevel>
@@ -201,7 +201,7 @@
   <ResearchProjectDef MayRequire="dankpyon.medieval.overhaul">
     <defName>Ferny_Polehammer</defName>
     <label>military maces</label>
-    <description>Forge polehammers, warhammers, morning stars and blacksmith&apos;s hammers.</description>
+    <description>Forge polehammers, warhammers, morning stars and blacksmith's hammers.</description>
     <baseCost>800</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>

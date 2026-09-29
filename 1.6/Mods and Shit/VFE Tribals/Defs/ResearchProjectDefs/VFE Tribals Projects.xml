@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <VFETribals.TribalResearchProjectDef>
-    <defName>Ferny_Traps</defName>
-    <label>traps</label>
-    <description>Build concealed hazards that injure prey, raiders, and careless intruders.</description>
-    <baseCost>15</baseCost>
-    <tab>VFET_Basics</tab>
-    <techLevel>Animal</techLevel>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
-    <prerequisites>
-      <li>VFET_Hunting</li>
-      <li>VFET_Construction</li>
-    </prerequisites>
-  </VFETribals.TribalResearchProjectDef>
-
   <VFETribals.TribalResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>Ferny_RawhideRack</defName>
     <label>rawhide rack</label>
