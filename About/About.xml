@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Progression: Arsenal</name>
-	<author>ferny</author>
-	<packageId>ferny.progressionarsenal</packageId>
+	<name>ProgressionLESS: Arsenal</name>
+	<author>Cruesoe</author>
+	<packageId>cruesoe.progressionlessarsenal</packageId>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
@@ -19,9 +19,17 @@
 		</li>
 	</modDependencies>
 	<incompatibleWith>
+		<li>ferny.progressionarsenal</li>
 		<li>ferny.progressionwarfare</li>
 	</incompatibleWith>
-	<description>Overhauls weapon progression.</description>
+	<description>All the Progression goodness, less research.
+
+Overhauls weapon progression.
+
+Forked from Progression: Arsenal by ferny.
+Huge thanks to ferny for the original mod and all the Progression work this builds on. Replaces the original; do not use both.
+
+For a really good modpack, check out The Progression Modpack on the Steam Workshop.</description>
 	<loadAfter>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
@@ -73,6 +81,7 @@
 		<li>VanillaExpanded.VWEHW</li>
 		<li>BiomesTeam.BiomesFossils</li>
 		<li>ferny.progressionfurniture</li>
+		<li>cruesoe.progressionlessfurniture</li>
 		<li>VanillaExpanded.VWEL</li>
 		<li>Smxrez.LaserReexamined</li>
 		<li>MRK.rimpackjoyride</li>
