@@ -6,7 +6,7 @@
     <label>butcher's cleaver</label>
     <description>Craft heavy chopping blades that split meat, bone, and lightly armored targets.</description>
     <baseCost>100</baseCost>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
     <researchViewX>3.70</researchViewX>
     <researchViewY>6.80</researchViewY>
