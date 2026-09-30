@@ -9,7 +9,7 @@
     <techLevel>Animal</techLevel>
     <tab>VFET_Basics</tab>
     <researchViewX>3.00</researchViewX>
-    <researchViewY>3.30</researchViewY>
+    <researchViewY>3.50</researchViewY>
     <prerequisites>
       <li>VFET_Weapons</li>
     </prerequisites>
@@ -23,7 +23,7 @@
     <techLevel>Animal</techLevel>
     <tab>VFET_Basics</tab>
     <researchViewX>3.00</researchViewX>
-    <researchViewY>4.30</researchViewY>
+    <researchViewY>4.20</researchViewY>
     <prerequisites>
       <li>VFET_Weapons</li>
     </prerequisites>
@@ -37,7 +37,7 @@
     <techLevel>Animal</techLevel>
     <tab>VFET_Basics</tab>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>3.30</researchViewY>
+    <researchViewY>3.50</researchViewY>
     <prerequisites>
       <li>Ferny_Club</li>
     </prerequisites>

@@ -14,8 +14,8 @@
               <baseCost>15</baseCost>
               <tab>VFET_Basics</tab>
               <techLevel>Animal</techLevel>
-              <researchViewX>4.80</researchViewX>
-              <researchViewY>4.00</researchViewY>
+              <researchViewX>4.00</researchViewX>
+              <researchViewY>4.20</researchViewY>
               <prerequisites>
                 <li MayRequire="VanillaExpanded.VWETB">Ferny_Sling</li>
                 <li>VFET_Bow</li>
