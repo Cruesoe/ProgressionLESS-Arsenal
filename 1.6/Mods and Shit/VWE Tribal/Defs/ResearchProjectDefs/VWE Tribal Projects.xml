@@ -8,8 +8,8 @@
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>3.50</researchViewX>
-    <researchViewY>5.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <prerequisites>
       <li MayRequire="OskarPotocki.VFE.Tribals">VFET_Weapons</li>
     </prerequisites>

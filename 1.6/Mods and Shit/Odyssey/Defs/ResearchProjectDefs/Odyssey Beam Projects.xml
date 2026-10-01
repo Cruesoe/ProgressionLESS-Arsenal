@@ -7,8 +7,8 @@
     <baseCost>1800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>17</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
     <prerequisites><li>BeamWeapons</li></prerequisites>

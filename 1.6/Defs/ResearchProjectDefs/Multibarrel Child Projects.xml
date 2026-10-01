@@ -4,7 +4,7 @@
     <defName>Ferny_SwarmMissileLauncher</defName><label>swarm missile launcher</label>
     <description>Assemble multi-projectile launchers that distribute guided missiles across groups of targets.</description>
     <baseCost>1000</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>16</researchViewX><researchViewY>18</researchViewY>
+    <researchViewX>9.00</researchViewX><researchViewY>2.80</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites><li>MultibarrelWeapons</li><li MayRequire="VanillaExpanded.VWE">Ferny_RocketLauncher</li></prerequisites>
   </ResearchProjectDef>
@@ -12,7 +12,7 @@
     <defName>Ferny_TwinMinigunBackpack</defName><label>twin minigun backpack</label>
     <description>Integrate paired downward-firing miniguns into a reinforced personal flight harness.</description>
     <baseCost>1200</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>17</researchViewX><researchViewY>19</researchViewY>
+    <researchViewX>13.00</researchViewX><researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
     <prerequisites><li>MultibarrelWeapons</li><li MayRequire="MrKociak.YABEMBionicModularity">BM_SpacerBionicImplants</li></prerequisites>

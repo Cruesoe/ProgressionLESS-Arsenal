@@ -8,8 +8,8 @@
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>7.30</researchViewX>
-    <researchViewY>0.70</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <prerequisites>
       <li>Ferny_Arquebus</li>
     </prerequisites>

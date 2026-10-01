@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul"><defName>Ferny_TwoHandedFlangedMace</defName><label>two-handed flanged mace</label><description>Craft imposing noble weapons with reinforced flanges and exceptional striking weight.</description><baseCost>1200</baseCost><techLevel>Medieval</techLevel><tab>Ferny_Arsenal</tab><researchViewX>13</researchViewX><researchViewY>20</researchViewY><prerequisites><li>DankPyon_NobleMaces</li></prerequisites></ResearchProjectDef>
+  <ResearchProjectDef MayRequire="DankPyon.Medieval.Overhaul"><defName>Ferny_TwoHandedFlangedMace</defName><label>two-handed flanged mace</label><description>Craft imposing noble weapons with reinforced flanges and exceptional striking weight.</description><baseCost>1200</baseCost><techLevel>Medieval</techLevel><tab>Ferny_Arsenal</tab><researchViewX>2.00</researchViewX><researchViewY>5.60</researchViewY><prerequisites><li>DankPyon_NobleMaces</li></prerequisites></ResearchProjectDef>
 </Defs>

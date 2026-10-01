@@ -50,8 +50,8 @@
     <baseCost>150</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>4.70</researchViewX>
-    <researchViewY>5.00</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li MayRequire="VanillaExpanded.VWETB">Ferny_Club</li>
     </prerequisites>
@@ -64,8 +64,8 @@
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>4.10</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Ferny_Hatchet</li>
     </prerequisites>
@@ -78,8 +78,8 @@
     <baseCost>150</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>3.70</researchViewX>
-    <researchViewY>3.10</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <prerequisites>
       <li>Ferny_Knife</li>
       <li>Smithing</li>
@@ -93,8 +93,8 @@
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>2.30</researchViewX>
-    <researchViewY>6.20</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <prerequisites>
       <li MayRequire="OskarPotocki.VFE.Tribals">VFET_Culture</li>
     </prerequisites>
@@ -107,8 +107,8 @@
     <baseCost>250</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.10</researchViewX>
-    <researchViewY>6.20</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <prerequisites>
       <li>Ferny_Gladius</li>
     </prerequisites>
@@ -121,8 +121,8 @@
     <baseCost>300</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.90</researchViewX>
-    <researchViewY>6.20</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <prerequisites>
       <li>Ferny_Longsword</li>
     </prerequisites>
@@ -135,8 +135,8 @@
     <baseCost>200</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.20</researchViewX>
-    <researchViewY>3.50</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li>Ferny_Axe</li>
     </prerequisites>
@@ -149,8 +149,8 @@
     <baseCost>250</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.60</researchViewX>
-    <researchViewY>3.50</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <prerequisites>
       <li MayRequireAnyOf="dankpyon.medieval.overhaul,oskarpotocki.vfe.medieval2,tug.minotaur,vanillaexpanded.vwe">Ferny_BattleAxe</li>
     </prerequisites>
@@ -163,8 +163,8 @@
     <baseCost>300</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.60</researchViewX>
-    <researchViewY>2.90</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <prerequisites>
       <li MayRequireAnyOf="dankpyon.medieval.overhaul,oskarpotocki.vfe.medieval2,tug.minotaur,vanillaexpanded.vwe">Ferny_DaneAxe</li>
     </prerequisites>
@@ -177,8 +177,8 @@
     <baseCost>150</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.10</researchViewX>
-    <researchViewY>5.10</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li>Ferny_Mace</li>
     </prerequisites>
@@ -191,8 +191,8 @@
     <baseCost>450</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>9</researchViewX>
-    <researchViewY>18</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <prerequisites>
       <li>DankPyon_BasicMaces</li>
     </prerequisites>
@@ -205,8 +205,8 @@
     <baseCost>800</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>11</researchViewX>
-    <researchViewY>19</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <prerequisites>
       <li>DankPyon_MilitaryMaces</li>
     </prerequisites>
@@ -219,8 +219,8 @@
     <baseCost>900</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>12</researchViewX>
-    <researchViewY>19</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <prerequisites>
       <li>Ferny_Polehammer</li>
     </prerequisites>
@@ -233,8 +233,8 @@
     <baseCost>200</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>3.10</researchViewX>
-    <researchViewY>2.50</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <prerequisites>
       <li>RecurveBow</li>
     </prerequisites>
@@ -247,8 +247,8 @@
     <baseCost>200</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.10</researchViewX>
-    <researchViewY>1.80</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <prerequisites>
       <li>Greatbow</li>
     </prerequisites>
@@ -261,8 +261,8 @@
     <baseCost>600</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>5.30</researchViewX>
-    <researchViewY>1.10</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <prerequisites>
       <li>VFEM2_Matchlocks</li>
     </prerequisites>
@@ -275,8 +275,8 @@
     <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>7.80</researchViewX>
-    <researchViewY>3.20</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -289,8 +289,8 @@
     <baseCost>600</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>10</researchViewX>
-    <researchViewY>6.3</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <prerequisites>
       <li>VWEFT_FrontierWeapons</li>
     </prerequisites>
@@ -303,8 +303,8 @@
     <baseCost>600</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>8</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>BlowbackOperation</li>
@@ -318,8 +318,8 @@
     <baseCost>600</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>12.47</researchViewX>
-    <researchViewY>16.19</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <prerequisites>
       <li>GasOperation</li>
     </prerequisites>
@@ -332,8 +332,8 @@
     <baseCost>700</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>11.47</researchViewX>
-    <researchViewY>16.19</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li>Ferny_BoltActionRifle</li>
       <li>GasOperation</li>
@@ -348,7 +348,7 @@
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>3.90</researchViewY>
+    <researchViewY>0.70</researchViewY>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -362,7 +362,7 @@
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
     <researchViewX>8.00</researchViewX>
-    <researchViewY>3.90</researchViewY>
+    <researchViewY>1.40</researchViewY>
     <prerequisites>
       <li>Ferny_PumpShotgun</li>
     </prerequisites>
@@ -375,8 +375,8 @@
     <baseCost>600</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>10.47</researchViewX>
-    <researchViewY>16.19</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <prerequisites>
       <li>Ferny_PumpShotgun</li>
       <li>GasOperation</li>
@@ -390,8 +390,8 @@
     <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>8.00</researchViewX>
-    <researchViewY>2.90</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <prerequisites>
       <li>Ferny_BoltActionRifle</li>
     </prerequisites>
@@ -404,8 +404,8 @@
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>12.00</researchViewX>
-    <researchViewY>3.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>PrecisionRifling</li>
@@ -419,8 +419,8 @@
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>13.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li MayRequireAnyOf="det.vanillaarsenal,sarg.alphagenes,vanillaexpanded.vwe">Ferny_ServiceRifle</li>
@@ -434,8 +434,8 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>13.00</researchViewX>
-    <researchViewY>3.60</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>Ferny_BoltActionRifle</li>
@@ -451,8 +451,8 @@
     <baseCost>900</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>13.5</researchViewX>
-    <researchViewY>4.5</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li>VWE_Quickdraw</li>
     </prerequisites>
@@ -465,8 +465,8 @@
     <baseCost>300</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.37</researchViewX>
-    <researchViewY>9.13</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <prerequisites>
       <li>Ferny_FragGrenades</li>
     </prerequisites>
@@ -479,8 +479,8 @@
     <baseCost>600</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>8.37</researchViewX>
-    <researchViewY>8.13</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
     <prerequisites>
       <li>Ferny_FragGrenades</li>
       <li>Ferny_SmokeLauncher</li>
@@ -494,8 +494,8 @@
     <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>10.61</researchViewX>
-    <researchViewY>24.31</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <prerequisites>
       <li>Mortars</li>
     </prerequisites>
@@ -508,8 +508,8 @@
     <baseCost>700</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>10.61</researchViewX>
-    <researchViewY>26.31</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <prerequisites>
       <li>Mortars</li>
     </prerequisites>
@@ -522,8 +522,8 @@
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>13</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>Ferny_RocketLauncher</li>
@@ -537,8 +537,8 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>13.00</researchViewX>
-    <researchViewY>8.00</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li MayRequire="VanillaExpanded.VWE">Ferny_GrenadeLauncher</li>
@@ -553,8 +553,8 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>12</researchViewX>
-    <researchViewY>6.2</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>SEX_PoweredWeapons</li>
@@ -568,8 +568,8 @@
     <baseCost>700</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>15</researchViewX>
-    <researchViewY>19</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>MultibarrelWeapons</li>
@@ -583,8 +583,8 @@
     <baseCost>900</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>16</researchViewX>
-    <researchViewY>20</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>HeavyTurrets</li>
@@ -599,8 +599,8 @@
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>9.53</researchViewX>
-    <researchViewY>20.27</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
     <prerequisites>
       <li>GunTurrets</li>
     </prerequisites>
@@ -613,8 +613,8 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>13</researchViewX>
-    <researchViewY>22.3</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>Ferny_ArmoredTurret</li>
@@ -628,8 +628,8 @@
     <baseCost>700</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>11.5</researchViewX>
-    <researchViewY>23.3</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <prerequisites>
       <li>GunTurrets</li>
     </prerequisites>
@@ -642,8 +642,8 @@
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>7</researchViewX>
-    <researchViewY>3.1</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>VFES_ConcealedDefenses</li>
@@ -687,8 +687,8 @@
     <baseCost>700</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>9</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>VFEP_WarcasketWeaponry</li>
@@ -702,8 +702,8 @@
     <baseCost>900</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>10</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>VFEP_WarcasketWeaponry</li>
@@ -717,8 +717,8 @@
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>8.43</researchViewX>
-    <researchViewY>12.17</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -731,8 +731,8 @@
     <baseCost>300</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>7.37</researchViewX>
-    <researchViewY>10.23</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <prerequisites>
       <li>Firefoam</li>
       <li>Gunsmithing</li>
@@ -746,8 +746,8 @@
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>9.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <prerequisites>
       <li>ToxGas</li>
     </prerequisites>
@@ -760,8 +760,8 @@
     <baseCost>250</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>14.4</researchViewX>
-    <researchViewY>29.4</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <prerequisites>
       <li>Ferny_Knife</li>
     </prerequisites>
@@ -774,8 +774,8 @@
     <baseCost>250</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>12.4</researchViewX>
-    <researchViewY>28.4</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <prerequisites>
       <li>Smithing</li>
     </prerequisites>
@@ -788,8 +788,8 @@
     <baseCost>1400</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>18</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -806,8 +806,8 @@
     <baseCost>1100</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -824,8 +824,8 @@
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>18</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -842,8 +842,8 @@
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>21</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -860,8 +860,8 @@
     <baseCost>2200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>21</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -878,8 +878,8 @@
     <baseCost>1200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -896,8 +896,8 @@
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -914,8 +914,8 @@
     <baseCost>1400</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -932,8 +932,8 @@
     <baseCost>1800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -950,8 +950,8 @@
     <baseCost>1800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -968,8 +968,8 @@
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>18</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -986,8 +986,8 @@
     <baseCost>2200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1004,8 +1004,8 @@
     <baseCost>2600</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1022,8 +1022,8 @@
     <baseCost>1200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>12</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1040,8 +1040,8 @@
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>12</researchViewY>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1058,8 +1058,8 @@
     <baseCost>2200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>21</researchViewX>
-    <researchViewY>13</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1076,8 +1076,8 @@
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1094,8 +1094,8 @@
     <baseCost>2400</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>21</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1112,8 +1112,8 @@
     <baseCost>2800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>22</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1130,8 +1130,8 @@
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>23</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1148,8 +1148,8 @@
     <baseCost>1400</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1166,8 +1166,8 @@
     <baseCost>2400</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1184,8 +1184,8 @@
     <baseCost>1800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>18</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1202,8 +1202,8 @@
     <baseCost>2400</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>19</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1220,8 +1220,8 @@
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>15</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>DV_PulseEnergyWeapons</li>
@@ -1235,8 +1235,8 @@
     <baseCost>2200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>21</researchViewX>
-    <researchViewY>15</researchViewY>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>Ferny_PulseRifle</li>
@@ -1250,8 +1250,8 @@
     <baseCost>2200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>16</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites>
       <li>DV_PhaseWeaponsResearch</li>
@@ -1265,8 +1265,8 @@
     <baseCost>2200</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>14</researchViewY>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
@@ -1283,8 +1283,8 @@
     <baseCost>1800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>20</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>

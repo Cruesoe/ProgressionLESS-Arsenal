@@ -7,8 +7,8 @@
     <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>8.43</researchViewX>
-    <researchViewY>14.17</researchViewY>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
     <prerequisites><li>Ferny_SmokeGrenades</li><li>Ferny_SmokeLauncher</li></prerequisites>
   </ResearchProjectDef>
 </Defs>

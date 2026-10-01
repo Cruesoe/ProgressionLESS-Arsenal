@@ -7,8 +7,8 @@
     <baseCost>300</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>6.37</researchViewX>
-    <researchViewY>9.13</researchViewY>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
     <prerequisites><li>Machining</li></prerequisites>
   </ResearchProjectDef>
 </Defs>

@@ -8,8 +8,8 @@
     <baseCost>400</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>4.60</researchViewX>
-    <researchViewY>3.30</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li>Smithing</li>
       <li MayRequire="OskarPotocki.VFE.Tribals">VFET_Hunting</li>
@@ -20,7 +20,7 @@
     <label>double autocannon turret</label>
     <description>Build twin-barreled heavy emplacements that trade accuracy for a punishing volume of autocannon fire.</description>
     <baseCost>1000</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>13</researchViewX><researchViewY>21.3</researchViewY>
+    <researchViewX>5.00</researchViewX><researchViewY>7.00</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites><li>HeavyTurrets</li></prerequisites>
   </ResearchProjectDef>
@@ -31,8 +31,8 @@
     <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>10.53</researchViewX>
-    <researchViewY>20.27</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>6.30</researchViewY>
     <prerequisites><li>Electricity</li></prerequisites>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequire="VanillaExpanded.VFESecurity">
@@ -42,8 +42,8 @@
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>14.4</researchViewX>
-    <researchViewY>28.4</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
     <prerequisites><li MayRequire="OskarPotocki.VFE.Tribals">VFET_Construction</li></prerequisites>
   </ResearchProjectDef>
 </Defs>
