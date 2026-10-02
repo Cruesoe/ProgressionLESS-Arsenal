@@ -62,5 +62,9 @@
     <li IfModActive="Smxrez.securityreexamined">1.6/Mods and Shit/Security Re-Examined</li>
     <li IfModActive="ferny.progressionfurniture,cruesoe.progressionlessfurniture">1.6/Mods and Shit/Progression Furniture</li>
     <li IfModActive="astryl.AsAboveSoBelow2">1.6/Mods and Shit/As Above So Below 2</li>
+    <!-- Warhammers without Medieval Overhaul: heavy maces when it exists, else mace -->
+    <li IfModActive="oskarpotocki.vfe.medieval2,VanillaExpanded.vwe" IfModNotActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/Heavy Maces</li>
+    <li IfModNotActive="dankpyon.medieval.overhaul,oskarpotocki.vfe.medieval2,VanillaExpanded.vwe">1.6/Mods and Shit/Maces</li>
+    <li IfModActive="RedMattis.BigSmall.Core" IfModNotActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/Big and Small</li>
   </v1.6>
 </loadFolders>

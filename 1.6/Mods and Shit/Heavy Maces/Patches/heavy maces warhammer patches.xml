@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]</xpath><match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_HeavyMace</researchPrerequisite></value></match></Operation>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ThingDef[defName="BS_JotunHammer"]</xpath><match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="BS_JotunHammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_HeavyMace</researchPrerequisite></value></match></Operation>
+</Patch>

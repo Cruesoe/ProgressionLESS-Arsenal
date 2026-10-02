@@ -21,4 +21,5 @@
     <li Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_TwoHandedFlangedMace"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TwoHandedFlangedMace</researchPrerequisite></value></li>
   </operations></Operation>
   <Operation Class="PatchOperationConditional"><xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]</xpath><match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Polehammer</researchPrerequisite></value></match></Operation>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ThingDef[defName="BS_JotunHammer"]</xpath><match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="BS_JotunHammer"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_Polehammer</researchPrerequisite></value></match></Operation>
 </Patch>
