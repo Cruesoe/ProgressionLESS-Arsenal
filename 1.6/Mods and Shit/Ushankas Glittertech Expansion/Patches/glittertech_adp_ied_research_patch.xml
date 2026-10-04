@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_TrapIED_ADP"]/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites Inherit="False">
+        <li>Ferny_SpacerIEDs</li>
+        <li>USH_NeuromodifiersBasicsRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>

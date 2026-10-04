@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Industrial trap modules keep IEDs; only the antigrain module moves to Spacer IEDs -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="BM_SpacerAntigrainTrapDeployerAbilityModule"]/recipeMaker/researchPrerequisites/li[text()="IEDs"]</xpath>
+    <value>
+      <li>Ferny_SpacerIEDs</li>
+    </value>
+  </Operation>
+</Patch>

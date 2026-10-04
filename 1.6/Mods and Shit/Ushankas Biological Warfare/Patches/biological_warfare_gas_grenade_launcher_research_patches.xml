@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Each launcher needs the merged project plus its own pathogen research -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_FleshBreakerGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_GasGrenadeLaunchers</li>
+        <li>USH_FleshBreakerOperationRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_FluGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_GasGrenadeLaunchers</li>
+        <li>USH_FluOperationRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_MalariaGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_GasGrenadeLaunchers</li>
+        <li>USH_MalariaOperationRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  <!-- The necroa launcher only exists with Necroa Archovirus -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="USH_NecroaGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="USH_NecroaGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_GasGrenadeLaunchers</li>
+          <li>USH_NecroaOperationRes</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_PlagueGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_GasGrenadeLaunchers</li>
+        <li>USH_PlagueOperationRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_ScariaGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_GasGrenadeLaunchers</li>
+        <li>USH_ScariaOperationRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="USH_SleepingSicknessGrenadeLauncher"]/recipeMaker/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_GasGrenadeLaunchers</li>
+        <li>USH_SleepingSicknessOperationRes</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>

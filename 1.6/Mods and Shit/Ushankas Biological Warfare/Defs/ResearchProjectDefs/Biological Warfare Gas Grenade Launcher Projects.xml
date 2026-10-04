@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_GasGrenadeLaunchers</defName>
+    <label>gas grenade launchers</label>
+    <description>Craft grenade launchers that disperse weaponized pathogens and chemical agents over groups of enemies. Each launcher also needs research into its own pathogen.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li MayRequireAnyOf="det.vanillaarsenal,vanillaexpanded.vwe">Ferny_GrenadeLauncher</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

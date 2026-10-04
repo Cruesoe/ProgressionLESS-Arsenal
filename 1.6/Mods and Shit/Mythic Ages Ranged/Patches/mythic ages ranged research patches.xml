@@ -9,8 +9,8 @@
           <value>
             <VFETribals.TribalResearchProjectDef>
               <defName>Ferny_CapryakScatterbow</defName>
-              <label>capryak scatterbow</label>
-              <description>Craft horn-backed skirmish bows that trade long-range accuracy for rapid close volleys.</description>
+              <label>megafauna bows</label>
+              <description>Craft bows from megafauna horn, bone and sacred wood: horn-backed capryak scatterbows for rapid close volleys and masterwork verdant bows.</description>
               <baseCost>15</baseCost>
               <tab>VFET_Basics</tab>
               <techLevel>Animal</techLevel>
@@ -25,6 +25,10 @@
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs/RecipeDef[defName="MA_Make_CapryakScatterbow"]</xpath>
+          <value><researchPrerequisite>Ferny_CapryakScatterbow</researchPrerequisite></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="MA_Make_VerdantBow"]</xpath>
           <value><researchPrerequisite>Ferny_CapryakScatterbow</researchPrerequisite></value>
         </li>
         <li Class="PatchOperationAdd">

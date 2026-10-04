@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- IEDs holds every industrial IED trap; costs as much as its most expensive member (deadlife IED) -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="IEDs"]/baseCost</xpath>
+    <value>
+      <baseCost>800</baseCost>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_AntigrainWarhead"]</xpath>
+    <value>
+      <researchPrerequisites Inherit="False">
+        <li>Ferny_SpacerIEDs</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>

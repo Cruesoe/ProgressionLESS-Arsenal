@@ -1294,4 +1294,18 @@
     </prerequisites>
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>Ferny_SpacerIEDs</defName>
+    <label>spacer IEDs</label>
+    <description>Rig antigrain warheads, shockmines and other spacer-tech charges as concealed traps.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>IEDs</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
 </Defs>

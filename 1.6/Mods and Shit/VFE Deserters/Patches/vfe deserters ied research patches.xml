@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Other remote IEDs keep Remote demolition alone, which already needs IEDs -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFED_RemoteTrapIED_AntigrainWarhead"]</xpath>
+    <value>
+      <researchPrerequisites Inherit="False">
+        <li>VFED_RemoteDemolition</li>
+        <li>Ferny_SpacerIEDs</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>
