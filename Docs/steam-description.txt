@@ -1,0 +1,43 @@
+[h1]ProgressionLESS: Arsenal[/h1]
+[b]All the Progression goodness, less research.[/b]
+
+[i]This is a fork of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3798837810]Progression: Arsenal[/url] by ferny. Huge thanks to ferny for the original mod and all the Progression work this builds on. For a really good modpack, check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3521297585]The Progression Modpack[/url].[/i]
+
+[h2]What it does[/h2]
+[list]
+[*]Overhauls weapon progression, so every weapon, turret and piece of combat gear unlocks in its proper tech era.
+[*]Everything lives on its own Arsenal research tab, with tribal weapons on the VFE Tribals tab.
+[*]Covers everything from clubs and slings to longswords, muskets, sniper rifles, warcaskets, turrets and spacer charge, laser and gauss weapons.
+[/list]
+
+[h2]Why "LESS"?[/h2]
+Progression: Arsenal adds up to [b]312 research projects[/b] depending on your mods. This fork groups them into [b]at most 126[/b] weapon families:
+[list]
+[*][b]Tribal:[/b] Melee weapons, Tribal ranged weapons, Heavy tribal weapons
+[*][b]Neolithic:[/b] Hatchets, Axes, Smithed blades, String instruments
+[*][b]Medieval:[/b] Swords, Great swords, Battle axes and pikes, Great axes, War axes, Heavy maces, Two-handed and Military maces, Composite bows and crossbows, Longbows, Matchlock guns
+[*][b]Industrial guns:[/b] Revolvers, Frontier guns, Blowback guns, Gas-operated SMGs, LMGs and carbines, Shotguns, Combat shotguns, Hunting rifles, Precision rifles, Marksman rifles, Sniper rifles
+[*][b]Industrial heavy weapons:[/b] Grenade launchers, Mortar shells, Artillery, Heavy rocket launchers, Powered weapons, Multi-barrel guns, Non-lethal guns, Tox weapons
+[*][b]Industrial defenses:[/b] Gun turrets, Concealed turrets, Non-lethal turrets, Multi-barrel turrets, Field fortifications
+[*][b]Warcaskets:[/b] Warcasket sets, Heavy warcasket sets, Warcasket melee weapons, Warcasket guns
+[*][b]Spacer:[/b] Charge pistols, Charge rifles and shotguns, Lance rifles, Spacer grenades, Charge turrets, Impact, Ion, Laser, Salvaged laser, Gauss, Pulse, Phase and Fusion weapons, Rocketswarm launchers
+[/list]
+Weapons from different mods share a project when they share a family and a stage, so a weapon from one mod unlocks alongside its matching weapons from others.
+
+Everything stays in the same era, and still needs the other research it did before: flamer turrets still need biofuel refining, and each gas missile launcher still needs its disease research.
+
+[h2]Compatibility[/h2]
+Keeps all of the original's mod support:
+[list]
+[*]Royalty, Ideology, Biotech, Anomaly and Odyssey
+[*]VE Weapons and its Makeshift, Frontier, Quickdraw, Tribal, Non-Lethal, Heavy Weapons, Laser and Coilgun add-ons
+[*]VFE Tribals, Medieval 2, Classical, Settlers, Pirates, Empire, Deserters, Mechanoids and Security, and VRE Wasters
+[*]Medieval Overhaul and House Roxmont
+[*]Vanilla Arsenal, Spacer Arsenal, Impact, Pulse and Phase Weaponry, Ion Weaponry, Advanced Armaments, and the Laser, Security and Non-Lethal Re-Examined mods
+[*]Alpha Genes, Alpha Biomes, Altered Carbon, Reinforced Mechanoid 2, Mechanoid Upgrades and Orbital Security
+[*]Det's Xenotypes (Half-foot, Keshig, Venators, Pyrinth), Highborn, Rim-Elves, and Roo's Minotaur and Satyr
+[*]Mythic Ages, Biomes! Mushkin, Rainbow Forest, Firefoam Things, Ancient Mining Industry, Reel's Turret Pipes, and As Above So Below 2
+[*]Both Progression: Furniture and ProgressionLESS: Furniture
+[/list]
+
+[b]Replaces the original. Don't use both.[/b]
