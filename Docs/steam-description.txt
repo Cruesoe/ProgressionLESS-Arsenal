@@ -11,20 +11,20 @@
 [/list]
 
 [h2]Why "LESS"?[/h2]
-Progression: Arsenal adds up to [b]312 research projects[/b] depending on your mods. This fork groups them into [b]at most 126[/b] weapon families:
+Progression: Arsenal adds up to [b]335 research projects[/b] depending on your mods. This fork groups them into [b]at most 128[/b] weapon families:
 [list]
-[*][b]Tribal:[/b] Melee weapons, Tribal ranged weapons, Heavy tribal weapons
+[*][b]Tribal:[/b] Melee weapons, Tribal ranged weapons, Heavy tribal weapons, Megafauna bows
 [*][b]Neolithic:[/b] Hatchets, Axes, Smithed blades, String instruments
 [*][b]Medieval:[/b] Swords, Great swords, Battle axes and pikes, Great axes, War axes, Heavy maces, Two-handed and Military maces, Composite bows and crossbows, Longbows, Matchlock guns
 [*][b]Industrial guns:[/b] Revolvers, Frontier guns, Blowback guns, Gas-operated SMGs, LMGs and carbines, Shotguns, Combat shotguns, Hunting rifles, Precision rifles, Marksman rifles, Sniper rifles
-[*][b]Industrial heavy weapons:[/b] Grenade launchers, Mortar shells, Artillery, Heavy rocket launchers, Powered weapons, Multi-barrel guns, Non-lethal guns, Tox weapons
+[*][b]Industrial heavy weapons:[/b] Grenade launchers, Gas grenade launchers, Mortar shells, Artillery, Heavy rocket launchers, Powered weapons, Multi-barrel guns, Non-lethal guns, Tox weapons
 [*][b]Industrial defenses:[/b] Gun turrets, Concealed turrets, Non-lethal turrets, Multi-barrel turrets, Field fortifications
 [*][b]Warcaskets:[/b] Warcasket sets, Heavy warcasket sets, Warcasket melee weapons, Warcasket guns
-[*][b]Spacer:[/b] Charge pistols, Charge rifles and shotguns, Lance rifles, Spacer grenades, Charge turrets, Impact, Ion, Laser, Salvaged laser, Gauss, Pulse, Phase and Fusion weapons, Rocketswarm launchers
+[*][b]Spacer:[/b] Charge pistols, Charge rifles and shotguns, Lance rifles, Spacer grenades, Charge turrets, Spacer IEDs, Impact, Ion, Laser, Salvaged laser, Gauss, Pulse, Phase and Fusion weapons, Rocketswarm launchers
 [/list]
 Weapons from different mods share a project when they share a family and a stage, so a weapon from one mod unlocks alongside its matching weapons from others.
 
-Everything stays in the same era, and still needs the other research it did before: flamer turrets still need biofuel refining, and each gas missile launcher still needs its disease research.
+Everything stays in the same era, and still needs the other research it did before: flamer turrets still need biofuel refining, and each gas missile and gas grenade launcher still needs its disease research. Every industrial IED trap unlocks with IEDs.
 
 [h2]Compatibility[/h2]
 Keeps all of the original's mod support:
@@ -35,9 +35,12 @@ Keeps all of the original's mod support:
 [*]Medieval Overhaul and House Roxmont
 [*]Vanilla Arsenal, Spacer Arsenal, Impact, Pulse and Phase Weaponry, Ion Weaponry, Advanced Armaments, and the Laser, Security and Non-Lethal Re-Examined mods
 [*]Alpha Genes, Alpha Biomes, Altered Carbon, Reinforced Mechanoid 2, Mechanoid Upgrades and Orbital Security
-[*]Det's Xenotypes (Half-foot, Keshig, Venators, Pyrinth), Highborn, Rim-Elves, and Roo's Minotaur and Satyr
+[*]Det's Xenotypes (Half-foot, Keshig, Venators, Pyrinth), Highborn, Rim-Elves, Big and Small, and Roo's Minotaur and Satyr
 [*]Mythic Ages, Biomes! Mushkin, Rainbow Forest, Firefoam Things, Ancient Mining Industry, Reel's Turret Pipes, and As Above So Below 2
+[*]Ushanka's Glittertech Expansion and Biological Warfare, Fireworks, and Bionic modularity
 [*]Both Progression: Furniture and ProgressionLESS: Furniture
 [/list]
 
 [b]Replaces the original. Don't use both.[/b]
+
+[b]Switching mid-game isn't recommended.[/b] Many of the original's research projects are merged or removed, so swapping Progression: Arsenal for this fork in an existing save can lose research progress. Start a new game when you switch.
