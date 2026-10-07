@@ -18,8 +18,8 @@
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ferny_Arsenal</tab>
-    <researchViewX>9.00</researchViewX>
-    <researchViewY>6.30</researchViewY>
+    <researchViewX>14.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
     <prerequisites><li>Ferny_IncendiaryLauncher</li></prerequisites>
   </ResearchProjectDef>
   <ResearchProjectDef MayRequire="VanillaExpanded.VWE"><defName>Ferny_AntiMaterielRifle</defName><label>anti-materiel rifle</label><description>Craft extremely heavy precision rifles designed to defeat armored targets and fortified positions at long range.</description><baseCost>1000</baseCost><techLevel>Industrial</techLevel><tab>Ferny_Arsenal</tab><researchViewX>5.00</researchViewX><researchViewY>2.10</researchViewY><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding><prerequisites><li>VWE_HeavyWeapons</li><li>PrecisionRifling</li></prerequisites></ResearchProjectDef>

@@ -123,13 +123,13 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>4.50</researchViewX>
+                        <researchViewX>8.00</researchViewX>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>6.80</researchViewY>
+                        <researchViewY>3.50</researchViewY>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
@@ -147,13 +147,13 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>5.30</researchViewX>
+                        <researchViewX>9.00</researchViewX>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>6.80</researchViewY>
+                        <researchViewY>3.50</researchViewY>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
@@ -179,13 +179,13 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>6.50</researchViewX>
+                        <researchViewX>8.00</researchViewX>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>6.20</researchViewY>
+                        <researchViewY>4.20</researchViewY>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
@@ -243,37 +243,37 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>4.30</researchViewX>
+                        <researchViewX>8.00</researchViewX>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5.60</researchViewY>
+                        <researchViewY>0.00</researchViewY>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>5.10</researchViewX>
+                        <researchViewX>9.00</researchViewX>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5.60</researchViewY>
+                        <researchViewY>0.00</researchViewY>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>5.90</researchViewX>
+                        <researchViewX>10.00</researchViewX>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5.60</researchViewY>
+                        <researchViewY>0.00</researchViewY>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
