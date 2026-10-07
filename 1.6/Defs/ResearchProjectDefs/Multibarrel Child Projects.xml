@@ -12,7 +12,7 @@
     <defName>Ferny_TwinMinigunBackpack</defName><label>twin minigun backpack</label>
     <description>Integrate paired downward-firing miniguns into a reinforced personal flight harness.</description>
     <baseCost>1200</baseCost><techLevel>Spacer</techLevel><tab>Ferny_Arsenal</tab>
-    <researchViewX>15.00</researchViewX><researchViewY>4.90</researchViewY>
+    <researchViewX>13.00</researchViewX><researchViewY>6.30</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
     <prerequisites><li>MultibarrelWeapons</li><li MayRequire="MrKociak.YABEMBionicModularity">BM_SpacerBionicImplants</li></prerequisites>
