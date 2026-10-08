@@ -34,8 +34,12 @@
     <xpath>Defs/ThingDef[defName="Shell_Toxic"]/recipeMaker/researchPrerequisite</xpath>
     <value><researchPrerequisite>Ferny_SmokeShell</researchPrerequisite></value>
   </Operation>
-  <Operation Class="PatchOperationReplace">
+  <!-- Combat Extended removes the toxbomb launcher -->
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="Gun_ToxbombLauncher"]/recipeMaker/researchPrerequisite</xpath>
-    <value><researchPrerequisite>Ferny_ToxPack</researchPrerequisite></value>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Gun_ToxbombLauncher"]/recipeMaker/researchPrerequisite</xpath>
+      <value><researchPrerequisite>Ferny_ToxPack</researchPrerequisite></value>
+    </match>
   </Operation>
 </Patch>

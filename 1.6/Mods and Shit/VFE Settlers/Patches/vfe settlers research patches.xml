@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationReplace">
+  <!-- Combat Extended replaces the tomahawk's recipeMaker with its own recipe -->
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="VFES_Tomahawk"]/recipeMaker/researchPrerequisite</xpath>
-    <value>
-      <researchPrerequisite>Ferny_Hatchet</researchPrerequisite>
-    </value>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFES_Tomahawk"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite>Ferny_Hatchet</researchPrerequisite>
+      </value>
+    </match>
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="VFES_Gun_DoubleActionRevolver"]/recipeMaker/researchPrerequisite</xpath>

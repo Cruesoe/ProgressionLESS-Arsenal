@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Combat Extended removes VWE_HeavyWeapons; drop it from prerequisite lists that name it -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="VWE_HeavyWeapons"]</xpath>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef/prerequisites/li[.="VWE_HeavyWeapons"]</xpath>
+      <match Class="PatchOperationRemove">
+        <xpath>Defs/ResearchProjectDef/prerequisites/li[.="VWE_HeavyWeapons"]</xpath>
+      </match>
+    </nomatch>
+  </Operation>
+
+</Patch>

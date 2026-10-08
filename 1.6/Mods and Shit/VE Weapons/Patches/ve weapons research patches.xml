@@ -18,11 +18,15 @@
                         <researchPrerequisite>Ferny_HeavyMace</researchPrerequisite>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
+                <!-- Combat Extended replaces the throwing knives' and smoke grenade's recipeMaker and removes VWE_HeavyWeapons -->
+                <Operation Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite>Ferny_Knife</researchPrerequisite>
-                    </value>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/recipeMaker/researchPrerequisite</xpath>
+                        <value>
+                            <researchPrerequisite>Ferny_Knife</researchPrerequisite>
+                        </value>
+                    </match>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="VWE_Bow_Long"]/recipeMaker/researchPrerequisite</xpath>
@@ -82,9 +86,12 @@
     <xpath>Defs/ThingDef[defName="VWE_Gun_GrenadeLauncher"]/recipeMaker/researchPrerequisite</xpath>
     <value><researchPrerequisite>Ferny_GrenadeLauncher</researchPrerequisite></value>
   </Operation>
-  <Operation Class="PatchOperationReplace">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="VWE_SmokeGrenade"]/recipeMaker/researchPrerequisite</xpath>
-    <value><researchPrerequisite>Ferny_SmokeGrenades</researchPrerequisite></value>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VWE_SmokeGrenade"]/recipeMaker/researchPrerequisite</xpath>
+      <value><researchPrerequisite>Ferny_SmokeGrenades</researchPrerequisite></value>
+    </match>
   </Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_SMG"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_SMG</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_Baton"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_CombatKnife</researchPrerequisite></value></Operation>
@@ -96,8 +103,10 @@
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_Carbine"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MarksmanRifle</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_BattleRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ServiceRifle</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_MarksmanRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MarksmanRifle</researchPrerequisite></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_HeavyWeapons"]/label</xpath><value><label>HMG</label></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_HeavyWeapons"]/description</xpath><value><description>Craft gas-operated heavy machine guns built for sustained heavy-caliber fire against armored targets and groups.</description></value></Operation>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ResearchProjectDef[defName="VWE_HeavyWeapons"]</xpath><match Class="PatchOperationSequence"><operations>
+    <li Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_HeavyWeapons"]/label</xpath><value><label>HMG</label></value></li>
+    <li Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="VWE_HeavyWeapons"]/description</xpath><value><description>Craft gas-operated heavy machine guns built for sustained heavy-caliber fire against armored targets and groups.</description></value></li>
+  </operations></match></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_AntiMaterialRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_AntiMaterielRifle</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_RocketLauncher</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_TripleRocket"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_TripleRocketLauncher</researchPrerequisite></value></Operation>

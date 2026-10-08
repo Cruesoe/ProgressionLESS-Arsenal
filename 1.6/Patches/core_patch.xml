@@ -185,11 +185,15 @@
                         <researchPrerequisite>Ferny_PumpShotgun</researchPrerequisite>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationAdd">
+                <!-- Combat Extended removes the smoke launcher -->
+                <Operation Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="Gun_SmokeLauncher"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisite>Ferny_SmokeLauncher</researchPrerequisite>
-                    </value>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SmokeLauncher"]/recipeMaker</xpath>
+                        <value>
+                            <researchPrerequisite>Ferny_SmokeLauncher</researchPrerequisite>
+                        </value>
+                    </match>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/recipeMaker</xpath>
@@ -209,13 +213,20 @@
     <xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]/generalRules/rulesStrings</xpath>
     <value><rulesStrings><li>subject-&gt;autopistols</li><li>subject_story-&gt;equipped its defenders with compact self-loading pistols</li><li>subject_gerund-&gt;crafting autopistols</li></rulesStrings></value>
   </Operation>
-  <Operation Class="PatchOperationReplace">
+  <!-- Combat Extended removes the grenades' recipeMaker and the charge lance's -->
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="Weapon_GrenadeMolotov"]/recipeMaker/researchPrerequisite</xpath>
-    <value><researchPrerequisite>Ferny_MolotovCocktails</researchPrerequisite></value>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Weapon_GrenadeMolotov"]/recipeMaker/researchPrerequisite</xpath>
+      <value><researchPrerequisite>Ferny_MolotovCocktails</researchPrerequisite></value>
+    </match>
   </Operation>
-  <Operation Class="PatchOperationReplace">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag"]/recipeMaker/researchPrerequisite</xpath>
-    <value><researchPrerequisite>Ferny_FragGrenades</researchPrerequisite></value>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag"]/recipeMaker/researchPrerequisite</xpath>
+      <value><researchPrerequisite>Ferny_FragGrenades</researchPrerequisite></value>
+    </match>
   </Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ChainShotgun</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_LMG</researchPrerequisite></value></Operation>
@@ -243,5 +254,5 @@
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/label</xpath><value><label>charge rifle</label></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath><value><description>Craft burst-fire rifles that energize each projectile with an unstable pulse for exceptional damage and armor penetration.</description></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/generalRules/rulesStrings</xpath><value><rulesStrings><li>subject-&gt;charge rifles</li><li>subject_story-&gt;armed its soldiers with pulse-charged rifles</li><li>subject_gerund-&gt;crafting charge rifles</li></rulesStrings></value></Operation>
-  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ChargeLance</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationConditional"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/recipeMaker/researchPrerequisite</xpath><match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ChargeLance</researchPrerequisite></value></match></Operation>
 </Patch>

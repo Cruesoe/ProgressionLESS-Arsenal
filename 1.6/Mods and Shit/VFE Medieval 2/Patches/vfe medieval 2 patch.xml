@@ -49,11 +49,15 @@
               <researchPrerequisite>Ferny_HeavyMace</researchPrerequisite>
             </value>
           </Operation>
-          <Operation Class="PatchOperationReplace">
+          <!-- Combat Extended replaces the throwing axe's recipeMaker with its own recipe -->
+          <Operation Class="PatchOperationConditional">
             <xpath>Defs/ThingDef[defName="VFEM2_ThrowingAxe"]/recipeMaker/researchPrerequisite</xpath>
-            <value>
-              <researchPrerequisite>Ferny_Axe</researchPrerequisite>
-            </value>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="VFEM2_ThrowingAxe"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite>Ferny_Axe</researchPrerequisite>
+              </value>
+            </match>
           </Operation>
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_Warbow"]/recipeMaker/researchPrerequisite</xpath>
