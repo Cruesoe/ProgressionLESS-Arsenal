@@ -43,13 +43,13 @@
                                 <match Class="PatchOperationReplace">
                                     <xpath>Defs/ThingDef[defName="VFEM2_Apparel_TorchBelt"]/recipeMaker/researchPrerequisite</xpath>
                                     <value>
-                                        <researchPrerequisite>Ferny_TorchBelt</researchPrerequisite>
+                                        <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                     </value>
                                 </match>
                                 <nomatch Class="PatchOperationAdd">
                                     <xpath>Defs/ThingDef[defName="VFEM2_Apparel_TorchBelt"]/recipeMaker</xpath>
                                     <value>
-                                        <researchPrerequisite>Ferny_TorchBelt</researchPrerequisite>
+                                        <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                     </value>
                                 </nomatch>
                             </li>
@@ -59,7 +59,7 @@
                                     <xpath>Defs/ThingDef[defName="VFEM2_Apparel_TorchBelt"]/researchPrerequisites</xpath>
                                     <value>
                                         <researchPrerequisites>
-                                            <li>Ferny_TorchBelt</li>
+                                            <li>VFET_Weapons</li>
                                         </researchPrerequisites>
                                     </value>
                                 </match>
@@ -67,7 +67,7 @@
                                     <xpath>Defs/ThingDef[defName="VFEM2_Apparel_TorchBelt"]</xpath>
                                     <value>
                                         <researchPrerequisites>
-                                            <li>Ferny_TorchBelt</li>
+                                            <li>VFET_Weapons</li>
                                         </researchPrerequisites>
                                     </value>
                                 </nomatch>
