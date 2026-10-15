@@ -13,6 +13,7 @@
     <li IfModActive="oskarpotocki.vfe.medieval2">Common/Mods and Shit/VFE Medieval 2</li>
     <li IfModActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Medieval Overhaul</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Common/Mods and Shit/Biotech</li>
+    <li IfModActive="Sov.Tenmo">Common/Mods and Shit/Geist Xenotype</li>
     <li IfModActive="VanillaExpanded.vwe">Common/Mods and Shit/VE Weapons</li>
     <li IfModActive="VanillaExpanded.VWEMS">Common/Mods and Shit/VWE Makeshift</li>
     <li IfModActive="det.vanillaarsenal">Common/Mods and Shit/Vanilla Arsenal</li>
@@ -85,6 +86,7 @@
     <li IfModActive="oskarpotocki.vfe.medieval2">Common/Mods and Shit/VFE Medieval 2</li>
     <li IfModActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Medieval Overhaul</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Common/Mods and Shit/Biotech</li>
+    <li IfModActive="Sov.Tenmo">Common/Mods and Shit/Geist Xenotype</li>
     <li IfModActive="VanillaExpanded.vwe">Common/Mods and Shit/VE Weapons</li>
     <li IfModActive="VanillaExpanded.VWEMS">Common/Mods and Shit/VWE Makeshift</li>
     <li IfModActive="det.vanillaarsenal">Common/Mods and Shit/Vanilla Arsenal</li>

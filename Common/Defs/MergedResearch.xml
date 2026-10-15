@@ -753,7 +753,7 @@
     </prerequisites>
   </ResearchProjectDef>
 
-  <ResearchProjectDef MayRequire="vanillaexpanded.vwe">
+  <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vwe,sov.tenmo">
     <defName>Ferny_CombatKnife</defName>
     <label>military melee weapons</label>
     <description>Craft combat knives, shovels and batons.</description>

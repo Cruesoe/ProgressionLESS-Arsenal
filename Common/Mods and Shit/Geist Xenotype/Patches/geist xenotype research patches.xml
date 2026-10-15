@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- The high-frequency blade joins military melee weapons; the project takes the blade's cost and bench -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_CombatKnife"]/baseCost</xpath>
+    <value><baseCost>600</baseCost></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_CombatKnife"]</xpath>
+    <value><requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_CombatKnife"]/description</xpath>
+    <value><description>Craft military melee weapons, from combat knives, shovels and batons to high-frequency blades.</description></value>
+  </Operation>
+
+  <!-- The blade keeps the research its own project needed -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GS_Blade"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="GS_Blade"]/recipeMaker/researchPrerequisite</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GS_Blade"]/recipeMaker/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GS_Blade"]/recipeMaker/researchPrerequisites</xpath>
+      <value><researchPrerequisites><li>Ferny_CombatKnife</li><li>Machining</li><li>Ferny_Longsword</li></researchPrerequisites></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GS_Blade"]/recipeMaker</xpath>
+      <value><researchPrerequisites><li>Ferny_CombatKnife</li><li>Machining</li><li>Ferny_Longsword</li></researchPrerequisites></value>
+    </nomatch>
+  </Operation>
+</Patch>
