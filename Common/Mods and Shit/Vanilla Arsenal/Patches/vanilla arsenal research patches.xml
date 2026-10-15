@@ -13,4 +13,14 @@
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_GrenadeLauncher"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_GrenadeLauncher</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_DMR"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_ServiceRifle</researchPrerequisite></value></Operation>
   <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Gun_ThermoRifle"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_MarksmanRifle</researchPrerequisite></value></Operation>
+
+  <!-- Stun grenades join smoke and tear gas grenades, which take their cost -->
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Ferny_SmokeGrenades"]/label</xpath><value><label>non-lethal grenades</label></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Ferny_SmokeGrenades"]/description</xpath><value><description>Craft non-lethal grenades: smoke, tear gas and stun grenades.</description></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ResearchProjectDef[defName="Ferny_SmokeGrenades"]/baseCost</xpath><value><baseCost>400</baseCost></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DV_Weapon_StunGrenades"]/recipeMaker/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_SmokeGrenades</researchPrerequisite></value></Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="MakeStunGrenade"]/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace"><xpath>Defs/RecipeDef[defName="MakeStunGrenade"]/researchPrerequisite</xpath><value><researchPrerequisite>Ferny_SmokeGrenades</researchPrerequisite></value></match>
+  </Operation>
 </Patch>

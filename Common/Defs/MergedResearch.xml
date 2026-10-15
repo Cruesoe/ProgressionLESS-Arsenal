@@ -458,7 +458,7 @@
     </prerequisites>
   </ResearchProjectDef>
 
-  <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vwe,vanillaexpanded.vwenl">
+  <ResearchProjectDef MayRequireAnyOf="vanillaexpanded.vwe,vanillaexpanded.vwenl,det.vanillaarsenal">
     <defName>Ferny_SmokeGrenades</defName>
     <label>smoke and tear gas grenades</label>
     <description>Craft smoke grenades and tear gas grenades.</description>
