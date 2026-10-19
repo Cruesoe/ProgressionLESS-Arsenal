@@ -53,7 +53,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.10</researchViewY>
     <prerequisites>
-      <li MayRequire="VanillaExpanded.VWETB">Ferny_Club</li>
+      <li MayRequire="VanillaExpanded.VWETB,OskarPotocki.VFE.Tribals">Ferny_Club</li>
     </prerequisites>
   </ResearchProjectDef>
 
