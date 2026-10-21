@@ -61,3 +61,7 @@ Rows marked "earlier" contain a member that needed another member, so merging mo
 - Tier pairs built in round 1 (charge pistols then charge SMGs; ion, impact, gauss, laser, salvaged laser and pulse pairs; swords then great swords; the mace and axe ladders). Merging those collapses deliberate stages within an era.
 - Medieval Overhaul's own mace projects (two-handed maces, military maces, heavy military maces, two-handed flanged mace): kept on ferny's tiers.
 - Singletons with no same-era theme partner: searchlight, ammunition logistics, compound bow, bear trap, molotov cocktails, fire bombs, string instruments, platform, ARC rifle, charge bow, twin minigun backpack, spacer IEDs, rawhide rack, trench.
+
+## Applied
+
+- **261021, Bret's request:** tribal ranged weapons (`Ferny_Sling`) folded into VFE Tribals' `VFET_Bow`, relabelled "ranged weapons". Both cost-and-prerequisite checks hold: bow costs 70 (sling 15) and both needed only `VFET_Weapons`, so nothing unlocks sooner. Slings (VWE Tribal, Roo's Minotaur) and throwing shards now need ranged weapons. Every folder that pointed at `Ferny_Sling` loads only with VFE Tribals, so `VFET_Bow` always exists there. Megafauna bows now need only ranged weapons (they needed both). No Medieval Overhaul content involved. Relabel and description are two load-time operations on `VFET_Bow` by defName. 128 -> 127 definitions.

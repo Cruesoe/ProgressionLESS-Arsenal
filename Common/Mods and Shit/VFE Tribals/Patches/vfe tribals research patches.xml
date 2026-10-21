@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+                <!-- Tribal ranged weapons (slings, throwing shards) fold into VFE Tribals' bow -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="VFET_Bow"]/label</xpath>
+                    <value>
+                        <label>ranged weapons</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="VFET_Bow"]/description</xpath>
+                    <value>
+                        <description>Craft short bows, slings and throwing shards for striking from a distance.</description>
+                    </value>
+                </Operation>
                 <Operation Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker/researchPrerequisite</xpath>
                     <match Class="PatchOperationReplace">
