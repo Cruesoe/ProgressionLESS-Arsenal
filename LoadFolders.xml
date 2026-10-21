@@ -8,6 +8,8 @@
     <li IfModActive="oskarpotocki.vfe.mechanoid">Common/Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="oskarpotocki.vfe.pirates">Common/Mods and Shit/VFE Pirates</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Common/Mods and Shit/VFE Security</li>
+    <!-- Searchlight keeps its own project only without Progression Furniture; with it, the searchlight is on electric lights -->
+    <li IfModActive="vanillaexpanded.vfesecurity" IfModNotActive="ferny.progressionfurniture,cruesoe.progressionlessfurniture">Common/Mods and Shit/VFE Security Without Progression Furniture</li>
     <li IfModActive="Reel.TurretPipeline">Common/Mods and Shit/Reel Turret Pipes</li>
     <li IfModActive="Mlie.ReinforcedMechanoid2">Common/Mods and Shit/Reinforced Mechanoid 2</li>
     <li IfModActive="oskarpotocki.vfe.medieval2">Common/Mods and Shit/VFE Medieval 2</li>
@@ -81,6 +83,8 @@
     <li IfModActive="oskarpotocki.vfe.mechanoid">Common/Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="oskarpotocki.vfe.pirates">Common/Mods and Shit/VFE Pirates</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Common/Mods and Shit/VFE Security</li>
+    <!-- Searchlight keeps its own project only without Progression Furniture; with it, the searchlight is on electric lights -->
+    <li IfModActive="vanillaexpanded.vfesecurity" IfModNotActive="ferny.progressionfurniture,cruesoe.progressionlessfurniture">Common/Mods and Shit/VFE Security Without Progression Furniture</li>
     <li IfModActive="Reel.TurretPipeline">Common/Mods and Shit/Reel Turret Pipes</li>
     <li IfModActive="Mlie.ReinforcedMechanoid2">Common/Mods and Shit/Reinforced Mechanoid 2</li>
     <li IfModActive="oskarpotocki.vfe.medieval2">Common/Mods and Shit/VFE Medieval 2</li>
