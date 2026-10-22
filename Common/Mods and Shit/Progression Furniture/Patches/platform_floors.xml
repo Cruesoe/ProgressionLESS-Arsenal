@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFES_Platform"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFES_Platform"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="False">
+              <li>Ferny_Floors</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Floors"]/description</xpath>
+          <value>
+            <description>Build floors, bridges, decks and platforms.</description>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

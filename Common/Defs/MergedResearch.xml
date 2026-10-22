@@ -15,19 +15,6 @@
     </prerequisites>
   </VFETribals.TribalResearchProjectDef>
 
-  <VFETribals.TribalResearchProjectDef MayRequire="oskarpotocki.vfe.tribals" MayRequireAnyOf="tug.minotaur.expanded,vanillaexpanded.vwetb">
-    <defName>Ferny_Sling</defName>
-    <label>tribal ranged weapons</label>
-    <description>Craft slings and throwing shards for striking from a distance.</description>
-    <baseCost>15</baseCost>
-    <techLevel>Animal</techLevel>
-    <tab>VFET_Basics</tab>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>4.20</researchViewY>
-    <prerequisites>
-      <li>VFET_Weapons</li>
-    </prerequisites>
-  </VFETribals.TribalResearchProjectDef>
 
   <VFETribals.TribalResearchProjectDef MayRequire="oskarpotocki.vfe.tribals" MayRequireAnyOf="vanillaexpanded.vwetb,veterano.mythicages.megafaunabestiary">
     <defName>Ferny_HeavyClub</defName>
@@ -53,7 +40,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.10</researchViewY>
     <prerequisites>
-      <li MayRequire="VanillaExpanded.VWETB">Ferny_Club</li>
+      <li MayRequire="VanillaExpanded.VWETB,OskarPotocki.VFE.Tribals">Ferny_Club</li>
     </prerequisites>
   </ResearchProjectDef>
 

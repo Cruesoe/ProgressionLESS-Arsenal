@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFES_Turret_Searchlight"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFES_Turret_Searchlight"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="False">
+          <li>Ferny_StandingLamp</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFES_Turret_Searchlight"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_StandingLamp"]/description</xpath>
+      <value>
+        <description>Build electric standing, wall, desk and sun lamps, decorative lights and searchlights.</description>
+      </value>
+    </match>
+  </Operation>
+</Patch>
