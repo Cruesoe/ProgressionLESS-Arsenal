@@ -24,15 +24,4 @@
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <prerequisites><li>HeavyTurrets</li></prerequisites>
   </ResearchProjectDef>
-  <ResearchProjectDef MayRequire="VanillaExpanded.VFESecurity">
-    <defName>Ferny_Platform</defName>
-    <label>platform</label>
-    <description>Build elevated firing positions that extend weapon range at the cost of reduced cover.</description>
-    <baseCost>200</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>Ferny_Arsenal</tab>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>7.00</researchViewY>
-    <prerequisites><li MayRequire="OskarPotocki.VFE.Tribals">VFET_Construction</li></prerequisites>
-  </ResearchProjectDef>
 </Defs>
