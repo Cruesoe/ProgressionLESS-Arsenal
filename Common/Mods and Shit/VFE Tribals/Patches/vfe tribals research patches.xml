@@ -2,13 +2,13 @@
 <Patch>
                 <!-- Tribal ranged weapons (slings, throwing shards) fold into VFE Tribals' bow -->
                 <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[defName="VFET_Bow"]/label</xpath>
+                    <xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Bow"]/label</xpath>
                     <value>
                         <label>ranged weapons</label>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[defName="VFET_Bow"]/description</xpath>
+                    <xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Bow"]/description</xpath>
                     <value>
                         <description>Craft short bows, slings and throwing shards for striking from a distance.</description>
                     </value>
