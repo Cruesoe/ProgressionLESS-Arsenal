@@ -10,9 +10,9 @@
 [/list]
 
 [h2]Why "LESS"?[/h2]
-Progression: Arsenal adds up to [b]337 research projects[/b] depending on your mods. This fork groups them into [b]at most 127[/b] weapon families:
+Progression: Arsenal adds up to [b]337 research projects[/b] depending on your mods. This fork groups them into [b]at most 126[/b] weapon families:
 [list]
-[*][b]Tribal:[/b] Melee weapons, Tribal ranged weapons, Heavy tribal weapons, Megafauna bows
+[*][b]Tribal:[/b] Melee weapons, Ranged weapons, Heavy tribal weapons, Megafauna bows
 [*][b]Neolithic:[/b] Hatchets, Axes, Smithed blades, String instruments
 [*][b]Medieval:[/b] Swords, Great swords, Battle axes and pikes, Great axes, War axes, Heavy maces, Two-handed and Military maces, Composite bows and crossbows, Longbows, Matchlock guns
 [*][b]Industrial guns:[/b] Revolvers, Frontier guns, Blowback guns, Gas-operated SMGs, LMGs and carbines, Shotguns, Combat shotguns, Hunting rifles, Precision rifles, Marksman rifles, Sniper rifles
