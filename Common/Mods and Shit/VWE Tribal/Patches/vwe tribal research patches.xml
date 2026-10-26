@@ -39,13 +39,13 @@
                             <li Class="PatchOperationReplace">
                                 <xpath>Defs/ThingDef[defName="VWE_Sling"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Sling</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Bow</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationReplace">
                                 <xpath>Defs/ThingDef[defName="VWE_Throwing_Shards"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Sling</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Bow</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationReplace">
