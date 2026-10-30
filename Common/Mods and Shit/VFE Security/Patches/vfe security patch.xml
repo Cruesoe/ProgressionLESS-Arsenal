@@ -48,6 +48,19 @@
                             <xpath>Defs/ResearchProjectDef[defName="VFES_SiegeEquipment"]</xpath>
                         </li>
 
+                        <!-- VFE Medieval 2 moves its arbalest turret to siege equipment when VFE Security is active -->
+                        <li Class="PatchOperationConditional">
+                            <xpath>Defs/ThingDef[defName="VFEM2_Turret_WallMountedArbalest"]/researchPrerequisites</xpath>
+                            <match Class="PatchOperationReplace">
+                                <xpath>Defs/ThingDef[defName="VFEM2_Turret_WallMountedArbalest"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites Inherit="False">
+                                        <li>DankPyon_HeavyCrossbow</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </match>
+                        </li>
+
                     </operations>
                   </match>
                 </Operation>

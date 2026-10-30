@@ -42,17 +42,42 @@
                                     <researchPrerequisite>VFET_Bow</researchPrerequisite>
                                 </value>
                             </li>
-                            <li Class="PatchOperationReplace">
+                            <!-- Combat Extended removes the shard and fire bomb recipeMakers and adds its own recipes -->
+                            <li Class="PatchOperationConditional">
                                 <xpath>Defs/ThingDef[defName="VWE_Throwing_Shards"]/recipeMaker/researchPrerequisite</xpath>
-                                <value>
-                                    <researchPrerequisite>VFET_Bow</researchPrerequisite>
-                                </value>
+                                <match Class="PatchOperationReplace">
+                                    <xpath>Defs/ThingDef[defName="VWE_Throwing_Shards"]/recipeMaker/researchPrerequisite</xpath>
+                                    <value>
+                                        <researchPrerequisite>VFET_Bow</researchPrerequisite>
+                                    </value>
+                                </match>
                             </li>
-                            <li Class="PatchOperationReplace">
+                            <li Class="PatchOperationConditional">
                                 <xpath>Defs/ThingDef[defName="VWE_Weapon_FireBomb"]/recipeMaker/researchPrerequisite</xpath>
-                                <value>
-                                    <researchPrerequisite>Ferny_FireBombs</researchPrerequisite>
-                                </value>
+                                <match Class="PatchOperationReplace">
+                                    <xpath>Defs/ThingDef[defName="VWE_Weapon_FireBomb"]/recipeMaker/researchPrerequisite</xpath>
+                                    <value>
+                                        <researchPrerequisite>Ferny_FireBombs</researchPrerequisite>
+                                    </value>
+                                </match>
+                            </li>
+                            <li Class="PatchOperationConditional">
+                                <xpath>Defs/RecipeDef[defName="MakeVWEThrowingShard"]</xpath>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>Defs/RecipeDef[defName="MakeVWEThrowingShard"]</xpath>
+                                    <value>
+                                        <researchPrerequisite>VFET_Bow</researchPrerequisite>
+                                    </value>
+                                </match>
+                            </li>
+                            <li Class="PatchOperationConditional">
+                                <xpath>Defs/RecipeDef[defName="MakeFireBomb"]</xpath>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>Defs/RecipeDef[defName="MakeFireBomb"]</xpath>
+                                    <value>
+                                        <researchPrerequisite>Ferny_FireBombs</researchPrerequisite>
+                                    </value>
+                                </match>
                             </li>
                         </operations>
                     </match>
