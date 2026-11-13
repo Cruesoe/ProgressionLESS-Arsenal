@@ -2,7 +2,7 @@
 <Defs>
   <ResearchProjectDef MayRequire="OskarPotocki.VFE.Pirates">
     <defName>Ferny_ShockWarcaskets</defName>
-    <label>shock warcaskets</label>
+    <label>shock warcasket</label>
     <description>Construct assault warcaskets equipped with impact mitigation and powerful propulsion systems.</description>
     <baseCost>1200</baseCost><techLevel>Industrial</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

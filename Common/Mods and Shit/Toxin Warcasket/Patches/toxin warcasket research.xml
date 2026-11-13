@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Toxin warcasket joins the heavy warcasket sets, keeping the marine warcasket on its items -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_HazardWarcaskets"]/baseCost</xpath>
+        <value>
+          <baseCost>1400</baseCost>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_HazardWarcaskets"]/description</xpath>
+        <value>
+          <description>Build hazard, barrage and toxin warcaskets.</description>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/VFEPirates.WarcasketDef[defName="TXWC_Warcasket_Toxin" or defName="TXWC_WarcasketHelmet_Toxin" or defName="TXWC_WarcasketShoulders_Toxin"]/researchPrerequisites</xpath>
+        <value>
+          <researchPrerequisites Inherit="False">
+            <li>Ferny_HazardWarcaskets</li>
+            <li>VFEP_AdvancedWarcaskets</li>
+          </researchPrerequisites>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
