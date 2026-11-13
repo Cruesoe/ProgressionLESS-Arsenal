@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Shipcracker warcasket: spacer warcaskets, plus transport pods -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/VFEPirates.WarcasketDef[defName="SCWC_Warcasket_Shipcracker" or defName="SCWC_WarcasketHelmet_Shipcracker" or defName="SCWC_WarcasketShoulders_Shipcracker"]/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites Inherit="False">
+        <li>VFEP_SpacerWarcaskets</li>
+        <li>TransportPod</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>

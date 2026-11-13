@@ -346,7 +346,8 @@
                             <xpath>Defs/ThingDef[defName="DankPyon_RawhideRack"]/researchPrerequisites</xpath>
                             <value>
                                 <researchPrerequisites>
-                                    <li>Ferny_RawhideRack</li>
+                                    <li>VFET_Hunting</li>
+                                    <li>VFET_Construction</li>
                                 </researchPrerequisites>
                             </value>
                         </match>
@@ -354,7 +355,8 @@
                             <xpath>Defs/ThingDef[defName="DankPyon_RawhideRack"]</xpath>
                             <value>
                                 <researchPrerequisites>
-                                    <li>Ferny_RawhideRack</li>
+                                    <li>VFET_Hunting</li>
+                                    <li>VFET_Construction</li>
                                 </researchPrerequisites>
                             </value>
                         </nomatch>

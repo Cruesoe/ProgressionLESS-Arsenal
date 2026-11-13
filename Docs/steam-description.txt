@@ -10,7 +10,7 @@
 [/list]
 
 [h2]Why "LESS"?[/h2]
-Progression: Arsenal adds up to [b]337 research projects[/b] depending on your mods. This fork groups them into [b]at most 126[/b] weapon families:
+Progression: Arsenal adds up to [b]346 research projects[/b] depending on your mods. This fork groups them into [b]at most 125[/b] weapon families:
 [list]
 [*][b]Tribal:[/b] Melee weapons, Ranged weapons, Heavy tribal weapons, Megafauna bows
 [*][b]Neolithic:[/b] Hatchets, Axes, Smithed blades, String instruments
@@ -37,6 +37,7 @@ Keeps all of the original's mod support:
 [*]Det's Xenotypes (Half-foot, Keshig, Venators, Pyrinth), Highborn, Geist Xenotype, Rim-Elves, Big and Small, and Roo's Minotaur and Satyr
 [*]Mythic Ages, Biomes! Mushkin, Rainbow Forest, Firefoam Things, Ancient Mining Industry, Reel's Turret Pipes, and As Above So Below 2
 [*]Ushanka's Glittertech Expansion and Biological Warfare, Fireworks, and Bionic modularity
+[*]Eventide, Medic, Shipcracker and Toxin warcaskets
 [*]Both Progression: Furniture and ProgressionLESS: Furniture
 [/list]
 

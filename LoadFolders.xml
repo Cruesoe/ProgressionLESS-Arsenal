@@ -7,6 +7,10 @@
     <li IfModActive="oskarpotocki.vfe.classical">Common/Mods and Shit/VFE Classical</li>
     <li IfModActive="oskarpotocki.vfe.mechanoid">Common/Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="oskarpotocki.vfe.pirates">Common/Mods and Shit/VFE Pirates</li>
+    <li IfModActive="shunter.toxinwarcasket">Common/Mods and Shit/Toxin Warcasket</li>
+    <li IfModActive="notdvd.eventide">Common/Mods and Shit/Eventide Warcasket</li>
+    <li IfModActive="shunter.medicwarcasket">Common/Mods and Shit/Medic Warcasket</li>
+    <li IfModActive="shunter.shipcrackerwarcasket">Common/Mods and Shit/Shipcracker Warcasket</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Common/Mods and Shit/VFE Security</li>
     <!-- Searchlight keeps its own project only without Progression Furniture; with it, the searchlight is on electric lights -->
     <li IfModActive="vanillaexpanded.vfesecurity" IfModNotActive="ferny.progressionfurniture,cruesoe.progressionlessfurniture">Common/Mods and Shit/VFE Security Without Progression Furniture</li>
@@ -82,6 +86,10 @@
     <li IfModActive="oskarpotocki.vfe.classical">Common/Mods and Shit/VFE Classical</li>
     <li IfModActive="oskarpotocki.vfe.mechanoid">Common/Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="oskarpotocki.vfe.pirates">Common/Mods and Shit/VFE Pirates</li>
+    <li IfModActive="shunter.toxinwarcasket">Common/Mods and Shit/Toxin Warcasket</li>
+    <li IfModActive="notdvd.eventide">Common/Mods and Shit/Eventide Warcasket</li>
+    <li IfModActive="shunter.medicwarcasket">Common/Mods and Shit/Medic Warcasket</li>
+    <li IfModActive="shunter.shipcrackerwarcasket">Common/Mods and Shit/Shipcracker Warcasket</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Common/Mods and Shit/VFE Security</li>
     <!-- Searchlight keeps its own project only without Progression Furniture; with it, the searchlight is on electric lights -->
     <li IfModActive="vanillaexpanded.vfesecurity" IfModNotActive="ferny.progressionfurniture,cruesoe.progressionlessfurniture">Common/Mods and Shit/VFE Security Without Progression Furniture</li>
