@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
- '  ' * $args[0].Groups[1].Value.Length <name>ProgressionLESS: Arsenal</name>
- '  ' * $args[0].Groups[1].Value.Length <author>Cruesoe</author>
- '  ' * $args[0].Groups[1].Value.Length <packageId>cruesoe.progressionlessarsenal</packageId>
- '  ' * $args[0].Groups[1].Value.Length <modVersion>261113</modVersion>
- '  ' * $args[0].Groups[1].Value.Length <supportedVersions>
- '  ' * $args[0].Groups[1].Value.Length <li>1.6</li>
- '  ' * $args[0].Groups[1].Value.Length <li>1.7</li>
- '  ' * $args[0].Groups[1].Value.Length </supportedVersions>
- '  ' * $args[0].Groups[1].Value.Length <modDependencies>
- '  ' * $args[0].Groups[1].Value.Length <li>
- '  ' * $args[0].Groups[1].Value.Length <packageId>ferny.replacelib</packageId>
- '  ' * $args[0].Groups[1].Value.Length <displayName>ReplaceLib</displayName>
- '  ' * $args[0].Groups[1].Value.Length <steamWorkshopUrl>steam://url/CommunityFilePage/3417393194</steamWorkshopUrl>
- '  ' * $args[0].Groups[1].Value.Length </li>
- '  ' * $args[0].Groups[1].Value.Length <li>
- '  ' * $args[0].Groups[1].Value.Length <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
- '  ' * $args[0].Groups[1].Value.Length <displayName>Vanilla Expanded Framework</displayName>
- '  ' * $args[0].Groups[1].Value.Length <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
- '  ' * $args[0].Groups[1].Value.Length </li>
- '  ' * $args[0].Groups[1].Value.Length </modDependencies>
- '  ' * $args[0].Groups[1].Value.Length <incompatibleWith>
- '  ' * $args[0].Groups[1].Value.Length <li>ferny.progressionarsenal</li>
- '  ' * $args[0].Groups[1].Value.Length <li>ferny.progressionwarfare</li>
- '  ' * $args[0].Groups[1].Value.Length </incompatibleWith>
- '  ' * $args[0].Groups[1].Value.Length <description>All the Progression goodness, less research.
+  <name>ProgressionLESS: Arsenal</name>
+  <author>Cruesoe</author>
+  <packageId>cruesoe.progressionlessarsenal</packageId>
+  <modVersion>261113</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>ferny.replacelib</packageId>
+      <displayName>ReplaceLib</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3417393194</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <incompatibleWith>
+    <li>ferny.progressionarsenal</li>
+    <li>ferny.progressionwarfare</li>
+  </incompatibleWith>
+  <description>All the Progression goodness, less research.
 
 Overhauls weapon progression.
 
@@ -34,65 +34,65 @@ Forked from Progression: Arsenal by ferny.
 Huge thanks to ferny for the original mod and all the Progression work this builds on. Replaces the original; do not use both.
 
 For a really good modpack, check out The Progression Modpack on the Steam Workshop.</description>
- '  ' * $args[0].Groups[1].Value.Length <loadAfter>
- '  ' * $args[0].Groups[1].Value.Length <li>Ludeon.Rimworld</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Ludeon.Rimworld.Royalty</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Ludeon.Rimworld.Ideology</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Ludeon.Rimworld.Biotech</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Ludeon.Rimworld.Anomaly</li>
- '  ' * $args[0].Groups[1].Value.Length <li>oskarpotocki.vfe.classical</li>
- '  ' * $args[0].Groups[1].Value.Length <li>oskarpotocki.vfe.mechanoid</li>
- '  ' * $args[0].Groups[1].Value.Length <li>oskarpotocki.vfe.pirates</li>
- '  ' * $args[0].Groups[1].Value.Length <li>vanillaexpanded.vfesecurity</li>
- '  ' * $args[0].Groups[1].Value.Length <li>dankpyon.medieval.overhaul</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Reel.TurretPipeline</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Mlie.ReinforcedMechanoid2</li>
- '  ' * $args[0].Groups[1].Value.Length <li>oskarpotocki.vfe.medieval2</li>
- '  ' * $args[0].Groups[1].Value.Length <li>ferny.progressioncore</li>
- '  ' * $args[0].Groups[1].Value.Length <li>dankpyon.medieval.overhaul</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.vwe</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWEMS</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWEFT</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWEQ</li>
- '  ' * $args[0].Groups[1].Value.Length <li>det.vanillaarsenal</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Smxrez.nonlethalreexamined</li>
- '  ' * $args[0].Groups[1].Value.Length <li>OskarPotocki.VFE.Medieval2</li>
- '  ' * $args[0].Groups[1].Value.Length <li>tug.Minotaur</li>
- '  ' * $args[0].Groups[1].Value.Length <li>tug.Satyr</li>
- '  ' * $args[0].Groups[1].Value.Length <li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VexedTrees980.RimElvesBiotech</li>
- '  ' * $args[0].Groups[1].Value.Length <li>sarg.alphagenes</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Ushanka.BiologicalWarfare</li>
- '  ' * $args[0].Groups[1].Value.Length <li>lts.I</li>
- '  ' * $args[0].Groups[1].Value.Length <li>det.epochspyrinth</li>
- '  ' * $args[0].Groups[1].Value.Length <li>ElSov.Highborn</li>
- '  ' * $args[0].Groups[1].Value.Length <li>DankPyon.Medieval.Overhaul.House.Roxmont</li>
- '  ' * $args[0].Groups[1].Value.Length <li>det.keshig</li>
- '  ' * $args[0].Groups[1].Value.Length <li>hlx.UltratechAlteredCarbon</li>
- '  ' * $args[0].Groups[1].Value.Length <li>BiomesTeam.GeneticsMushkin</li>
- '  ' * $args[0].Groups[1].Value.Length <li>OskarPotocki.VFE.Tribals</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWETB</li>
- '  ' * $args[0].Groups[1].Value.Length <li>tug.Minotaur.Expanded</li>
- '  ' * $args[0].Groups[1].Value.Length <li>veterano.mythicages.megafaunabestiary</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Wara.toomanymods</li>
- '  ' * $args[0].Groups[1].Value.Length <li>ferny.noderesearch</li>
- '  ' * $args[0].Groups[1].Value.Length <li>det.halffoot</li>
- '  ' * $args[0].Groups[1].Value.Length <li>mosi.FirefoamThings</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWENL</li>
- '  ' * $args[0].Groups[1].Value.Length <li>ICC.AOV.OSEC</li>
- '  ' * $args[0].Groups[1].Value.Length <li>XMB.AncientMiningIndustry.MO</li>
- '  ' * $args[0].Groups[1].Value.Length <li>sarg.alphabiomes</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWEHW</li>
- '  ' * $args[0].Groups[1].Value.Length <li>BiomesTeam.BiomesFossils</li>
- '  ' * $args[0].Groups[1].Value.Length <li>ferny.progressionfurniture</li>
- '  ' * $args[0].Groups[1].Value.Length <li>cruesoe.progressionlessfurniture</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWEL</li>
- '  ' * $args[0].Groups[1].Value.Length <li>Smxrez.LaserReexamined</li>
- '  ' * $args[0].Groups[1].Value.Length <li>MRK.rimpackjoyride</li>
- '  ' * $args[0].Groups[1].Value.Length <li>MrKociak.YABEMBionicModularity</li>
- '  ' * $args[0].Groups[1].Value.Length <li>zal.eltexweaponry</li>
- '  ' * $args[0].Groups[1].Value.Length <li>notdvd.eventide</li>
- '  ' * $args[0].Groups[1].Value.Length <li>VanillaExpanded.VWEBF</li>
- '  ' * $args[0].Groups[1].Value.Length <li>CETeam.CombatExtended</li>
- '  ' * $args[0].Groups[1].Value.Length </loadAfter>
+  <loadAfter>
+    <li>Ludeon.Rimworld</li>
+    <li>Ludeon.Rimworld.Royalty</li>
+    <li>Ludeon.Rimworld.Ideology</li>
+    <li>Ludeon.Rimworld.Biotech</li>
+    <li>Ludeon.Rimworld.Anomaly</li>
+    <li>oskarpotocki.vfe.classical</li>
+    <li>oskarpotocki.vfe.mechanoid</li>
+    <li>oskarpotocki.vfe.pirates</li>
+    <li>vanillaexpanded.vfesecurity</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>Reel.TurretPipeline</li>
+    <li>Mlie.ReinforcedMechanoid2</li>
+    <li>oskarpotocki.vfe.medieval2</li>
+    <li>ferny.progressioncore</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>VanillaExpanded.vwe</li>
+    <li>VanillaExpanded.VWEMS</li>
+    <li>VanillaExpanded.VWEFT</li>
+    <li>VanillaExpanded.VWEQ</li>
+    <li>det.vanillaarsenal</li>
+    <li>Smxrez.nonlethalreexamined</li>
+    <li>OskarPotocki.VFE.Medieval2</li>
+    <li>tug.Minotaur</li>
+    <li>tug.Satyr</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
+    <li>VexedTrees980.RimElvesBiotech</li>
+    <li>sarg.alphagenes</li>
+    <li>Ushanka.BiologicalWarfare</li>
+    <li>lts.I</li>
+    <li>det.epochspyrinth</li>
+    <li>ElSov.Highborn</li>
+    <li>DankPyon.Medieval.Overhaul.House.Roxmont</li>
+    <li>det.keshig</li>
+    <li>hlx.UltratechAlteredCarbon</li>
+    <li>BiomesTeam.GeneticsMushkin</li>
+    <li>OskarPotocki.VFE.Tribals</li>
+    <li>VanillaExpanded.VWETB</li>
+    <li>tug.Minotaur.Expanded</li>
+    <li>veterano.mythicages.megafaunabestiary</li>
+    <li>Wara.toomanymods</li>
+    <li>ferny.noderesearch</li>
+    <li>det.halffoot</li>
+    <li>mosi.FirefoamThings</li>
+    <li>VanillaExpanded.VWENL</li>
+    <li>ICC.AOV.OSEC</li>
+    <li>XMB.AncientMiningIndustry.MO</li>
+    <li>sarg.alphabiomes</li>
+    <li>VanillaExpanded.VWEHW</li>
+    <li>BiomesTeam.BiomesFossils</li>
+    <li>ferny.progressionfurniture</li>
+    <li>cruesoe.progressionlessfurniture</li>
+    <li>VanillaExpanded.VWEL</li>
+    <li>Smxrez.LaserReexamined</li>
+    <li>MRK.rimpackjoyride</li>
+    <li>MrKociak.YABEMBionicModularity</li>
+    <li>zal.eltexweaponry</li>
+    <li>notdvd.eventide</li>
+    <li>VanillaExpanded.VWEBF</li>
+    <li>CETeam.CombatExtended</li>
+  </loadAfter>
 </ModMetaData>
