@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Stick bombs: GAE always defines SEX_Plosives (Basic explosives). -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeStickBomb"][
+        not(researchPrerequisite="SEX_Plosives")
+        and not(researchPrerequisites/li="SEX_Plosives")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeStickBomb"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeStickBomb"]/researchPrerequisites</xpath>
+        <value>
+          <li>SEX_Plosives</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeStickBomb"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>SEX_Plosives</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>

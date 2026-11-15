@@ -1,0 +1,3025 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- 524 conventional cartridge/shell recipes. Preserve specialty gates; no extra Advanced ammunition for ordinary AP. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_10Gauge_Beanbag"
+        or defName="MakeAmmo_10Gauge_Buck"
+        or defName="MakeAmmo_10Gauge_ElectroSlug"
+        or defName="MakeAmmo_10Gauge_Slug"
+        or defName="MakeAmmo_10mmAuto_AP"
+        or defName="MakeAmmo_10mmAuto_FMJ"
+        or defName="MakeAmmo_10mmAuto_HP"
+        or defName="MakeAmmo_127x108mm_AP"
+        or defName="MakeAmmo_127x108mm_FMJ"
+        or defName="MakeAmmo_127x108mm_HE"
+        or defName="MakeAmmo_127x108mm_Incendiary"
+        or defName="MakeAmmo_127x108mm_Sabot"
+        or defName="MakeAmmo_127x55mm_AP"
+        or defName="MakeAmmo_127x55mm_FMJ"
+        or defName="MakeAmmo_127x55mm_HE"
+        or defName="MakeAmmo_127x55mm_HP"
+        or defName="MakeAmmo_127x55mm_Incendiary"
+        or defName="MakeAmmo_127x55mm_Sabot"
+        or defName="MakeAmmo_12Gauge_Beanbag"
+        or defName="MakeAmmo_12Gauge_Buck"
+        or defName="MakeAmmo_12Gauge_ElectroSlug"
+        or defName="MakeAmmo_12Gauge_Slug"
+        or defName="MakeAmmo_132x92mmSRTuF_AP"
+        or defName="MakeAmmo_132x92mmSRTuF_FMJ"
+        or defName="MakeAmmo_132x92mmSRTuF_HE"
+        or defName="MakeAmmo_132x92mmSRTuF_Incendiary"
+        or defName="MakeAmmo_132x92mmSRTuF_Sabot"
+        or defName="MakeAmmo_13mmGyrojet_AP"
+        or defName="MakeAmmo_13mmGyrojet_FMJ"
+        or defName="MakeAmmo_13mmGyrojet_HP"
+        or defName="MakeAmmo_145x114mm_AP"
+        or defName="MakeAmmo_145x114mm_FMJ"
+        or defName="MakeAmmo_145x114mm_HE"
+        or defName="MakeAmmo_145x114mm_Incendiary"
+        or defName="MakeAmmo_145x114mm_Sabot"
+        or defName="MakeAmmo_152x169mm_Sabot"
+        or defName="MakeAmmo_16Gauge_Beanbag"
+        or defName="MakeAmmo_16Gauge_Buck"
+        or defName="MakeAmmo_16Gauge_ElectroSlug"
+        or defName="MakeAmmo_16Gauge_Slug"
+        or defName="MakeAmmo_17HMR_AP"
+        or defName="MakeAmmo_17HMR_FMJ"
+        or defName="MakeAmmo_17HMR_HP"
+        or defName="MakeAmmo_20Gauge_Beanbag"
+        or defName="MakeAmmo_20Gauge_Buck"
+        or defName="MakeAmmo_20Gauge_ElectroSlug"
+        or defName="MakeAmmo_20Gauge_Slug"
+        or defName="MakeAmmo_20x102mmNATO_AP"
+        or defName="MakeAmmo_20x102mmNATO_HE"
+        or defName="MakeAmmo_20x102mmNATO_Incendiary"
+        or defName="MakeAmmo_20x102mmNATO_Sabot"
+        or defName="MakeAmmo_20x110mmHispano_AP"
+        or defName="MakeAmmo_20x110mmHispano_HE"
+        or defName="MakeAmmo_20x110mmHispano_Incendiary"
+        or defName="MakeAmmo_20x110mmHispano_Sabot"
+        or defName="MakeAmmo_20x128mmOerlikon_AP"
+        or defName="MakeAmmo_20x128mmOerlikon_HE"
+        or defName="MakeAmmo_20x128mmOerlikon_Incendiary"
+        or defName="MakeAmmo_20x128mmOerlikon_Sabot"
+        or defName="MakeAmmo_20x138mmB_AP"
+        or defName="MakeAmmo_20x138mmB_HE"
+        or defName="MakeAmmo_20x138mmB_Incendiary"
+        or defName="MakeAmmo_20x138mmB_Sabot"
+        or defName="MakeAmmo_20x139mm_AP"
+        or defName="MakeAmmo_20x139mm_HE"
+        or defName="MakeAmmo_20x139mm_Incendiary"
+        or defName="MakeAmmo_20x139mm_Sabot"
+        or defName="MakeAmmo_20x82mmMauser_AP"
+        or defName="MakeAmmo_20x82mmMauser_HE"
+        or defName="MakeAmmo_20x82mmMauser_Incendiary"
+        or defName="MakeAmmo_20x82mmMauser_Sabot"
+        or defName="MakeAmmo_20x99mmRShVAK_AP"
+        or defName="MakeAmmo_20x99mmRShVAK_HE"
+        or defName="MakeAmmo_20x99mmRShVAK_Incendiary"
+        or defName="MakeAmmo_20x99mmRShVAK_Sabot"
+        or defName="MakeAmmo_22Hornet_AP"
+        or defName="MakeAmmo_22Hornet_FMJ"
+        or defName="MakeAmmo_22Hornet_HP"
+        or defName="MakeAmmo_22LR_AP"
+        or defName="MakeAmmo_22LR_FMJ"
+        or defName="MakeAmmo_22LR_HP"
+        or defName="MakeAmmo_22Short_AP"
+        or defName="MakeAmmo_22Short_FMJ"
+        or defName="MakeAmmo_22Short_HP"
+        or defName="MakeAmmo_22WMR_AP"
+        or defName="MakeAmmo_22WMR_FMJ"
+        or defName="MakeAmmo_22WMR_HP"
+        or defName="MakeAmmo_23x115mm_AP"
+        or defName="MakeAmmo_23x115mm_HE"
+        or defName="MakeAmmo_23x115mm_Incendiary"
+        or defName="MakeAmmo_23x115mm_Sabot"
+        or defName="MakeAmmo_23x152mmB_AP"
+        or defName="MakeAmmo_23x152mmB_APHE"
+        or defName="MakeAmmo_23x152mmB_Incendiary"
+        or defName="MakeAmmo_23x152mmB_Sabot"
+        or defName="MakeAmmo_23x75mmR_Beanbag"
+        or defName="MakeAmmo_23x75mmR_Buck"
+        or defName="MakeAmmo_23x75mmR_ElectroSlug"
+        or defName="MakeAmmo_23x75mmR_Slug"
+        or defName="MakeAmmo_243Winchester_AP"
+        or defName="MakeAmmo_243Winchester_FMJ"
+        or defName="MakeAmmo_243Winchester_HE"
+        or defName="MakeAmmo_243Winchester_HP"
+        or defName="MakeAmmo_243Winchester_Incendiary"
+        or defName="MakeAmmo_243Winchester_Sabot"
+        or defName="MakeAmmo_25ACP_AP"
+        or defName="MakeAmmo_25ACP_FMJ"
+        or defName="MakeAmmo_25ACP_HP"
+        or defName="MakeAmmo_25x137mmNATO_AP"
+        or defName="MakeAmmo_25x137mmNATO_HE"
+        or defName="MakeAmmo_25x137mmNATO_Incendiary"
+        or defName="MakeAmmo_25x137mmNATO_Sabot"
+        or defName="MakeAmmo_277Fury_AP"
+        or defName="MakeAmmo_277Fury_FMJ"
+        or defName="MakeAmmo_277Fury_HE"
+        or defName="MakeAmmo_277Fury_HP"
+        or defName="MakeAmmo_277Fury_Incendiary"
+        or defName="MakeAmmo_277Fury_Sabot"
+        or defName="MakeAmmo_27x145mmMauser_AP"
+        or defName="MakeAmmo_27x145mmMauser_HE"
+        or defName="MakeAmmo_27x145mmMauser_Incendiary"
+        or defName="MakeAmmo_27x145mmMauser_Sabot"
+        or defName="MakeAmmo_280British_AP"
+        or defName="MakeAmmo_280British_FMJ"
+        or defName="MakeAmmo_280British_HE"
+        or defName="MakeAmmo_280British_HP"
+        or defName="MakeAmmo_280British_Incendiary"
+        or defName="MakeAmmo_280British_Sabot"
+        or defName="MakeAmmo_2Bore_AP"
+        or defName="MakeAmmo_2Bore_FMJ"
+        or defName="MakeAmmo_2Bore_HE"
+        or defName="MakeAmmo_2Bore_Incendiary"
+        or defName="MakeAmmo_2Bore_Sabot"
+        or defName="MakeAmmo_3006Springfield_AP"
+        or defName="MakeAmmo_3006Springfield_FMJ"
+        or defName="MakeAmmo_3006Springfield_HE"
+        or defName="MakeAmmo_3006Springfield_HP"
+        or defName="MakeAmmo_3006Springfield_Incendiary"
+        or defName="MakeAmmo_3006Springfield_Sabot"
+        or defName="MakeAmmo_300AACBlackout_AP"
+        or defName="MakeAmmo_300AACBlackout_FMJ"
+        or defName="MakeAmmo_300AACBlackout_HE"
+        or defName="MakeAmmo_300AACBlackout_HP"
+        or defName="MakeAmmo_300AACBlackout_Incendiary"
+        or defName="MakeAmmo_300AACBlackout_Sabot"
+        or defName="MakeAmmo_300WinchesterMagnum_AP"
+        or defName="MakeAmmo_300WinchesterMagnum_FMJ"
+        or defName="MakeAmmo_300WinchesterMagnum_HE"
+        or defName="MakeAmmo_300WinchesterMagnum_Incendiary"
+        or defName="MakeAmmo_300WinchesterMagnum_Sabot"
+        or defName="MakeAmmo_3030Winchester_AP"
+        or defName="MakeAmmo_3030Winchester_FMJ"
+        or defName="MakeAmmo_3030Winchester_HE"
+        or defName="MakeAmmo_3030Winchester_HP"
+        or defName="MakeAmmo_3030Winchester_Incendiary"
+        or defName="MakeAmmo_3030Winchester_Sabot"
+        or defName="MakeAmmo_303British_AP"
+        or defName="MakeAmmo_303British_FMJ"
+        or defName="MakeAmmo_303British_HE"
+        or defName="MakeAmmo_303British_HP"
+        or defName="MakeAmmo_303British_Incendiary"
+        or defName="MakeAmmo_303British_Sabot"
+        or defName="MakeAmmo_30Carbine_AP"
+        or defName="MakeAmmo_30Carbine_FMJ"
+        or defName="MakeAmmo_30Carbine_HE"
+        or defName="MakeAmmo_30Carbine_HP"
+        or defName="MakeAmmo_30Carbine_Incendiary"
+        or defName="MakeAmmo_30Carbine_Sabot"
+        or defName="MakeAmmo_30x113mmB_AP"
+        or defName="MakeAmmo_30x113mmB_HE"
+        or defName="MakeAmmo_30x113mmB_Incendiary"
+        or defName="MakeAmmo_30x113mmB_Sabot"
+        or defName="MakeAmmo_30x165mm_AP"
+        or defName="MakeAmmo_30x165mm_HE"
+        or defName="MakeAmmo_30x165mm_Incendiary"
+        or defName="MakeAmmo_30x165mm_Sabot"
+        or defName="MakeAmmo_30x170mm_AP"
+        or defName="MakeAmmo_30x170mm_HE"
+        or defName="MakeAmmo_30x170mm_Incendiary"
+        or defName="MakeAmmo_30x170mm_Sabot"
+        or defName="MakeAmmo_30x173mmNATO_AP"
+        or defName="MakeAmmo_30x173mmNATO_HE"
+        or defName="MakeAmmo_30x173mmNATO_Incendiary"
+        or defName="MakeAmmo_30x173mmNATO_Sabot"
+        or defName="MakeAmmo_32ACP_AP"
+        or defName="MakeAmmo_32ACP_FMJ"
+        or defName="MakeAmmo_32ACP_HP"
+        or defName="MakeAmmo_338Lapua_AP"
+        or defName="MakeAmmo_338Lapua_FMJ"
+        or defName="MakeAmmo_338Lapua_HE"
+        or defName="MakeAmmo_338Lapua_Incendiary"
+        or defName="MakeAmmo_338Lapua_Sabot"
+        or defName="MakeAmmo_338Norma_AP"
+        or defName="MakeAmmo_338Norma_FMJ"
+        or defName="MakeAmmo_338Norma_HE"
+        or defName="MakeAmmo_338Norma_Incendiary"
+        or defName="MakeAmmo_338Norma_Sabot"
+        or defName="MakeAmmo_357Magnum_AP"
+        or defName="MakeAmmo_357Magnum_FMJ"
+        or defName="MakeAmmo_357Magnum_HP"
+        or defName="MakeAmmo_357SIG_AP"
+        or defName="MakeAmmo_357SIG_FMJ"
+        or defName="MakeAmmo_357SIG_HP"
+        or defName="MakeAmmo_35x228mmNATO_AP"
+        or defName="MakeAmmo_35x228mmNATO_HE"
+        or defName="MakeAmmo_35x228mmNATO_Incendiary"
+        or defName="MakeAmmo_35x228mmNATO_Sabot"
+        or defName="MakeAmmo_380ACP_AP"
+        or defName="MakeAmmo_380ACP_FMJ"
+        or defName="MakeAmmo_380ACP_HP"
+        or defName="MakeAmmo_3855Winchester_AP"
+        or defName="MakeAmmo_3855Winchester_FMJ"
+        or defName="MakeAmmo_3855Winchester_HE"
+        or defName="MakeAmmo_3855Winchester_HP"
+        or defName="MakeAmmo_3855Winchester_Incendiary"
+        or defName="MakeAmmo_3855Winchester_Sabot"
+        or defName="MakeAmmo_38ACP_AP"
+        or defName="MakeAmmo_38ACP_FMJ"
+        or defName="MakeAmmo_38ACP_HP"
+        or defName="MakeAmmo_38SW_AP"
+        or defName="MakeAmmo_38SW_FMJ"
+        or defName="MakeAmmo_38SW_HP"
+        or defName="MakeAmmo_38Special_AP"
+        or defName="MakeAmmo_38Special_FMJ"
+        or defName="MakeAmmo_38Special_HP"
+        or defName="MakeAmmo_38Super_AP"
+        or defName="MakeAmmo_38Super_FMJ"
+        or defName="MakeAmmo_38Super_HP"
+        or defName="MakeAmmo_408CheyenneTactical_AP"
+        or defName="MakeAmmo_408CheyenneTactical_FMJ"
+        or defName="MakeAmmo_408CheyenneTactical_HE"
+        or defName="MakeAmmo_408CheyenneTactical_Incendiary"
+        or defName="MakeAmmo_408CheyenneTactical_Sabot"
+        or defName="MakeAmmo_40SW_AP"
+        or defName="MakeAmmo_40SW_FMJ"
+        or defName="MakeAmmo_40SW_HP"
+        or defName="MakeAmmo_40x311mmR_AP"
+        or defName="MakeAmmo_40x311mmR_HE"
+        or defName="MakeAmmo_40x311mmR_Incendiary"
+        or defName="MakeAmmo_40x311mmR_Sabot"
+        or defName="MakeAmmo_410Bore_Beanbag"
+        or defName="MakeAmmo_410Bore_Buck"
+        or defName="MakeAmmo_410Bore_ElectroSlug"
+        or defName="MakeAmmo_410Bore_Slug"
+        or defName="MakeAmmo_41Rimfire_AP"
+        or defName="MakeAmmo_41Rimfire_FMJ"
+        or defName="MakeAmmo_41Rimfire_HP"
+        or defName="MakeAmmo_44-40Winchester_AP"
+        or defName="MakeAmmo_44-40Winchester_FMJ"
+        or defName="MakeAmmo_44-40Winchester_HE"
+        or defName="MakeAmmo_44-40Winchester_HP"
+        or defName="MakeAmmo_44-40Winchester_Incendiary"
+        or defName="MakeAmmo_44-40Winchester_Sabot"
+        or defName="MakeAmmo_44Magnum_AP"
+        or defName="MakeAmmo_44Magnum_FMJ"
+        or defName="MakeAmmo_44Magnum_HP"
+        or defName="MakeAmmo_44SWSpecial_AP"
+        or defName="MakeAmmo_44SWSpecial_FMJ"
+        or defName="MakeAmmo_44SWSpecial_HP"
+        or defName="MakeAmmo_454Casull_AP"
+        or defName="MakeAmmo_454Casull_FMJ"
+        or defName="MakeAmmo_454Casull_HP"
+        or defName="MakeAmmo_455Webley_AP"
+        or defName="MakeAmmo_455Webley_FMJ"
+        or defName="MakeAmmo_455Webley_HP"
+        or defName="MakeAmmo_4570Gov_AP"
+        or defName="MakeAmmo_4570Gov_FMJ"
+        or defName="MakeAmmo_4570Gov_HE"
+        or defName="MakeAmmo_4570Gov_HP"
+        or defName="MakeAmmo_4570Gov_Incendiary"
+        or defName="MakeAmmo_4570Gov_Sabot"
+        or defName="MakeAmmo_458SOCOM_AP"
+        or defName="MakeAmmo_458SOCOM_FMJ"
+        or defName="MakeAmmo_458SOCOM_HE"
+        or defName="MakeAmmo_458SOCOM_HP"
+        or defName="MakeAmmo_458SOCOM_Incendiary"
+        or defName="MakeAmmo_458SOCOM_Sabot"
+        or defName="MakeAmmo_45ACP_AP"
+        or defName="MakeAmmo_45ACP_FMJ"
+        or defName="MakeAmmo_45ACP_HP"
+        or defName="MakeAmmo_45Colt_AP"
+        or defName="MakeAmmo_45Colt_FMJ"
+        or defName="MakeAmmo_45Colt_HP"
+        or defName="MakeAmmo_45Schofield_AP"
+        or defName="MakeAmmo_45Schofield_FMJ"
+        or defName="MakeAmmo_45Schofield_HP"
+        or defName="MakeAmmo_460SWMagnum_AP"
+        or defName="MakeAmmo_460SWMagnum_FMJ"
+        or defName="MakeAmmo_460SWMagnum_HP"
+        or defName="MakeAmmo_46x30mm_AP"
+        or defName="MakeAmmo_46x30mm_FMJ"
+        or defName="MakeAmmo_46x30mm_HP"
+        or defName="MakeAmmo_470NitroExpress_AP"
+        or defName="MakeAmmo_470NitroExpress_FMJ"
+        or defName="MakeAmmo_470NitroExpress_HE"
+        or defName="MakeAmmo_470NitroExpress_Incendiary"
+        or defName="MakeAmmo_470NitroExpress_Sabot"
+        or defName="MakeAmmo_473x33mmCaseless_AP"
+        or defName="MakeAmmo_473x33mmCaseless_FMJ"
+        or defName="MakeAmmo_473x33mmCaseless_HE"
+        or defName="MakeAmmo_473x33mmCaseless_HP"
+        or defName="MakeAmmo_473x33mmCaseless_Incendiary"
+        or defName="MakeAmmo_473x33mmCaseless_Sabot"
+        or defName="MakeAmmo_485x49mm_AP"
+        or defName="MakeAmmo_485x49mm_FMJ"
+        or defName="MakeAmmo_485x49mm_HE"
+        or defName="MakeAmmo_485x49mm_HP"
+        or defName="MakeAmmo_485x49mm_Incendiary"
+        or defName="MakeAmmo_485x49mm_Sabot"
+        or defName="MakeAmmo_500SWMagnum_AP"
+        or defName="MakeAmmo_500SWMagnum_FMJ"
+        or defName="MakeAmmo_500SWMagnum_HP"
+        or defName="MakeAmmo_50AE_AP"
+        or defName="MakeAmmo_50AE_FMJ"
+        or defName="MakeAmmo_50AE_HP"
+        or defName="MakeAmmo_50BMG_AP"
+        or defName="MakeAmmo_50BMG_FMJ"
+        or defName="MakeAmmo_50BMG_HE"
+        or defName="MakeAmmo_50BMG_Incendiary"
+        or defName="MakeAmmo_50BMG_Sabot"
+        or defName="MakeAmmo_50Beowulf_AP"
+        or defName="MakeAmmo_50Beowulf_FMJ"
+        or defName="MakeAmmo_50Beowulf_HE"
+        or defName="MakeAmmo_50Beowulf_HP"
+        or defName="MakeAmmo_50Beowulf_Incendiary"
+        or defName="MakeAmmo_50Beowulf_Sabot"
+        or defName="MakeAmmo_50JDJ_HE"
+        or defName="MakeAmmo_50JDJ_Incendiary"
+        or defName="MakeAmmo_50JDJ_Sabot"
+        or defName="MakeAmmo_545x39mmSoviet_AP"
+        or defName="MakeAmmo_545x39mmSoviet_FMJ"
+        or defName="MakeAmmo_545x39mmSoviet_HE"
+        or defName="MakeAmmo_545x39mmSoviet_HP"
+        or defName="MakeAmmo_545x39mmSoviet_Incendiary"
+        or defName="MakeAmmo_545x39mmSoviet_Sabot"
+        or defName="MakeAmmo_556x45mmNATO_AP"
+        or defName="MakeAmmo_556x45mmNATO_FMJ"
+        or defName="MakeAmmo_556x45mmNATO_HE"
+        or defName="MakeAmmo_556x45mmNATO_HP"
+        or defName="MakeAmmo_556x45mmNATO_Incendiary"
+        or defName="MakeAmmo_556x45mmNATO_Sabot"
+        or defName="MakeAmmo_55Boys_AP"
+        or defName="MakeAmmo_55Boys_FMJ"
+        or defName="MakeAmmo_55Boys_HE"
+        or defName="MakeAmmo_55Boys_Incendiary"
+        or defName="MakeAmmo_55Boys_Sabot"
+        or defName="MakeAmmo_5656Spencer_AP"
+        or defName="MakeAmmo_5656Spencer_FMJ"
+        or defName="MakeAmmo_5656Spencer_HE"
+        or defName="MakeAmmo_5656Spencer_HP"
+        or defName="MakeAmmo_5656Spencer_Incendiary"
+        or defName="MakeAmmo_5656Spencer_Sabot"
+        or defName="MakeAmmo_58x21mmDAP92_AP"
+        or defName="MakeAmmo_58x21mmDAP92_FMJ"
+        or defName="MakeAmmo_58x21mmDAP92_HP"
+        or defName="MakeAmmo_58x42mmDBP10_AP"
+        or defName="MakeAmmo_58x42mmDBP10_FMJ"
+        or defName="MakeAmmo_58x42mmDBP10_HE"
+        or defName="MakeAmmo_58x42mmDBP10_HP"
+        or defName="MakeAmmo_58x42mmDBP10_Incendiary"
+        or defName="MakeAmmo_58x42mmDBP10_Sabot"
+        or defName="MakeAmmo_5x50mmCaseless_Sabot"
+        or defName="MakeAmmo_600NitroExpress_AP"
+        or defName="MakeAmmo_600NitroExpress_FMJ"
+        or defName="MakeAmmo_600NitroExpress_HE"
+        or defName="MakeAmmo_600NitroExpress_Incendiary"
+        or defName="MakeAmmo_600NitroExpress_Sabot"
+        or defName="MakeAmmo_65x48mmCreedmoor_AP"
+        or defName="MakeAmmo_65x48mmCreedmoor_FMJ"
+        or defName="MakeAmmo_65x48mmCreedmoor_HE"
+        or defName="MakeAmmo_65x48mmCreedmoor_HP"
+        or defName="MakeAmmo_65x48mmCreedmoor_Incendiary"
+        or defName="MakeAmmo_65x48mmCreedmoor_Sabot"
+        or defName="MakeAmmo_65x50mmSRArisaka_AP"
+        or defName="MakeAmmo_65x50mmSRArisaka_FMJ"
+        or defName="MakeAmmo_65x50mmSRArisaka_HE"
+        or defName="MakeAmmo_65x50mmSRArisaka_HP"
+        or defName="MakeAmmo_65x50mmSRArisaka_Incendiary"
+        or defName="MakeAmmo_65x50mmSRArisaka_Sabot"
+        or defName="MakeAmmo_65x52mmCarcano_AP"
+        or defName="MakeAmmo_65x52mmCarcano_FMJ"
+        or defName="MakeAmmo_65x52mmCarcano_HE"
+        or defName="MakeAmmo_65x52mmCarcano_HP"
+        or defName="MakeAmmo_65x52mmCarcano_Incendiary"
+        or defName="MakeAmmo_65x52mmCarcano_Sabot"
+        or defName="MakeAmmo_75FK_AP"
+        or defName="MakeAmmo_75FK_FMJ"
+        or defName="MakeAmmo_75FK_HP"
+        or defName="MakeAmmo_75x54mmFrench_AP"
+        or defName="MakeAmmo_75x54mmFrench_FMJ"
+        or defName="MakeAmmo_75x54mmFrench_HE"
+        or defName="MakeAmmo_75x54mmFrench_HP"
+        or defName="MakeAmmo_75x54mmFrench_Incendiary"
+        or defName="MakeAmmo_75x54mmFrench_Sabot"
+        or defName="MakeAmmo_762x25mmTokarev_AP"
+        or defName="MakeAmmo_762x25mmTokarev_FMJ"
+        or defName="MakeAmmo_762x25mmTokarev_HP"
+        or defName="MakeAmmo_762x38mmR_AP"
+        or defName="MakeAmmo_762x38mmR_FMJ"
+        or defName="MakeAmmo_762x38mmR_HP"
+        or defName="MakeAmmo_762x39mmSoviet_AP"
+        or defName="MakeAmmo_762x39mmSoviet_FMJ"
+        or defName="MakeAmmo_762x39mmSoviet_HE"
+        or defName="MakeAmmo_762x39mmSoviet_HP"
+        or defName="MakeAmmo_762x39mmSoviet_Incendiary"
+        or defName="MakeAmmo_762x39mmSoviet_Sabot"
+        or defName="MakeAmmo_762x51mmNATO_AP"
+        or defName="MakeAmmo_762x51mmNATO_FMJ"
+        or defName="MakeAmmo_762x51mmNATO_HE"
+        or defName="MakeAmmo_762x51mmNATO_HP"
+        or defName="MakeAmmo_762x51mmNATO_Incendiary"
+        or defName="MakeAmmo_762x51mmNATO_Sabot"
+        or defName="MakeAmmo_762x54mmR_AP"
+        or defName="MakeAmmo_762x54mmR_FMJ"
+        or defName="MakeAmmo_762x54mmR_HE"
+        or defName="MakeAmmo_762x54mmR_HP"
+        or defName="MakeAmmo_762x54mmR_Incendiary"
+        or defName="MakeAmmo_762x54mmR_Sabot"
+        or defName="MakeAmmo_763x25mmMauser_AP"
+        or defName="MakeAmmo_763x25mmMauser_FMJ"
+        or defName="MakeAmmo_763x25mmMauser_HP"
+        or defName="MakeAmmo_765x20mmLongue_AP"
+        or defName="MakeAmmo_765x20mmLongue_FMJ"
+        or defName="MakeAmmo_765x20mmLongue_HP"
+        or defName="MakeAmmo_77x58mmArisaka_AP"
+        or defName="MakeAmmo_77x58mmArisaka_FMJ"
+        or defName="MakeAmmo_77x58mmArisaka_HE"
+        or defName="MakeAmmo_77x58mmArisaka_HP"
+        or defName="MakeAmmo_77x58mmArisaka_Incendiary"
+        or defName="MakeAmmo_77x58mmArisaka_Sabot"
+        or defName="MakeAmmo_792x33mmKurz_AP"
+        or defName="MakeAmmo_792x33mmKurz_FMJ"
+        or defName="MakeAmmo_792x33mmKurz_HE"
+        or defName="MakeAmmo_792x33mmKurz_HP"
+        or defName="MakeAmmo_792x33mmKurz_Incendiary"
+        or defName="MakeAmmo_792x33mmKurz_Sabot"
+        or defName="MakeAmmo_792x57mmMauser_AP"
+        or defName="MakeAmmo_792x57mmMauser_FMJ"
+        or defName="MakeAmmo_792x57mmMauser_HE"
+        or defName="MakeAmmo_792x57mmMauser_HP"
+        or defName="MakeAmmo_792x57mmMauser_Incendiary"
+        or defName="MakeAmmo_792x57mmMauser_Sabot"
+        or defName="MakeAmmo_792x94mmPatronen_AP"
+        or defName="MakeAmmo_792x94mmPatronen_FMJ"
+        or defName="MakeAmmo_792x94mmPatronen_HE"
+        or defName="MakeAmmo_792x94mmPatronen_Incendiary"
+        or defName="MakeAmmo_792x94mmPatronen_Sabot"
+        or defName="MakeAmmo_86x43mmBlackout_AP"
+        or defName="MakeAmmo_86x43mmBlackout_FMJ"
+        or defName="MakeAmmo_86x43mmBlackout_HE"
+        or defName="MakeAmmo_86x43mmBlackout_HP"
+        or defName="MakeAmmo_86x43mmBlackout_Incendiary"
+        or defName="MakeAmmo_86x43mmBlackout_Sabot"
+        or defName="MakeAmmo_8x22mmNambu_AP"
+        or defName="MakeAmmo_8x22mmNambu_FMJ"
+        or defName="MakeAmmo_8x22mmNambu_HP"
+        or defName="MakeAmmo_8x50mmRLebel_AP"
+        or defName="MakeAmmo_8x50mmRLebel_FMJ"
+        or defName="MakeAmmo_8x50mmRLebel_HE"
+        or defName="MakeAmmo_8x50mmRLebel_HP"
+        or defName="MakeAmmo_8x50mmRLebel_Incendiary"
+        or defName="MakeAmmo_8x50mmRLebel_Sabot"
+        or defName="MakeAmmo_8x50mmRMannlicher_AP"
+        or defName="MakeAmmo_8x50mmRMannlicher_FMJ"
+        or defName="MakeAmmo_8x50mmRMannlicher_HE"
+        or defName="MakeAmmo_8x50mmRMannlicher_HP"
+        or defName="MakeAmmo_8x50mmRMannlicher_Incendiary"
+        or defName="MakeAmmo_8x50mmRMannlicher_Sabot"
+        or defName="MakeAmmo_950JDJ_AP"
+        or defName="MakeAmmo_950JDJ_FMJ"
+        or defName="MakeAmmo_9x18mmMakarov_AP"
+        or defName="MakeAmmo_9x18mmMakarov_FMJ"
+        or defName="MakeAmmo_9x18mmMakarov_HP"
+        or defName="MakeAmmo_9x19mmPara_AP"
+        or defName="MakeAmmo_9x19mmPara_FMJ"
+        or defName="MakeAmmo_9x19mmPara_HP"
+        or defName="MakeAmmo_9x21mmGyurza_AP"
+        or defName="MakeAmmo_9x21mmGyurza_FMJ"
+        or defName="MakeAmmo_9x21mmGyurza_HP"
+        or defName="MakeAmmo_9x39mmSoviet_AP"
+        or defName="MakeAmmo_9x39mmSoviet_FMJ"
+        or defName="MakeAmmo_9x39mmSoviet_HE"
+        or defName="MakeAmmo_9x39mmSoviet_HP"
+        or defName="MakeAmmo_9x39mmSoviet_Incendiary"
+        or defName="MakeAmmo_9x39mmSoviet_Sabot"
+        or defName="MakeAmmo_AntiMateriel_AP"
+        or defName="MakeAmmo_AntiMateriel_FMJ"
+        or defName="MakeAmmo_AntiMateriel_HE"
+        or defName="MakeAmmo_AntiMateriel_Incendiary"
+        or defName="MakeAmmo_AntiMateriel_Sabot"
+        or defName="MakeAmmo_Autocannon_AP"
+        or defName="MakeAmmo_Autocannon_HE"
+        or defName="MakeAmmo_Autocannon_Incendiary"
+        or defName="MakeAmmo_Autocannon_Sabot"
+        or defName="MakeAmmo_FN57x28mm_AP"
+        or defName="MakeAmmo_FN57x28mm_FMJ"
+        or defName="MakeAmmo_FN57x28mm_HP"
+        or defName="MakeAmmo_PistolMagnum_AP"
+        or defName="MakeAmmo_PistolMagnum_FMJ"
+        or defName="MakeAmmo_PistolMagnum_HP"
+        or defName="MakeAmmo_Pistol_AP"
+        or defName="MakeAmmo_Pistol_FMJ"
+        or defName="MakeAmmo_Pistol_HP"
+        or defName="MakeAmmo_RifleIntermediate_AP"
+        or defName="MakeAmmo_RifleIntermediate_FMJ"
+        or defName="MakeAmmo_RifleIntermediate_HE"
+        or defName="MakeAmmo_RifleIntermediate_HP"
+        or defName="MakeAmmo_RifleIntermediate_Incendiary"
+        or defName="MakeAmmo_RifleIntermediate_Sabot"
+        or defName="MakeAmmo_RifleMagnum_AP"
+        or defName="MakeAmmo_RifleMagnum_FMJ"
+        or defName="MakeAmmo_RifleMagnum_HE"
+        or defName="MakeAmmo_RifleMagnum_Incendiary"
+        or defName="MakeAmmo_RifleMagnum_Sabot"
+        or defName="MakeAmmo_Rifle_AP"
+        or defName="MakeAmmo_Rifle_FMJ"
+        or defName="MakeAmmo_Rifle_HE"
+        or defName="MakeAmmo_Rifle_HP"
+        or defName="MakeAmmo_Rifle_Incendiary"
+        or defName="MakeAmmo_Rifle_Sabot"
+        or defName="MakeAmmo_Shotgun_Beanbag"
+        or defName="MakeAmmo_Shotgun_Buck"
+        or defName="MakeAmmo_Shotgun_ElectroSlug"
+        or defName="MakeAmmo_Shotgun_Slug"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_10Gauge_Beanbag"
+          or defName="MakeAmmo_10Gauge_Buck"
+          or defName="MakeAmmo_10Gauge_ElectroSlug"
+          or defName="MakeAmmo_10Gauge_Slug"
+          or defName="MakeAmmo_10mmAuto_AP"
+          or defName="MakeAmmo_10mmAuto_FMJ"
+          or defName="MakeAmmo_10mmAuto_HP"
+          or defName="MakeAmmo_127x108mm_AP"
+          or defName="MakeAmmo_127x108mm_FMJ"
+          or defName="MakeAmmo_127x108mm_HE"
+          or defName="MakeAmmo_127x108mm_Incendiary"
+          or defName="MakeAmmo_127x108mm_Sabot"
+          or defName="MakeAmmo_127x55mm_AP"
+          or defName="MakeAmmo_127x55mm_FMJ"
+          or defName="MakeAmmo_127x55mm_HE"
+          or defName="MakeAmmo_127x55mm_HP"
+          or defName="MakeAmmo_127x55mm_Incendiary"
+          or defName="MakeAmmo_127x55mm_Sabot"
+          or defName="MakeAmmo_12Gauge_Beanbag"
+          or defName="MakeAmmo_12Gauge_Buck"
+          or defName="MakeAmmo_12Gauge_ElectroSlug"
+          or defName="MakeAmmo_12Gauge_Slug"
+          or defName="MakeAmmo_132x92mmSRTuF_AP"
+          or defName="MakeAmmo_132x92mmSRTuF_FMJ"
+          or defName="MakeAmmo_132x92mmSRTuF_HE"
+          or defName="MakeAmmo_132x92mmSRTuF_Incendiary"
+          or defName="MakeAmmo_132x92mmSRTuF_Sabot"
+          or defName="MakeAmmo_13mmGyrojet_AP"
+          or defName="MakeAmmo_13mmGyrojet_FMJ"
+          or defName="MakeAmmo_13mmGyrojet_HP"
+          or defName="MakeAmmo_145x114mm_AP"
+          or defName="MakeAmmo_145x114mm_FMJ"
+          or defName="MakeAmmo_145x114mm_HE"
+          or defName="MakeAmmo_145x114mm_Incendiary"
+          or defName="MakeAmmo_145x114mm_Sabot"
+          or defName="MakeAmmo_152x169mm_Sabot"
+          or defName="MakeAmmo_16Gauge_Beanbag"
+          or defName="MakeAmmo_16Gauge_Buck"
+          or defName="MakeAmmo_16Gauge_ElectroSlug"
+          or defName="MakeAmmo_16Gauge_Slug"
+          or defName="MakeAmmo_17HMR_AP"
+          or defName="MakeAmmo_17HMR_FMJ"
+          or defName="MakeAmmo_17HMR_HP"
+          or defName="MakeAmmo_20Gauge_Beanbag"
+          or defName="MakeAmmo_20Gauge_Buck"
+          or defName="MakeAmmo_20Gauge_ElectroSlug"
+          or defName="MakeAmmo_20Gauge_Slug"
+          or defName="MakeAmmo_20x102mmNATO_AP"
+          or defName="MakeAmmo_20x102mmNATO_HE"
+          or defName="MakeAmmo_20x102mmNATO_Incendiary"
+          or defName="MakeAmmo_20x102mmNATO_Sabot"
+          or defName="MakeAmmo_20x110mmHispano_AP"
+          or defName="MakeAmmo_20x110mmHispano_HE"
+          or defName="MakeAmmo_20x110mmHispano_Incendiary"
+          or defName="MakeAmmo_20x110mmHispano_Sabot"
+          or defName="MakeAmmo_20x128mmOerlikon_AP"
+          or defName="MakeAmmo_20x128mmOerlikon_HE"
+          or defName="MakeAmmo_20x128mmOerlikon_Incendiary"
+          or defName="MakeAmmo_20x128mmOerlikon_Sabot"
+          or defName="MakeAmmo_20x138mmB_AP"
+          or defName="MakeAmmo_20x138mmB_HE"
+          or defName="MakeAmmo_20x138mmB_Incendiary"
+          or defName="MakeAmmo_20x138mmB_Sabot"
+          or defName="MakeAmmo_20x139mm_AP"
+          or defName="MakeAmmo_20x139mm_HE"
+          or defName="MakeAmmo_20x139mm_Incendiary"
+          or defName="MakeAmmo_20x139mm_Sabot"
+          or defName="MakeAmmo_20x82mmMauser_AP"
+          or defName="MakeAmmo_20x82mmMauser_HE"
+          or defName="MakeAmmo_20x82mmMauser_Incendiary"
+          or defName="MakeAmmo_20x82mmMauser_Sabot"
+          or defName="MakeAmmo_20x99mmRShVAK_AP"
+          or defName="MakeAmmo_20x99mmRShVAK_HE"
+          or defName="MakeAmmo_20x99mmRShVAK_Incendiary"
+          or defName="MakeAmmo_20x99mmRShVAK_Sabot"
+          or defName="MakeAmmo_22Hornet_AP"
+          or defName="MakeAmmo_22Hornet_FMJ"
+          or defName="MakeAmmo_22Hornet_HP"
+          or defName="MakeAmmo_22LR_AP"
+          or defName="MakeAmmo_22LR_FMJ"
+          or defName="MakeAmmo_22LR_HP"
+          or defName="MakeAmmo_22Short_AP"
+          or defName="MakeAmmo_22Short_FMJ"
+          or defName="MakeAmmo_22Short_HP"
+          or defName="MakeAmmo_22WMR_AP"
+          or defName="MakeAmmo_22WMR_FMJ"
+          or defName="MakeAmmo_22WMR_HP"
+          or defName="MakeAmmo_23x115mm_AP"
+          or defName="MakeAmmo_23x115mm_HE"
+          or defName="MakeAmmo_23x115mm_Incendiary"
+          or defName="MakeAmmo_23x115mm_Sabot"
+          or defName="MakeAmmo_23x152mmB_AP"
+          or defName="MakeAmmo_23x152mmB_APHE"
+          or defName="MakeAmmo_23x152mmB_Incendiary"
+          or defName="MakeAmmo_23x152mmB_Sabot"
+          or defName="MakeAmmo_23x75mmR_Beanbag"
+          or defName="MakeAmmo_23x75mmR_Buck"
+          or defName="MakeAmmo_23x75mmR_ElectroSlug"
+          or defName="MakeAmmo_23x75mmR_Slug"
+          or defName="MakeAmmo_243Winchester_AP"
+          or defName="MakeAmmo_243Winchester_FMJ"
+          or defName="MakeAmmo_243Winchester_HE"
+          or defName="MakeAmmo_243Winchester_HP"
+          or defName="MakeAmmo_243Winchester_Incendiary"
+          or defName="MakeAmmo_243Winchester_Sabot"
+          or defName="MakeAmmo_25ACP_AP"
+          or defName="MakeAmmo_25ACP_FMJ"
+          or defName="MakeAmmo_25ACP_HP"
+          or defName="MakeAmmo_25x137mmNATO_AP"
+          or defName="MakeAmmo_25x137mmNATO_HE"
+          or defName="MakeAmmo_25x137mmNATO_Incendiary"
+          or defName="MakeAmmo_25x137mmNATO_Sabot"
+          or defName="MakeAmmo_277Fury_AP"
+          or defName="MakeAmmo_277Fury_FMJ"
+          or defName="MakeAmmo_277Fury_HE"
+          or defName="MakeAmmo_277Fury_HP"
+          or defName="MakeAmmo_277Fury_Incendiary"
+          or defName="MakeAmmo_277Fury_Sabot"
+          or defName="MakeAmmo_27x145mmMauser_AP"
+          or defName="MakeAmmo_27x145mmMauser_HE"
+          or defName="MakeAmmo_27x145mmMauser_Incendiary"
+          or defName="MakeAmmo_27x145mmMauser_Sabot"
+          or defName="MakeAmmo_280British_AP"
+          or defName="MakeAmmo_280British_FMJ"
+          or defName="MakeAmmo_280British_HE"
+          or defName="MakeAmmo_280British_HP"
+          or defName="MakeAmmo_280British_Incendiary"
+          or defName="MakeAmmo_280British_Sabot"
+          or defName="MakeAmmo_2Bore_AP"
+          or defName="MakeAmmo_2Bore_FMJ"
+          or defName="MakeAmmo_2Bore_HE"
+          or defName="MakeAmmo_2Bore_Incendiary"
+          or defName="MakeAmmo_2Bore_Sabot"
+          or defName="MakeAmmo_3006Springfield_AP"
+          or defName="MakeAmmo_3006Springfield_FMJ"
+          or defName="MakeAmmo_3006Springfield_HE"
+          or defName="MakeAmmo_3006Springfield_HP"
+          or defName="MakeAmmo_3006Springfield_Incendiary"
+          or defName="MakeAmmo_3006Springfield_Sabot"
+          or defName="MakeAmmo_300AACBlackout_AP"
+          or defName="MakeAmmo_300AACBlackout_FMJ"
+          or defName="MakeAmmo_300AACBlackout_HE"
+          or defName="MakeAmmo_300AACBlackout_HP"
+          or defName="MakeAmmo_300AACBlackout_Incendiary"
+          or defName="MakeAmmo_300AACBlackout_Sabot"
+          or defName="MakeAmmo_300WinchesterMagnum_AP"
+          or defName="MakeAmmo_300WinchesterMagnum_FMJ"
+          or defName="MakeAmmo_300WinchesterMagnum_HE"
+          or defName="MakeAmmo_300WinchesterMagnum_Incendiary"
+          or defName="MakeAmmo_300WinchesterMagnum_Sabot"
+          or defName="MakeAmmo_3030Winchester_AP"
+          or defName="MakeAmmo_3030Winchester_FMJ"
+          or defName="MakeAmmo_3030Winchester_HE"
+          or defName="MakeAmmo_3030Winchester_HP"
+          or defName="MakeAmmo_3030Winchester_Incendiary"
+          or defName="MakeAmmo_3030Winchester_Sabot"
+          or defName="MakeAmmo_303British_AP"
+          or defName="MakeAmmo_303British_FMJ"
+          or defName="MakeAmmo_303British_HE"
+          or defName="MakeAmmo_303British_HP"
+          or defName="MakeAmmo_303British_Incendiary"
+          or defName="MakeAmmo_303British_Sabot"
+          or defName="MakeAmmo_30Carbine_AP"
+          or defName="MakeAmmo_30Carbine_FMJ"
+          or defName="MakeAmmo_30Carbine_HE"
+          or defName="MakeAmmo_30Carbine_HP"
+          or defName="MakeAmmo_30Carbine_Incendiary"
+          or defName="MakeAmmo_30Carbine_Sabot"
+          or defName="MakeAmmo_30x113mmB_AP"
+          or defName="MakeAmmo_30x113mmB_HE"
+          or defName="MakeAmmo_30x113mmB_Incendiary"
+          or defName="MakeAmmo_30x113mmB_Sabot"
+          or defName="MakeAmmo_30x165mm_AP"
+          or defName="MakeAmmo_30x165mm_HE"
+          or defName="MakeAmmo_30x165mm_Incendiary"
+          or defName="MakeAmmo_30x165mm_Sabot"
+          or defName="MakeAmmo_30x170mm_AP"
+          or defName="MakeAmmo_30x170mm_HE"
+          or defName="MakeAmmo_30x170mm_Incendiary"
+          or defName="MakeAmmo_30x170mm_Sabot"
+          or defName="MakeAmmo_30x173mmNATO_AP"
+          or defName="MakeAmmo_30x173mmNATO_HE"
+          or defName="MakeAmmo_30x173mmNATO_Incendiary"
+          or defName="MakeAmmo_30x173mmNATO_Sabot"
+          or defName="MakeAmmo_32ACP_AP"
+          or defName="MakeAmmo_32ACP_FMJ"
+          or defName="MakeAmmo_32ACP_HP"
+          or defName="MakeAmmo_338Lapua_AP"
+          or defName="MakeAmmo_338Lapua_FMJ"
+          or defName="MakeAmmo_338Lapua_HE"
+          or defName="MakeAmmo_338Lapua_Incendiary"
+          or defName="MakeAmmo_338Lapua_Sabot"
+          or defName="MakeAmmo_338Norma_AP"
+          or defName="MakeAmmo_338Norma_FMJ"
+          or defName="MakeAmmo_338Norma_HE"
+          or defName="MakeAmmo_338Norma_Incendiary"
+          or defName="MakeAmmo_338Norma_Sabot"
+          or defName="MakeAmmo_357Magnum_AP"
+          or defName="MakeAmmo_357Magnum_FMJ"
+          or defName="MakeAmmo_357Magnum_HP"
+          or defName="MakeAmmo_357SIG_AP"
+          or defName="MakeAmmo_357SIG_FMJ"
+          or defName="MakeAmmo_357SIG_HP"
+          or defName="MakeAmmo_35x228mmNATO_AP"
+          or defName="MakeAmmo_35x228mmNATO_HE"
+          or defName="MakeAmmo_35x228mmNATO_Incendiary"
+          or defName="MakeAmmo_35x228mmNATO_Sabot"
+          or defName="MakeAmmo_380ACP_AP"
+          or defName="MakeAmmo_380ACP_FMJ"
+          or defName="MakeAmmo_380ACP_HP"
+          or defName="MakeAmmo_3855Winchester_AP"
+          or defName="MakeAmmo_3855Winchester_FMJ"
+          or defName="MakeAmmo_3855Winchester_HE"
+          or defName="MakeAmmo_3855Winchester_HP"
+          or defName="MakeAmmo_3855Winchester_Incendiary"
+          or defName="MakeAmmo_3855Winchester_Sabot"
+          or defName="MakeAmmo_38ACP_AP"
+          or defName="MakeAmmo_38ACP_FMJ"
+          or defName="MakeAmmo_38ACP_HP"
+          or defName="MakeAmmo_38SW_AP"
+          or defName="MakeAmmo_38SW_FMJ"
+          or defName="MakeAmmo_38SW_HP"
+          or defName="MakeAmmo_38Special_AP"
+          or defName="MakeAmmo_38Special_FMJ"
+          or defName="MakeAmmo_38Special_HP"
+          or defName="MakeAmmo_38Super_AP"
+          or defName="MakeAmmo_38Super_FMJ"
+          or defName="MakeAmmo_38Super_HP"
+          or defName="MakeAmmo_408CheyenneTactical_AP"
+          or defName="MakeAmmo_408CheyenneTactical_FMJ"
+          or defName="MakeAmmo_408CheyenneTactical_HE"
+          or defName="MakeAmmo_408CheyenneTactical_Incendiary"
+          or defName="MakeAmmo_408CheyenneTactical_Sabot"
+          or defName="MakeAmmo_40SW_AP"
+          or defName="MakeAmmo_40SW_FMJ"
+          or defName="MakeAmmo_40SW_HP"
+          or defName="MakeAmmo_40x311mmR_AP"
+          or defName="MakeAmmo_40x311mmR_HE"
+          or defName="MakeAmmo_40x311mmR_Incendiary"
+          or defName="MakeAmmo_40x311mmR_Sabot"
+          or defName="MakeAmmo_410Bore_Beanbag"
+          or defName="MakeAmmo_410Bore_Buck"
+          or defName="MakeAmmo_410Bore_ElectroSlug"
+          or defName="MakeAmmo_410Bore_Slug"
+          or defName="MakeAmmo_41Rimfire_AP"
+          or defName="MakeAmmo_41Rimfire_FMJ"
+          or defName="MakeAmmo_41Rimfire_HP"
+          or defName="MakeAmmo_44-40Winchester_AP"
+          or defName="MakeAmmo_44-40Winchester_FMJ"
+          or defName="MakeAmmo_44-40Winchester_HE"
+          or defName="MakeAmmo_44-40Winchester_HP"
+          or defName="MakeAmmo_44-40Winchester_Incendiary"
+          or defName="MakeAmmo_44-40Winchester_Sabot"
+          or defName="MakeAmmo_44Magnum_AP"
+          or defName="MakeAmmo_44Magnum_FMJ"
+          or defName="MakeAmmo_44Magnum_HP"
+          or defName="MakeAmmo_44SWSpecial_AP"
+          or defName="MakeAmmo_44SWSpecial_FMJ"
+          or defName="MakeAmmo_44SWSpecial_HP"
+          or defName="MakeAmmo_454Casull_AP"
+          or defName="MakeAmmo_454Casull_FMJ"
+          or defName="MakeAmmo_454Casull_HP"
+          or defName="MakeAmmo_455Webley_AP"
+          or defName="MakeAmmo_455Webley_FMJ"
+          or defName="MakeAmmo_455Webley_HP"
+          or defName="MakeAmmo_4570Gov_AP"
+          or defName="MakeAmmo_4570Gov_FMJ"
+          or defName="MakeAmmo_4570Gov_HE"
+          or defName="MakeAmmo_4570Gov_HP"
+          or defName="MakeAmmo_4570Gov_Incendiary"
+          or defName="MakeAmmo_4570Gov_Sabot"
+          or defName="MakeAmmo_458SOCOM_AP"
+          or defName="MakeAmmo_458SOCOM_FMJ"
+          or defName="MakeAmmo_458SOCOM_HE"
+          or defName="MakeAmmo_458SOCOM_HP"
+          or defName="MakeAmmo_458SOCOM_Incendiary"
+          or defName="MakeAmmo_458SOCOM_Sabot"
+          or defName="MakeAmmo_45ACP_AP"
+          or defName="MakeAmmo_45ACP_FMJ"
+          or defName="MakeAmmo_45ACP_HP"
+          or defName="MakeAmmo_45Colt_AP"
+          or defName="MakeAmmo_45Colt_FMJ"
+          or defName="MakeAmmo_45Colt_HP"
+          or defName="MakeAmmo_45Schofield_AP"
+          or defName="MakeAmmo_45Schofield_FMJ"
+          or defName="MakeAmmo_45Schofield_HP"
+          or defName="MakeAmmo_460SWMagnum_AP"
+          or defName="MakeAmmo_460SWMagnum_FMJ"
+          or defName="MakeAmmo_460SWMagnum_HP"
+          or defName="MakeAmmo_46x30mm_AP"
+          or defName="MakeAmmo_46x30mm_FMJ"
+          or defName="MakeAmmo_46x30mm_HP"
+          or defName="MakeAmmo_470NitroExpress_AP"
+          or defName="MakeAmmo_470NitroExpress_FMJ"
+          or defName="MakeAmmo_470NitroExpress_HE"
+          or defName="MakeAmmo_470NitroExpress_Incendiary"
+          or defName="MakeAmmo_470NitroExpress_Sabot"
+          or defName="MakeAmmo_473x33mmCaseless_AP"
+          or defName="MakeAmmo_473x33mmCaseless_FMJ"
+          or defName="MakeAmmo_473x33mmCaseless_HE"
+          or defName="MakeAmmo_473x33mmCaseless_HP"
+          or defName="MakeAmmo_473x33mmCaseless_Incendiary"
+          or defName="MakeAmmo_473x33mmCaseless_Sabot"
+          or defName="MakeAmmo_485x49mm_AP"
+          or defName="MakeAmmo_485x49mm_FMJ"
+          or defName="MakeAmmo_485x49mm_HE"
+          or defName="MakeAmmo_485x49mm_HP"
+          or defName="MakeAmmo_485x49mm_Incendiary"
+          or defName="MakeAmmo_485x49mm_Sabot"
+          or defName="MakeAmmo_500SWMagnum_AP"
+          or defName="MakeAmmo_500SWMagnum_FMJ"
+          or defName="MakeAmmo_500SWMagnum_HP"
+          or defName="MakeAmmo_50AE_AP"
+          or defName="MakeAmmo_50AE_FMJ"
+          or defName="MakeAmmo_50AE_HP"
+          or defName="MakeAmmo_50BMG_AP"
+          or defName="MakeAmmo_50BMG_FMJ"
+          or defName="MakeAmmo_50BMG_HE"
+          or defName="MakeAmmo_50BMG_Incendiary"
+          or defName="MakeAmmo_50BMG_Sabot"
+          or defName="MakeAmmo_50Beowulf_AP"
+          or defName="MakeAmmo_50Beowulf_FMJ"
+          or defName="MakeAmmo_50Beowulf_HE"
+          or defName="MakeAmmo_50Beowulf_HP"
+          or defName="MakeAmmo_50Beowulf_Incendiary"
+          or defName="MakeAmmo_50Beowulf_Sabot"
+          or defName="MakeAmmo_50JDJ_HE"
+          or defName="MakeAmmo_50JDJ_Incendiary"
+          or defName="MakeAmmo_50JDJ_Sabot"
+          or defName="MakeAmmo_545x39mmSoviet_AP"
+          or defName="MakeAmmo_545x39mmSoviet_FMJ"
+          or defName="MakeAmmo_545x39mmSoviet_HE"
+          or defName="MakeAmmo_545x39mmSoviet_HP"
+          or defName="MakeAmmo_545x39mmSoviet_Incendiary"
+          or defName="MakeAmmo_545x39mmSoviet_Sabot"
+          or defName="MakeAmmo_556x45mmNATO_AP"
+          or defName="MakeAmmo_556x45mmNATO_FMJ"
+          or defName="MakeAmmo_556x45mmNATO_HE"
+          or defName="MakeAmmo_556x45mmNATO_HP"
+          or defName="MakeAmmo_556x45mmNATO_Incendiary"
+          or defName="MakeAmmo_556x45mmNATO_Sabot"
+          or defName="MakeAmmo_55Boys_AP"
+          or defName="MakeAmmo_55Boys_FMJ"
+          or defName="MakeAmmo_55Boys_HE"
+          or defName="MakeAmmo_55Boys_Incendiary"
+          or defName="MakeAmmo_55Boys_Sabot"
+          or defName="MakeAmmo_5656Spencer_AP"
+          or defName="MakeAmmo_5656Spencer_FMJ"
+          or defName="MakeAmmo_5656Spencer_HE"
+          or defName="MakeAmmo_5656Spencer_HP"
+          or defName="MakeAmmo_5656Spencer_Incendiary"
+          or defName="MakeAmmo_5656Spencer_Sabot"
+          or defName="MakeAmmo_58x21mmDAP92_AP"
+          or defName="MakeAmmo_58x21mmDAP92_FMJ"
+          or defName="MakeAmmo_58x21mmDAP92_HP"
+          or defName="MakeAmmo_58x42mmDBP10_AP"
+          or defName="MakeAmmo_58x42mmDBP10_FMJ"
+          or defName="MakeAmmo_58x42mmDBP10_HE"
+          or defName="MakeAmmo_58x42mmDBP10_HP"
+          or defName="MakeAmmo_58x42mmDBP10_Incendiary"
+          or defName="MakeAmmo_58x42mmDBP10_Sabot"
+          or defName="MakeAmmo_5x50mmCaseless_Sabot"
+          or defName="MakeAmmo_600NitroExpress_AP"
+          or defName="MakeAmmo_600NitroExpress_FMJ"
+          or defName="MakeAmmo_600NitroExpress_HE"
+          or defName="MakeAmmo_600NitroExpress_Incendiary"
+          or defName="MakeAmmo_600NitroExpress_Sabot"
+          or defName="MakeAmmo_65x48mmCreedmoor_AP"
+          or defName="MakeAmmo_65x48mmCreedmoor_FMJ"
+          or defName="MakeAmmo_65x48mmCreedmoor_HE"
+          or defName="MakeAmmo_65x48mmCreedmoor_HP"
+          or defName="MakeAmmo_65x48mmCreedmoor_Incendiary"
+          or defName="MakeAmmo_65x48mmCreedmoor_Sabot"
+          or defName="MakeAmmo_65x50mmSRArisaka_AP"
+          or defName="MakeAmmo_65x50mmSRArisaka_FMJ"
+          or defName="MakeAmmo_65x50mmSRArisaka_HE"
+          or defName="MakeAmmo_65x50mmSRArisaka_HP"
+          or defName="MakeAmmo_65x50mmSRArisaka_Incendiary"
+          or defName="MakeAmmo_65x50mmSRArisaka_Sabot"
+          or defName="MakeAmmo_65x52mmCarcano_AP"
+          or defName="MakeAmmo_65x52mmCarcano_FMJ"
+          or defName="MakeAmmo_65x52mmCarcano_HE"
+          or defName="MakeAmmo_65x52mmCarcano_HP"
+          or defName="MakeAmmo_65x52mmCarcano_Incendiary"
+          or defName="MakeAmmo_65x52mmCarcano_Sabot"
+          or defName="MakeAmmo_75FK_AP"
+          or defName="MakeAmmo_75FK_FMJ"
+          or defName="MakeAmmo_75FK_HP"
+          or defName="MakeAmmo_75x54mmFrench_AP"
+          or defName="MakeAmmo_75x54mmFrench_FMJ"
+          or defName="MakeAmmo_75x54mmFrench_HE"
+          or defName="MakeAmmo_75x54mmFrench_HP"
+          or defName="MakeAmmo_75x54mmFrench_Incendiary"
+          or defName="MakeAmmo_75x54mmFrench_Sabot"
+          or defName="MakeAmmo_762x25mmTokarev_AP"
+          or defName="MakeAmmo_762x25mmTokarev_FMJ"
+          or defName="MakeAmmo_762x25mmTokarev_HP"
+          or defName="MakeAmmo_762x38mmR_AP"
+          or defName="MakeAmmo_762x38mmR_FMJ"
+          or defName="MakeAmmo_762x38mmR_HP"
+          or defName="MakeAmmo_762x39mmSoviet_AP"
+          or defName="MakeAmmo_762x39mmSoviet_FMJ"
+          or defName="MakeAmmo_762x39mmSoviet_HE"
+          or defName="MakeAmmo_762x39mmSoviet_HP"
+          or defName="MakeAmmo_762x39mmSoviet_Incendiary"
+          or defName="MakeAmmo_762x39mmSoviet_Sabot"
+          or defName="MakeAmmo_762x51mmNATO_AP"
+          or defName="MakeAmmo_762x51mmNATO_FMJ"
+          or defName="MakeAmmo_762x51mmNATO_HE"
+          or defName="MakeAmmo_762x51mmNATO_HP"
+          or defName="MakeAmmo_762x51mmNATO_Incendiary"
+          or defName="MakeAmmo_762x51mmNATO_Sabot"
+          or defName="MakeAmmo_762x54mmR_AP"
+          or defName="MakeAmmo_762x54mmR_FMJ"
+          or defName="MakeAmmo_762x54mmR_HE"
+          or defName="MakeAmmo_762x54mmR_HP"
+          or defName="MakeAmmo_762x54mmR_Incendiary"
+          or defName="MakeAmmo_762x54mmR_Sabot"
+          or defName="MakeAmmo_763x25mmMauser_AP"
+          or defName="MakeAmmo_763x25mmMauser_FMJ"
+          or defName="MakeAmmo_763x25mmMauser_HP"
+          or defName="MakeAmmo_765x20mmLongue_AP"
+          or defName="MakeAmmo_765x20mmLongue_FMJ"
+          or defName="MakeAmmo_765x20mmLongue_HP"
+          or defName="MakeAmmo_77x58mmArisaka_AP"
+          or defName="MakeAmmo_77x58mmArisaka_FMJ"
+          or defName="MakeAmmo_77x58mmArisaka_HE"
+          or defName="MakeAmmo_77x58mmArisaka_HP"
+          or defName="MakeAmmo_77x58mmArisaka_Incendiary"
+          or defName="MakeAmmo_77x58mmArisaka_Sabot"
+          or defName="MakeAmmo_792x33mmKurz_AP"
+          or defName="MakeAmmo_792x33mmKurz_FMJ"
+          or defName="MakeAmmo_792x33mmKurz_HE"
+          or defName="MakeAmmo_792x33mmKurz_HP"
+          or defName="MakeAmmo_792x33mmKurz_Incendiary"
+          or defName="MakeAmmo_792x33mmKurz_Sabot"
+          or defName="MakeAmmo_792x57mmMauser_AP"
+          or defName="MakeAmmo_792x57mmMauser_FMJ"
+          or defName="MakeAmmo_792x57mmMauser_HE"
+          or defName="MakeAmmo_792x57mmMauser_HP"
+          or defName="MakeAmmo_792x57mmMauser_Incendiary"
+          or defName="MakeAmmo_792x57mmMauser_Sabot"
+          or defName="MakeAmmo_792x94mmPatronen_AP"
+          or defName="MakeAmmo_792x94mmPatronen_FMJ"
+          or defName="MakeAmmo_792x94mmPatronen_HE"
+          or defName="MakeAmmo_792x94mmPatronen_Incendiary"
+          or defName="MakeAmmo_792x94mmPatronen_Sabot"
+          or defName="MakeAmmo_86x43mmBlackout_AP"
+          or defName="MakeAmmo_86x43mmBlackout_FMJ"
+          or defName="MakeAmmo_86x43mmBlackout_HE"
+          or defName="MakeAmmo_86x43mmBlackout_HP"
+          or defName="MakeAmmo_86x43mmBlackout_Incendiary"
+          or defName="MakeAmmo_86x43mmBlackout_Sabot"
+          or defName="MakeAmmo_8x22mmNambu_AP"
+          or defName="MakeAmmo_8x22mmNambu_FMJ"
+          or defName="MakeAmmo_8x22mmNambu_HP"
+          or defName="MakeAmmo_8x50mmRLebel_AP"
+          or defName="MakeAmmo_8x50mmRLebel_FMJ"
+          or defName="MakeAmmo_8x50mmRLebel_HE"
+          or defName="MakeAmmo_8x50mmRLebel_HP"
+          or defName="MakeAmmo_8x50mmRLebel_Incendiary"
+          or defName="MakeAmmo_8x50mmRLebel_Sabot"
+          or defName="MakeAmmo_8x50mmRMannlicher_AP"
+          or defName="MakeAmmo_8x50mmRMannlicher_FMJ"
+          or defName="MakeAmmo_8x50mmRMannlicher_HE"
+          or defName="MakeAmmo_8x50mmRMannlicher_HP"
+          or defName="MakeAmmo_8x50mmRMannlicher_Incendiary"
+          or defName="MakeAmmo_8x50mmRMannlicher_Sabot"
+          or defName="MakeAmmo_950JDJ_AP"
+          or defName="MakeAmmo_950JDJ_FMJ"
+          or defName="MakeAmmo_9x18mmMakarov_AP"
+          or defName="MakeAmmo_9x18mmMakarov_FMJ"
+          or defName="MakeAmmo_9x18mmMakarov_HP"
+          or defName="MakeAmmo_9x19mmPara_AP"
+          or defName="MakeAmmo_9x19mmPara_FMJ"
+          or defName="MakeAmmo_9x19mmPara_HP"
+          or defName="MakeAmmo_9x21mmGyurza_AP"
+          or defName="MakeAmmo_9x21mmGyurza_FMJ"
+          or defName="MakeAmmo_9x21mmGyurza_HP"
+          or defName="MakeAmmo_9x39mmSoviet_AP"
+          or defName="MakeAmmo_9x39mmSoviet_FMJ"
+          or defName="MakeAmmo_9x39mmSoviet_HE"
+          or defName="MakeAmmo_9x39mmSoviet_HP"
+          or defName="MakeAmmo_9x39mmSoviet_Incendiary"
+          or defName="MakeAmmo_9x39mmSoviet_Sabot"
+          or defName="MakeAmmo_AntiMateriel_AP"
+          or defName="MakeAmmo_AntiMateriel_FMJ"
+          or defName="MakeAmmo_AntiMateriel_HE"
+          or defName="MakeAmmo_AntiMateriel_Incendiary"
+          or defName="MakeAmmo_AntiMateriel_Sabot"
+          or defName="MakeAmmo_Autocannon_AP"
+          or defName="MakeAmmo_Autocannon_HE"
+          or defName="MakeAmmo_Autocannon_Incendiary"
+          or defName="MakeAmmo_Autocannon_Sabot"
+          or defName="MakeAmmo_FN57x28mm_AP"
+          or defName="MakeAmmo_FN57x28mm_FMJ"
+          or defName="MakeAmmo_FN57x28mm_HP"
+          or defName="MakeAmmo_PistolMagnum_AP"
+          or defName="MakeAmmo_PistolMagnum_FMJ"
+          or defName="MakeAmmo_PistolMagnum_HP"
+          or defName="MakeAmmo_Pistol_AP"
+          or defName="MakeAmmo_Pistol_FMJ"
+          or defName="MakeAmmo_Pistol_HP"
+          or defName="MakeAmmo_RifleIntermediate_AP"
+          or defName="MakeAmmo_RifleIntermediate_FMJ"
+          or defName="MakeAmmo_RifleIntermediate_HE"
+          or defName="MakeAmmo_RifleIntermediate_HP"
+          or defName="MakeAmmo_RifleIntermediate_Incendiary"
+          or defName="MakeAmmo_RifleIntermediate_Sabot"
+          or defName="MakeAmmo_RifleMagnum_AP"
+          or defName="MakeAmmo_RifleMagnum_FMJ"
+          or defName="MakeAmmo_RifleMagnum_HE"
+          or defName="MakeAmmo_RifleMagnum_Incendiary"
+          or defName="MakeAmmo_RifleMagnum_Sabot"
+          or defName="MakeAmmo_Rifle_AP"
+          or defName="MakeAmmo_Rifle_FMJ"
+          or defName="MakeAmmo_Rifle_HE"
+          or defName="MakeAmmo_Rifle_HP"
+          or defName="MakeAmmo_Rifle_Incendiary"
+          or defName="MakeAmmo_Rifle_Sabot"
+          or defName="MakeAmmo_Shotgun_Beanbag"
+          or defName="MakeAmmo_Shotgun_Buck"
+          or defName="MakeAmmo_Shotgun_ElectroSlug"
+          or defName="MakeAmmo_Shotgun_Slug"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_10Gauge_Beanbag"
+        or defName="MakeAmmo_10Gauge_Buck"
+        or defName="MakeAmmo_10Gauge_ElectroSlug"
+        or defName="MakeAmmo_10Gauge_Slug"
+        or defName="MakeAmmo_10mmAuto_AP"
+        or defName="MakeAmmo_10mmAuto_FMJ"
+        or defName="MakeAmmo_10mmAuto_HP"
+        or defName="MakeAmmo_127x108mm_AP"
+        or defName="MakeAmmo_127x108mm_FMJ"
+        or defName="MakeAmmo_127x108mm_HE"
+        or defName="MakeAmmo_127x108mm_Incendiary"
+        or defName="MakeAmmo_127x108mm_Sabot"
+        or defName="MakeAmmo_127x55mm_AP"
+        or defName="MakeAmmo_127x55mm_FMJ"
+        or defName="MakeAmmo_127x55mm_HE"
+        or defName="MakeAmmo_127x55mm_HP"
+        or defName="MakeAmmo_127x55mm_Incendiary"
+        or defName="MakeAmmo_127x55mm_Sabot"
+        or defName="MakeAmmo_12Gauge_Beanbag"
+        or defName="MakeAmmo_12Gauge_Buck"
+        or defName="MakeAmmo_12Gauge_ElectroSlug"
+        or defName="MakeAmmo_12Gauge_Slug"
+        or defName="MakeAmmo_132x92mmSRTuF_AP"
+        or defName="MakeAmmo_132x92mmSRTuF_FMJ"
+        or defName="MakeAmmo_132x92mmSRTuF_HE"
+        or defName="MakeAmmo_132x92mmSRTuF_Incendiary"
+        or defName="MakeAmmo_132x92mmSRTuF_Sabot"
+        or defName="MakeAmmo_13mmGyrojet_AP"
+        or defName="MakeAmmo_13mmGyrojet_FMJ"
+        or defName="MakeAmmo_13mmGyrojet_HP"
+        or defName="MakeAmmo_145x114mm_AP"
+        or defName="MakeAmmo_145x114mm_FMJ"
+        or defName="MakeAmmo_145x114mm_HE"
+        or defName="MakeAmmo_145x114mm_Incendiary"
+        or defName="MakeAmmo_145x114mm_Sabot"
+        or defName="MakeAmmo_152x169mm_Sabot"
+        or defName="MakeAmmo_16Gauge_Beanbag"
+        or defName="MakeAmmo_16Gauge_Buck"
+        or defName="MakeAmmo_16Gauge_ElectroSlug"
+        or defName="MakeAmmo_16Gauge_Slug"
+        or defName="MakeAmmo_17HMR_AP"
+        or defName="MakeAmmo_17HMR_FMJ"
+        or defName="MakeAmmo_17HMR_HP"
+        or defName="MakeAmmo_20Gauge_Beanbag"
+        or defName="MakeAmmo_20Gauge_Buck"
+        or defName="MakeAmmo_20Gauge_ElectroSlug"
+        or defName="MakeAmmo_20Gauge_Slug"
+        or defName="MakeAmmo_20x102mmNATO_AP"
+        or defName="MakeAmmo_20x102mmNATO_HE"
+        or defName="MakeAmmo_20x102mmNATO_Incendiary"
+        or defName="MakeAmmo_20x102mmNATO_Sabot"
+        or defName="MakeAmmo_20x110mmHispano_AP"
+        or defName="MakeAmmo_20x110mmHispano_HE"
+        or defName="MakeAmmo_20x110mmHispano_Incendiary"
+        or defName="MakeAmmo_20x110mmHispano_Sabot"
+        or defName="MakeAmmo_20x128mmOerlikon_AP"
+        or defName="MakeAmmo_20x128mmOerlikon_HE"
+        or defName="MakeAmmo_20x128mmOerlikon_Incendiary"
+        or defName="MakeAmmo_20x128mmOerlikon_Sabot"
+        or defName="MakeAmmo_20x138mmB_AP"
+        or defName="MakeAmmo_20x138mmB_HE"
+        or defName="MakeAmmo_20x138mmB_Incendiary"
+        or defName="MakeAmmo_20x138mmB_Sabot"
+        or defName="MakeAmmo_20x139mm_AP"
+        or defName="MakeAmmo_20x139mm_HE"
+        or defName="MakeAmmo_20x139mm_Incendiary"
+        or defName="MakeAmmo_20x139mm_Sabot"
+        or defName="MakeAmmo_20x82mmMauser_AP"
+        or defName="MakeAmmo_20x82mmMauser_HE"
+        or defName="MakeAmmo_20x82mmMauser_Incendiary"
+        or defName="MakeAmmo_20x82mmMauser_Sabot"
+        or defName="MakeAmmo_20x99mmRShVAK_AP"
+        or defName="MakeAmmo_20x99mmRShVAK_HE"
+        or defName="MakeAmmo_20x99mmRShVAK_Incendiary"
+        or defName="MakeAmmo_20x99mmRShVAK_Sabot"
+        or defName="MakeAmmo_22Hornet_AP"
+        or defName="MakeAmmo_22Hornet_FMJ"
+        or defName="MakeAmmo_22Hornet_HP"
+        or defName="MakeAmmo_22LR_AP"
+        or defName="MakeAmmo_22LR_FMJ"
+        or defName="MakeAmmo_22LR_HP"
+        or defName="MakeAmmo_22Short_AP"
+        or defName="MakeAmmo_22Short_FMJ"
+        or defName="MakeAmmo_22Short_HP"
+        or defName="MakeAmmo_22WMR_AP"
+        or defName="MakeAmmo_22WMR_FMJ"
+        or defName="MakeAmmo_22WMR_HP"
+        or defName="MakeAmmo_23x115mm_AP"
+        or defName="MakeAmmo_23x115mm_HE"
+        or defName="MakeAmmo_23x115mm_Incendiary"
+        or defName="MakeAmmo_23x115mm_Sabot"
+        or defName="MakeAmmo_23x152mmB_AP"
+        or defName="MakeAmmo_23x152mmB_APHE"
+        or defName="MakeAmmo_23x152mmB_Incendiary"
+        or defName="MakeAmmo_23x152mmB_Sabot"
+        or defName="MakeAmmo_23x75mmR_Beanbag"
+        or defName="MakeAmmo_23x75mmR_Buck"
+        or defName="MakeAmmo_23x75mmR_ElectroSlug"
+        or defName="MakeAmmo_23x75mmR_Slug"
+        or defName="MakeAmmo_243Winchester_AP"
+        or defName="MakeAmmo_243Winchester_FMJ"
+        or defName="MakeAmmo_243Winchester_HE"
+        or defName="MakeAmmo_243Winchester_HP"
+        or defName="MakeAmmo_243Winchester_Incendiary"
+        or defName="MakeAmmo_243Winchester_Sabot"
+        or defName="MakeAmmo_25ACP_AP"
+        or defName="MakeAmmo_25ACP_FMJ"
+        or defName="MakeAmmo_25ACP_HP"
+        or defName="MakeAmmo_25x137mmNATO_AP"
+        or defName="MakeAmmo_25x137mmNATO_HE"
+        or defName="MakeAmmo_25x137mmNATO_Incendiary"
+        or defName="MakeAmmo_25x137mmNATO_Sabot"
+        or defName="MakeAmmo_277Fury_AP"
+        or defName="MakeAmmo_277Fury_FMJ"
+        or defName="MakeAmmo_277Fury_HE"
+        or defName="MakeAmmo_277Fury_HP"
+        or defName="MakeAmmo_277Fury_Incendiary"
+        or defName="MakeAmmo_277Fury_Sabot"
+        or defName="MakeAmmo_27x145mmMauser_AP"
+        or defName="MakeAmmo_27x145mmMauser_HE"
+        or defName="MakeAmmo_27x145mmMauser_Incendiary"
+        or defName="MakeAmmo_27x145mmMauser_Sabot"
+        or defName="MakeAmmo_280British_AP"
+        or defName="MakeAmmo_280British_FMJ"
+        or defName="MakeAmmo_280British_HE"
+        or defName="MakeAmmo_280British_HP"
+        or defName="MakeAmmo_280British_Incendiary"
+        or defName="MakeAmmo_280British_Sabot"
+        or defName="MakeAmmo_2Bore_AP"
+        or defName="MakeAmmo_2Bore_FMJ"
+        or defName="MakeAmmo_2Bore_HE"
+        or defName="MakeAmmo_2Bore_Incendiary"
+        or defName="MakeAmmo_2Bore_Sabot"
+        or defName="MakeAmmo_3006Springfield_AP"
+        or defName="MakeAmmo_3006Springfield_FMJ"
+        or defName="MakeAmmo_3006Springfield_HE"
+        or defName="MakeAmmo_3006Springfield_HP"
+        or defName="MakeAmmo_3006Springfield_Incendiary"
+        or defName="MakeAmmo_3006Springfield_Sabot"
+        or defName="MakeAmmo_300AACBlackout_AP"
+        or defName="MakeAmmo_300AACBlackout_FMJ"
+        or defName="MakeAmmo_300AACBlackout_HE"
+        or defName="MakeAmmo_300AACBlackout_HP"
+        or defName="MakeAmmo_300AACBlackout_Incendiary"
+        or defName="MakeAmmo_300AACBlackout_Sabot"
+        or defName="MakeAmmo_300WinchesterMagnum_AP"
+        or defName="MakeAmmo_300WinchesterMagnum_FMJ"
+        or defName="MakeAmmo_300WinchesterMagnum_HE"
+        or defName="MakeAmmo_300WinchesterMagnum_Incendiary"
+        or defName="MakeAmmo_300WinchesterMagnum_Sabot"
+        or defName="MakeAmmo_3030Winchester_AP"
+        or defName="MakeAmmo_3030Winchester_FMJ"
+        or defName="MakeAmmo_3030Winchester_HE"
+        or defName="MakeAmmo_3030Winchester_HP"
+        or defName="MakeAmmo_3030Winchester_Incendiary"
+        or defName="MakeAmmo_3030Winchester_Sabot"
+        or defName="MakeAmmo_303British_AP"
+        or defName="MakeAmmo_303British_FMJ"
+        or defName="MakeAmmo_303British_HE"
+        or defName="MakeAmmo_303British_HP"
+        or defName="MakeAmmo_303British_Incendiary"
+        or defName="MakeAmmo_303British_Sabot"
+        or defName="MakeAmmo_30Carbine_AP"
+        or defName="MakeAmmo_30Carbine_FMJ"
+        or defName="MakeAmmo_30Carbine_HE"
+        or defName="MakeAmmo_30Carbine_HP"
+        or defName="MakeAmmo_30Carbine_Incendiary"
+        or defName="MakeAmmo_30Carbine_Sabot"
+        or defName="MakeAmmo_30x113mmB_AP"
+        or defName="MakeAmmo_30x113mmB_HE"
+        or defName="MakeAmmo_30x113mmB_Incendiary"
+        or defName="MakeAmmo_30x113mmB_Sabot"
+        or defName="MakeAmmo_30x165mm_AP"
+        or defName="MakeAmmo_30x165mm_HE"
+        or defName="MakeAmmo_30x165mm_Incendiary"
+        or defName="MakeAmmo_30x165mm_Sabot"
+        or defName="MakeAmmo_30x170mm_AP"
+        or defName="MakeAmmo_30x170mm_HE"
+        or defName="MakeAmmo_30x170mm_Incendiary"
+        or defName="MakeAmmo_30x170mm_Sabot"
+        or defName="MakeAmmo_30x173mmNATO_AP"
+        or defName="MakeAmmo_30x173mmNATO_HE"
+        or defName="MakeAmmo_30x173mmNATO_Incendiary"
+        or defName="MakeAmmo_30x173mmNATO_Sabot"
+        or defName="MakeAmmo_32ACP_AP"
+        or defName="MakeAmmo_32ACP_FMJ"
+        or defName="MakeAmmo_32ACP_HP"
+        or defName="MakeAmmo_338Lapua_AP"
+        or defName="MakeAmmo_338Lapua_FMJ"
+        or defName="MakeAmmo_338Lapua_HE"
+        or defName="MakeAmmo_338Lapua_Incendiary"
+        or defName="MakeAmmo_338Lapua_Sabot"
+        or defName="MakeAmmo_338Norma_AP"
+        or defName="MakeAmmo_338Norma_FMJ"
+        or defName="MakeAmmo_338Norma_HE"
+        or defName="MakeAmmo_338Norma_Incendiary"
+        or defName="MakeAmmo_338Norma_Sabot"
+        or defName="MakeAmmo_357Magnum_AP"
+        or defName="MakeAmmo_357Magnum_FMJ"
+        or defName="MakeAmmo_357Magnum_HP"
+        or defName="MakeAmmo_357SIG_AP"
+        or defName="MakeAmmo_357SIG_FMJ"
+        or defName="MakeAmmo_357SIG_HP"
+        or defName="MakeAmmo_35x228mmNATO_AP"
+        or defName="MakeAmmo_35x228mmNATO_HE"
+        or defName="MakeAmmo_35x228mmNATO_Incendiary"
+        or defName="MakeAmmo_35x228mmNATO_Sabot"
+        or defName="MakeAmmo_380ACP_AP"
+        or defName="MakeAmmo_380ACP_FMJ"
+        or defName="MakeAmmo_380ACP_HP"
+        or defName="MakeAmmo_3855Winchester_AP"
+        or defName="MakeAmmo_3855Winchester_FMJ"
+        or defName="MakeAmmo_3855Winchester_HE"
+        or defName="MakeAmmo_3855Winchester_HP"
+        or defName="MakeAmmo_3855Winchester_Incendiary"
+        or defName="MakeAmmo_3855Winchester_Sabot"
+        or defName="MakeAmmo_38ACP_AP"
+        or defName="MakeAmmo_38ACP_FMJ"
+        or defName="MakeAmmo_38ACP_HP"
+        or defName="MakeAmmo_38SW_AP"
+        or defName="MakeAmmo_38SW_FMJ"
+        or defName="MakeAmmo_38SW_HP"
+        or defName="MakeAmmo_38Special_AP"
+        or defName="MakeAmmo_38Special_FMJ"
+        or defName="MakeAmmo_38Special_HP"
+        or defName="MakeAmmo_38Super_AP"
+        or defName="MakeAmmo_38Super_FMJ"
+        or defName="MakeAmmo_38Super_HP"
+        or defName="MakeAmmo_408CheyenneTactical_AP"
+        or defName="MakeAmmo_408CheyenneTactical_FMJ"
+        or defName="MakeAmmo_408CheyenneTactical_HE"
+        or defName="MakeAmmo_408CheyenneTactical_Incendiary"
+        or defName="MakeAmmo_408CheyenneTactical_Sabot"
+        or defName="MakeAmmo_40SW_AP"
+        or defName="MakeAmmo_40SW_FMJ"
+        or defName="MakeAmmo_40SW_HP"
+        or defName="MakeAmmo_40x311mmR_AP"
+        or defName="MakeAmmo_40x311mmR_HE"
+        or defName="MakeAmmo_40x311mmR_Incendiary"
+        or defName="MakeAmmo_40x311mmR_Sabot"
+        or defName="MakeAmmo_410Bore_Beanbag"
+        or defName="MakeAmmo_410Bore_Buck"
+        or defName="MakeAmmo_410Bore_ElectroSlug"
+        or defName="MakeAmmo_410Bore_Slug"
+        or defName="MakeAmmo_41Rimfire_AP"
+        or defName="MakeAmmo_41Rimfire_FMJ"
+        or defName="MakeAmmo_41Rimfire_HP"
+        or defName="MakeAmmo_44-40Winchester_AP"
+        or defName="MakeAmmo_44-40Winchester_FMJ"
+        or defName="MakeAmmo_44-40Winchester_HE"
+        or defName="MakeAmmo_44-40Winchester_HP"
+        or defName="MakeAmmo_44-40Winchester_Incendiary"
+        or defName="MakeAmmo_44-40Winchester_Sabot"
+        or defName="MakeAmmo_44Magnum_AP"
+        or defName="MakeAmmo_44Magnum_FMJ"
+        or defName="MakeAmmo_44Magnum_HP"
+        or defName="MakeAmmo_44SWSpecial_AP"
+        or defName="MakeAmmo_44SWSpecial_FMJ"
+        or defName="MakeAmmo_44SWSpecial_HP"
+        or defName="MakeAmmo_454Casull_AP"
+        or defName="MakeAmmo_454Casull_FMJ"
+        or defName="MakeAmmo_454Casull_HP"
+        or defName="MakeAmmo_455Webley_AP"
+        or defName="MakeAmmo_455Webley_FMJ"
+        or defName="MakeAmmo_455Webley_HP"
+        or defName="MakeAmmo_4570Gov_AP"
+        or defName="MakeAmmo_4570Gov_FMJ"
+        or defName="MakeAmmo_4570Gov_HE"
+        or defName="MakeAmmo_4570Gov_HP"
+        or defName="MakeAmmo_4570Gov_Incendiary"
+        or defName="MakeAmmo_4570Gov_Sabot"
+        or defName="MakeAmmo_458SOCOM_AP"
+        or defName="MakeAmmo_458SOCOM_FMJ"
+        or defName="MakeAmmo_458SOCOM_HE"
+        or defName="MakeAmmo_458SOCOM_HP"
+        or defName="MakeAmmo_458SOCOM_Incendiary"
+        or defName="MakeAmmo_458SOCOM_Sabot"
+        or defName="MakeAmmo_45ACP_AP"
+        or defName="MakeAmmo_45ACP_FMJ"
+        or defName="MakeAmmo_45ACP_HP"
+        or defName="MakeAmmo_45Colt_AP"
+        or defName="MakeAmmo_45Colt_FMJ"
+        or defName="MakeAmmo_45Colt_HP"
+        or defName="MakeAmmo_45Schofield_AP"
+        or defName="MakeAmmo_45Schofield_FMJ"
+        or defName="MakeAmmo_45Schofield_HP"
+        or defName="MakeAmmo_460SWMagnum_AP"
+        or defName="MakeAmmo_460SWMagnum_FMJ"
+        or defName="MakeAmmo_460SWMagnum_HP"
+        or defName="MakeAmmo_46x30mm_AP"
+        or defName="MakeAmmo_46x30mm_FMJ"
+        or defName="MakeAmmo_46x30mm_HP"
+        or defName="MakeAmmo_470NitroExpress_AP"
+        or defName="MakeAmmo_470NitroExpress_FMJ"
+        or defName="MakeAmmo_470NitroExpress_HE"
+        or defName="MakeAmmo_470NitroExpress_Incendiary"
+        or defName="MakeAmmo_470NitroExpress_Sabot"
+        or defName="MakeAmmo_473x33mmCaseless_AP"
+        or defName="MakeAmmo_473x33mmCaseless_FMJ"
+        or defName="MakeAmmo_473x33mmCaseless_HE"
+        or defName="MakeAmmo_473x33mmCaseless_HP"
+        or defName="MakeAmmo_473x33mmCaseless_Incendiary"
+        or defName="MakeAmmo_473x33mmCaseless_Sabot"
+        or defName="MakeAmmo_485x49mm_AP"
+        or defName="MakeAmmo_485x49mm_FMJ"
+        or defName="MakeAmmo_485x49mm_HE"
+        or defName="MakeAmmo_485x49mm_HP"
+        or defName="MakeAmmo_485x49mm_Incendiary"
+        or defName="MakeAmmo_485x49mm_Sabot"
+        or defName="MakeAmmo_500SWMagnum_AP"
+        or defName="MakeAmmo_500SWMagnum_FMJ"
+        or defName="MakeAmmo_500SWMagnum_HP"
+        or defName="MakeAmmo_50AE_AP"
+        or defName="MakeAmmo_50AE_FMJ"
+        or defName="MakeAmmo_50AE_HP"
+        or defName="MakeAmmo_50BMG_AP"
+        or defName="MakeAmmo_50BMG_FMJ"
+        or defName="MakeAmmo_50BMG_HE"
+        or defName="MakeAmmo_50BMG_Incendiary"
+        or defName="MakeAmmo_50BMG_Sabot"
+        or defName="MakeAmmo_50Beowulf_AP"
+        or defName="MakeAmmo_50Beowulf_FMJ"
+        or defName="MakeAmmo_50Beowulf_HE"
+        or defName="MakeAmmo_50Beowulf_HP"
+        or defName="MakeAmmo_50Beowulf_Incendiary"
+        or defName="MakeAmmo_50Beowulf_Sabot"
+        or defName="MakeAmmo_50JDJ_HE"
+        or defName="MakeAmmo_50JDJ_Incendiary"
+        or defName="MakeAmmo_50JDJ_Sabot"
+        or defName="MakeAmmo_545x39mmSoviet_AP"
+        or defName="MakeAmmo_545x39mmSoviet_FMJ"
+        or defName="MakeAmmo_545x39mmSoviet_HE"
+        or defName="MakeAmmo_545x39mmSoviet_HP"
+        or defName="MakeAmmo_545x39mmSoviet_Incendiary"
+        or defName="MakeAmmo_545x39mmSoviet_Sabot"
+        or defName="MakeAmmo_556x45mmNATO_AP"
+        or defName="MakeAmmo_556x45mmNATO_FMJ"
+        or defName="MakeAmmo_556x45mmNATO_HE"
+        or defName="MakeAmmo_556x45mmNATO_HP"
+        or defName="MakeAmmo_556x45mmNATO_Incendiary"
+        or defName="MakeAmmo_556x45mmNATO_Sabot"
+        or defName="MakeAmmo_55Boys_AP"
+        or defName="MakeAmmo_55Boys_FMJ"
+        or defName="MakeAmmo_55Boys_HE"
+        or defName="MakeAmmo_55Boys_Incendiary"
+        or defName="MakeAmmo_55Boys_Sabot"
+        or defName="MakeAmmo_5656Spencer_AP"
+        or defName="MakeAmmo_5656Spencer_FMJ"
+        or defName="MakeAmmo_5656Spencer_HE"
+        or defName="MakeAmmo_5656Spencer_HP"
+        or defName="MakeAmmo_5656Spencer_Incendiary"
+        or defName="MakeAmmo_5656Spencer_Sabot"
+        or defName="MakeAmmo_58x21mmDAP92_AP"
+        or defName="MakeAmmo_58x21mmDAP92_FMJ"
+        or defName="MakeAmmo_58x21mmDAP92_HP"
+        or defName="MakeAmmo_58x42mmDBP10_AP"
+        or defName="MakeAmmo_58x42mmDBP10_FMJ"
+        or defName="MakeAmmo_58x42mmDBP10_HE"
+        or defName="MakeAmmo_58x42mmDBP10_HP"
+        or defName="MakeAmmo_58x42mmDBP10_Incendiary"
+        or defName="MakeAmmo_58x42mmDBP10_Sabot"
+        or defName="MakeAmmo_5x50mmCaseless_Sabot"
+        or defName="MakeAmmo_600NitroExpress_AP"
+        or defName="MakeAmmo_600NitroExpress_FMJ"
+        or defName="MakeAmmo_600NitroExpress_HE"
+        or defName="MakeAmmo_600NitroExpress_Incendiary"
+        or defName="MakeAmmo_600NitroExpress_Sabot"
+        or defName="MakeAmmo_65x48mmCreedmoor_AP"
+        or defName="MakeAmmo_65x48mmCreedmoor_FMJ"
+        or defName="MakeAmmo_65x48mmCreedmoor_HE"
+        or defName="MakeAmmo_65x48mmCreedmoor_HP"
+        or defName="MakeAmmo_65x48mmCreedmoor_Incendiary"
+        or defName="MakeAmmo_65x48mmCreedmoor_Sabot"
+        or defName="MakeAmmo_65x50mmSRArisaka_AP"
+        or defName="MakeAmmo_65x50mmSRArisaka_FMJ"
+        or defName="MakeAmmo_65x50mmSRArisaka_HE"
+        or defName="MakeAmmo_65x50mmSRArisaka_HP"
+        or defName="MakeAmmo_65x50mmSRArisaka_Incendiary"
+        or defName="MakeAmmo_65x50mmSRArisaka_Sabot"
+        or defName="MakeAmmo_65x52mmCarcano_AP"
+        or defName="MakeAmmo_65x52mmCarcano_FMJ"
+        or defName="MakeAmmo_65x52mmCarcano_HE"
+        or defName="MakeAmmo_65x52mmCarcano_HP"
+        or defName="MakeAmmo_65x52mmCarcano_Incendiary"
+        or defName="MakeAmmo_65x52mmCarcano_Sabot"
+        or defName="MakeAmmo_75FK_AP"
+        or defName="MakeAmmo_75FK_FMJ"
+        or defName="MakeAmmo_75FK_HP"
+        or defName="MakeAmmo_75x54mmFrench_AP"
+        or defName="MakeAmmo_75x54mmFrench_FMJ"
+        or defName="MakeAmmo_75x54mmFrench_HE"
+        or defName="MakeAmmo_75x54mmFrench_HP"
+        or defName="MakeAmmo_75x54mmFrench_Incendiary"
+        or defName="MakeAmmo_75x54mmFrench_Sabot"
+        or defName="MakeAmmo_762x25mmTokarev_AP"
+        or defName="MakeAmmo_762x25mmTokarev_FMJ"
+        or defName="MakeAmmo_762x25mmTokarev_HP"
+        or defName="MakeAmmo_762x38mmR_AP"
+        or defName="MakeAmmo_762x38mmR_FMJ"
+        or defName="MakeAmmo_762x38mmR_HP"
+        or defName="MakeAmmo_762x39mmSoviet_AP"
+        or defName="MakeAmmo_762x39mmSoviet_FMJ"
+        or defName="MakeAmmo_762x39mmSoviet_HE"
+        or defName="MakeAmmo_762x39mmSoviet_HP"
+        or defName="MakeAmmo_762x39mmSoviet_Incendiary"
+        or defName="MakeAmmo_762x39mmSoviet_Sabot"
+        or defName="MakeAmmo_762x51mmNATO_AP"
+        or defName="MakeAmmo_762x51mmNATO_FMJ"
+        or defName="MakeAmmo_762x51mmNATO_HE"
+        or defName="MakeAmmo_762x51mmNATO_HP"
+        or defName="MakeAmmo_762x51mmNATO_Incendiary"
+        or defName="MakeAmmo_762x51mmNATO_Sabot"
+        or defName="MakeAmmo_762x54mmR_AP"
+        or defName="MakeAmmo_762x54mmR_FMJ"
+        or defName="MakeAmmo_762x54mmR_HE"
+        or defName="MakeAmmo_762x54mmR_HP"
+        or defName="MakeAmmo_762x54mmR_Incendiary"
+        or defName="MakeAmmo_762x54mmR_Sabot"
+        or defName="MakeAmmo_763x25mmMauser_AP"
+        or defName="MakeAmmo_763x25mmMauser_FMJ"
+        or defName="MakeAmmo_763x25mmMauser_HP"
+        or defName="MakeAmmo_765x20mmLongue_AP"
+        or defName="MakeAmmo_765x20mmLongue_FMJ"
+        or defName="MakeAmmo_765x20mmLongue_HP"
+        or defName="MakeAmmo_77x58mmArisaka_AP"
+        or defName="MakeAmmo_77x58mmArisaka_FMJ"
+        or defName="MakeAmmo_77x58mmArisaka_HE"
+        or defName="MakeAmmo_77x58mmArisaka_HP"
+        or defName="MakeAmmo_77x58mmArisaka_Incendiary"
+        or defName="MakeAmmo_77x58mmArisaka_Sabot"
+        or defName="MakeAmmo_792x33mmKurz_AP"
+        or defName="MakeAmmo_792x33mmKurz_FMJ"
+        or defName="MakeAmmo_792x33mmKurz_HE"
+        or defName="MakeAmmo_792x33mmKurz_HP"
+        or defName="MakeAmmo_792x33mmKurz_Incendiary"
+        or defName="MakeAmmo_792x33mmKurz_Sabot"
+        or defName="MakeAmmo_792x57mmMauser_AP"
+        or defName="MakeAmmo_792x57mmMauser_FMJ"
+        or defName="MakeAmmo_792x57mmMauser_HE"
+        or defName="MakeAmmo_792x57mmMauser_HP"
+        or defName="MakeAmmo_792x57mmMauser_Incendiary"
+        or defName="MakeAmmo_792x57mmMauser_Sabot"
+        or defName="MakeAmmo_792x94mmPatronen_AP"
+        or defName="MakeAmmo_792x94mmPatronen_FMJ"
+        or defName="MakeAmmo_792x94mmPatronen_HE"
+        or defName="MakeAmmo_792x94mmPatronen_Incendiary"
+        or defName="MakeAmmo_792x94mmPatronen_Sabot"
+        or defName="MakeAmmo_86x43mmBlackout_AP"
+        or defName="MakeAmmo_86x43mmBlackout_FMJ"
+        or defName="MakeAmmo_86x43mmBlackout_HE"
+        or defName="MakeAmmo_86x43mmBlackout_HP"
+        or defName="MakeAmmo_86x43mmBlackout_Incendiary"
+        or defName="MakeAmmo_86x43mmBlackout_Sabot"
+        or defName="MakeAmmo_8x22mmNambu_AP"
+        or defName="MakeAmmo_8x22mmNambu_FMJ"
+        or defName="MakeAmmo_8x22mmNambu_HP"
+        or defName="MakeAmmo_8x50mmRLebel_AP"
+        or defName="MakeAmmo_8x50mmRLebel_FMJ"
+        or defName="MakeAmmo_8x50mmRLebel_HE"
+        or defName="MakeAmmo_8x50mmRLebel_HP"
+        or defName="MakeAmmo_8x50mmRLebel_Incendiary"
+        or defName="MakeAmmo_8x50mmRLebel_Sabot"
+        or defName="MakeAmmo_8x50mmRMannlicher_AP"
+        or defName="MakeAmmo_8x50mmRMannlicher_FMJ"
+        or defName="MakeAmmo_8x50mmRMannlicher_HE"
+        or defName="MakeAmmo_8x50mmRMannlicher_HP"
+        or defName="MakeAmmo_8x50mmRMannlicher_Incendiary"
+        or defName="MakeAmmo_8x50mmRMannlicher_Sabot"
+        or defName="MakeAmmo_950JDJ_AP"
+        or defName="MakeAmmo_950JDJ_FMJ"
+        or defName="MakeAmmo_9x18mmMakarov_AP"
+        or defName="MakeAmmo_9x18mmMakarov_FMJ"
+        or defName="MakeAmmo_9x18mmMakarov_HP"
+        or defName="MakeAmmo_9x19mmPara_AP"
+        or defName="MakeAmmo_9x19mmPara_FMJ"
+        or defName="MakeAmmo_9x19mmPara_HP"
+        or defName="MakeAmmo_9x21mmGyurza_AP"
+        or defName="MakeAmmo_9x21mmGyurza_FMJ"
+        or defName="MakeAmmo_9x21mmGyurza_HP"
+        or defName="MakeAmmo_9x39mmSoviet_AP"
+        or defName="MakeAmmo_9x39mmSoviet_FMJ"
+        or defName="MakeAmmo_9x39mmSoviet_HE"
+        or defName="MakeAmmo_9x39mmSoviet_HP"
+        or defName="MakeAmmo_9x39mmSoviet_Incendiary"
+        or defName="MakeAmmo_9x39mmSoviet_Sabot"
+        or defName="MakeAmmo_AntiMateriel_AP"
+        or defName="MakeAmmo_AntiMateriel_FMJ"
+        or defName="MakeAmmo_AntiMateriel_HE"
+        or defName="MakeAmmo_AntiMateriel_Incendiary"
+        or defName="MakeAmmo_AntiMateriel_Sabot"
+        or defName="MakeAmmo_Autocannon_AP"
+        or defName="MakeAmmo_Autocannon_HE"
+        or defName="MakeAmmo_Autocannon_Incendiary"
+        or defName="MakeAmmo_Autocannon_Sabot"
+        or defName="MakeAmmo_FN57x28mm_AP"
+        or defName="MakeAmmo_FN57x28mm_FMJ"
+        or defName="MakeAmmo_FN57x28mm_HP"
+        or defName="MakeAmmo_PistolMagnum_AP"
+        or defName="MakeAmmo_PistolMagnum_FMJ"
+        or defName="MakeAmmo_PistolMagnum_HP"
+        or defName="MakeAmmo_Pistol_AP"
+        or defName="MakeAmmo_Pistol_FMJ"
+        or defName="MakeAmmo_Pistol_HP"
+        or defName="MakeAmmo_RifleIntermediate_AP"
+        or defName="MakeAmmo_RifleIntermediate_FMJ"
+        or defName="MakeAmmo_RifleIntermediate_HE"
+        or defName="MakeAmmo_RifleIntermediate_HP"
+        or defName="MakeAmmo_RifleIntermediate_Incendiary"
+        or defName="MakeAmmo_RifleIntermediate_Sabot"
+        or defName="MakeAmmo_RifleMagnum_AP"
+        or defName="MakeAmmo_RifleMagnum_FMJ"
+        or defName="MakeAmmo_RifleMagnum_HE"
+        or defName="MakeAmmo_RifleMagnum_Incendiary"
+        or defName="MakeAmmo_RifleMagnum_Sabot"
+        or defName="MakeAmmo_Rifle_AP"
+        or defName="MakeAmmo_Rifle_FMJ"
+        or defName="MakeAmmo_Rifle_HE"
+        or defName="MakeAmmo_Rifle_HP"
+        or defName="MakeAmmo_Rifle_Incendiary"
+        or defName="MakeAmmo_Rifle_Sabot"
+        or defName="MakeAmmo_Shotgun_Beanbag"
+        or defName="MakeAmmo_Shotgun_Buck"
+        or defName="MakeAmmo_Shotgun_ElectroSlug"
+        or defName="MakeAmmo_Shotgun_Slug"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_10Gauge_Beanbag"
+          or defName="MakeAmmo_10Gauge_Buck"
+          or defName="MakeAmmo_10Gauge_ElectroSlug"
+          or defName="MakeAmmo_10Gauge_Slug"
+          or defName="MakeAmmo_10mmAuto_AP"
+          or defName="MakeAmmo_10mmAuto_FMJ"
+          or defName="MakeAmmo_10mmAuto_HP"
+          or defName="MakeAmmo_127x108mm_AP"
+          or defName="MakeAmmo_127x108mm_FMJ"
+          or defName="MakeAmmo_127x108mm_HE"
+          or defName="MakeAmmo_127x108mm_Incendiary"
+          or defName="MakeAmmo_127x108mm_Sabot"
+          or defName="MakeAmmo_127x55mm_AP"
+          or defName="MakeAmmo_127x55mm_FMJ"
+          or defName="MakeAmmo_127x55mm_HE"
+          or defName="MakeAmmo_127x55mm_HP"
+          or defName="MakeAmmo_127x55mm_Incendiary"
+          or defName="MakeAmmo_127x55mm_Sabot"
+          or defName="MakeAmmo_12Gauge_Beanbag"
+          or defName="MakeAmmo_12Gauge_Buck"
+          or defName="MakeAmmo_12Gauge_ElectroSlug"
+          or defName="MakeAmmo_12Gauge_Slug"
+          or defName="MakeAmmo_132x92mmSRTuF_AP"
+          or defName="MakeAmmo_132x92mmSRTuF_FMJ"
+          or defName="MakeAmmo_132x92mmSRTuF_HE"
+          or defName="MakeAmmo_132x92mmSRTuF_Incendiary"
+          or defName="MakeAmmo_132x92mmSRTuF_Sabot"
+          or defName="MakeAmmo_13mmGyrojet_AP"
+          or defName="MakeAmmo_13mmGyrojet_FMJ"
+          or defName="MakeAmmo_13mmGyrojet_HP"
+          or defName="MakeAmmo_145x114mm_AP"
+          or defName="MakeAmmo_145x114mm_FMJ"
+          or defName="MakeAmmo_145x114mm_HE"
+          or defName="MakeAmmo_145x114mm_Incendiary"
+          or defName="MakeAmmo_145x114mm_Sabot"
+          or defName="MakeAmmo_152x169mm_Sabot"
+          or defName="MakeAmmo_16Gauge_Beanbag"
+          or defName="MakeAmmo_16Gauge_Buck"
+          or defName="MakeAmmo_16Gauge_ElectroSlug"
+          or defName="MakeAmmo_16Gauge_Slug"
+          or defName="MakeAmmo_17HMR_AP"
+          or defName="MakeAmmo_17HMR_FMJ"
+          or defName="MakeAmmo_17HMR_HP"
+          or defName="MakeAmmo_20Gauge_Beanbag"
+          or defName="MakeAmmo_20Gauge_Buck"
+          or defName="MakeAmmo_20Gauge_ElectroSlug"
+          or defName="MakeAmmo_20Gauge_Slug"
+          or defName="MakeAmmo_20x102mmNATO_AP"
+          or defName="MakeAmmo_20x102mmNATO_HE"
+          or defName="MakeAmmo_20x102mmNATO_Incendiary"
+          or defName="MakeAmmo_20x102mmNATO_Sabot"
+          or defName="MakeAmmo_20x110mmHispano_AP"
+          or defName="MakeAmmo_20x110mmHispano_HE"
+          or defName="MakeAmmo_20x110mmHispano_Incendiary"
+          or defName="MakeAmmo_20x110mmHispano_Sabot"
+          or defName="MakeAmmo_20x128mmOerlikon_AP"
+          or defName="MakeAmmo_20x128mmOerlikon_HE"
+          or defName="MakeAmmo_20x128mmOerlikon_Incendiary"
+          or defName="MakeAmmo_20x128mmOerlikon_Sabot"
+          or defName="MakeAmmo_20x138mmB_AP"
+          or defName="MakeAmmo_20x138mmB_HE"
+          or defName="MakeAmmo_20x138mmB_Incendiary"
+          or defName="MakeAmmo_20x138mmB_Sabot"
+          or defName="MakeAmmo_20x139mm_AP"
+          or defName="MakeAmmo_20x139mm_HE"
+          or defName="MakeAmmo_20x139mm_Incendiary"
+          or defName="MakeAmmo_20x139mm_Sabot"
+          or defName="MakeAmmo_20x82mmMauser_AP"
+          or defName="MakeAmmo_20x82mmMauser_HE"
+          or defName="MakeAmmo_20x82mmMauser_Incendiary"
+          or defName="MakeAmmo_20x82mmMauser_Sabot"
+          or defName="MakeAmmo_20x99mmRShVAK_AP"
+          or defName="MakeAmmo_20x99mmRShVAK_HE"
+          or defName="MakeAmmo_20x99mmRShVAK_Incendiary"
+          or defName="MakeAmmo_20x99mmRShVAK_Sabot"
+          or defName="MakeAmmo_22Hornet_AP"
+          or defName="MakeAmmo_22Hornet_FMJ"
+          or defName="MakeAmmo_22Hornet_HP"
+          or defName="MakeAmmo_22LR_AP"
+          or defName="MakeAmmo_22LR_FMJ"
+          or defName="MakeAmmo_22LR_HP"
+          or defName="MakeAmmo_22Short_AP"
+          or defName="MakeAmmo_22Short_FMJ"
+          or defName="MakeAmmo_22Short_HP"
+          or defName="MakeAmmo_22WMR_AP"
+          or defName="MakeAmmo_22WMR_FMJ"
+          or defName="MakeAmmo_22WMR_HP"
+          or defName="MakeAmmo_23x115mm_AP"
+          or defName="MakeAmmo_23x115mm_HE"
+          or defName="MakeAmmo_23x115mm_Incendiary"
+          or defName="MakeAmmo_23x115mm_Sabot"
+          or defName="MakeAmmo_23x152mmB_AP"
+          or defName="MakeAmmo_23x152mmB_APHE"
+          or defName="MakeAmmo_23x152mmB_Incendiary"
+          or defName="MakeAmmo_23x152mmB_Sabot"
+          or defName="MakeAmmo_23x75mmR_Beanbag"
+          or defName="MakeAmmo_23x75mmR_Buck"
+          or defName="MakeAmmo_23x75mmR_ElectroSlug"
+          or defName="MakeAmmo_23x75mmR_Slug"
+          or defName="MakeAmmo_243Winchester_AP"
+          or defName="MakeAmmo_243Winchester_FMJ"
+          or defName="MakeAmmo_243Winchester_HE"
+          or defName="MakeAmmo_243Winchester_HP"
+          or defName="MakeAmmo_243Winchester_Incendiary"
+          or defName="MakeAmmo_243Winchester_Sabot"
+          or defName="MakeAmmo_25ACP_AP"
+          or defName="MakeAmmo_25ACP_FMJ"
+          or defName="MakeAmmo_25ACP_HP"
+          or defName="MakeAmmo_25x137mmNATO_AP"
+          or defName="MakeAmmo_25x137mmNATO_HE"
+          or defName="MakeAmmo_25x137mmNATO_Incendiary"
+          or defName="MakeAmmo_25x137mmNATO_Sabot"
+          or defName="MakeAmmo_277Fury_AP"
+          or defName="MakeAmmo_277Fury_FMJ"
+          or defName="MakeAmmo_277Fury_HE"
+          or defName="MakeAmmo_277Fury_HP"
+          or defName="MakeAmmo_277Fury_Incendiary"
+          or defName="MakeAmmo_277Fury_Sabot"
+          or defName="MakeAmmo_27x145mmMauser_AP"
+          or defName="MakeAmmo_27x145mmMauser_HE"
+          or defName="MakeAmmo_27x145mmMauser_Incendiary"
+          or defName="MakeAmmo_27x145mmMauser_Sabot"
+          or defName="MakeAmmo_280British_AP"
+          or defName="MakeAmmo_280British_FMJ"
+          or defName="MakeAmmo_280British_HE"
+          or defName="MakeAmmo_280British_HP"
+          or defName="MakeAmmo_280British_Incendiary"
+          or defName="MakeAmmo_280British_Sabot"
+          or defName="MakeAmmo_2Bore_AP"
+          or defName="MakeAmmo_2Bore_FMJ"
+          or defName="MakeAmmo_2Bore_HE"
+          or defName="MakeAmmo_2Bore_Incendiary"
+          or defName="MakeAmmo_2Bore_Sabot"
+          or defName="MakeAmmo_3006Springfield_AP"
+          or defName="MakeAmmo_3006Springfield_FMJ"
+          or defName="MakeAmmo_3006Springfield_HE"
+          or defName="MakeAmmo_3006Springfield_HP"
+          or defName="MakeAmmo_3006Springfield_Incendiary"
+          or defName="MakeAmmo_3006Springfield_Sabot"
+          or defName="MakeAmmo_300AACBlackout_AP"
+          or defName="MakeAmmo_300AACBlackout_FMJ"
+          or defName="MakeAmmo_300AACBlackout_HE"
+          or defName="MakeAmmo_300AACBlackout_HP"
+          or defName="MakeAmmo_300AACBlackout_Incendiary"
+          or defName="MakeAmmo_300AACBlackout_Sabot"
+          or defName="MakeAmmo_300WinchesterMagnum_AP"
+          or defName="MakeAmmo_300WinchesterMagnum_FMJ"
+          or defName="MakeAmmo_300WinchesterMagnum_HE"
+          or defName="MakeAmmo_300WinchesterMagnum_Incendiary"
+          or defName="MakeAmmo_300WinchesterMagnum_Sabot"
+          or defName="MakeAmmo_3030Winchester_AP"
+          or defName="MakeAmmo_3030Winchester_FMJ"
+          or defName="MakeAmmo_3030Winchester_HE"
+          or defName="MakeAmmo_3030Winchester_HP"
+          or defName="MakeAmmo_3030Winchester_Incendiary"
+          or defName="MakeAmmo_3030Winchester_Sabot"
+          or defName="MakeAmmo_303British_AP"
+          or defName="MakeAmmo_303British_FMJ"
+          or defName="MakeAmmo_303British_HE"
+          or defName="MakeAmmo_303British_HP"
+          or defName="MakeAmmo_303British_Incendiary"
+          or defName="MakeAmmo_303British_Sabot"
+          or defName="MakeAmmo_30Carbine_AP"
+          or defName="MakeAmmo_30Carbine_FMJ"
+          or defName="MakeAmmo_30Carbine_HE"
+          or defName="MakeAmmo_30Carbine_HP"
+          or defName="MakeAmmo_30Carbine_Incendiary"
+          or defName="MakeAmmo_30Carbine_Sabot"
+          or defName="MakeAmmo_30x113mmB_AP"
+          or defName="MakeAmmo_30x113mmB_HE"
+          or defName="MakeAmmo_30x113mmB_Incendiary"
+          or defName="MakeAmmo_30x113mmB_Sabot"
+          or defName="MakeAmmo_30x165mm_AP"
+          or defName="MakeAmmo_30x165mm_HE"
+          or defName="MakeAmmo_30x165mm_Incendiary"
+          or defName="MakeAmmo_30x165mm_Sabot"
+          or defName="MakeAmmo_30x170mm_AP"
+          or defName="MakeAmmo_30x170mm_HE"
+          or defName="MakeAmmo_30x170mm_Incendiary"
+          or defName="MakeAmmo_30x170mm_Sabot"
+          or defName="MakeAmmo_30x173mmNATO_AP"
+          or defName="MakeAmmo_30x173mmNATO_HE"
+          or defName="MakeAmmo_30x173mmNATO_Incendiary"
+          or defName="MakeAmmo_30x173mmNATO_Sabot"
+          or defName="MakeAmmo_32ACP_AP"
+          or defName="MakeAmmo_32ACP_FMJ"
+          or defName="MakeAmmo_32ACP_HP"
+          or defName="MakeAmmo_338Lapua_AP"
+          or defName="MakeAmmo_338Lapua_FMJ"
+          or defName="MakeAmmo_338Lapua_HE"
+          or defName="MakeAmmo_338Lapua_Incendiary"
+          or defName="MakeAmmo_338Lapua_Sabot"
+          or defName="MakeAmmo_338Norma_AP"
+          or defName="MakeAmmo_338Norma_FMJ"
+          or defName="MakeAmmo_338Norma_HE"
+          or defName="MakeAmmo_338Norma_Incendiary"
+          or defName="MakeAmmo_338Norma_Sabot"
+          or defName="MakeAmmo_357Magnum_AP"
+          or defName="MakeAmmo_357Magnum_FMJ"
+          or defName="MakeAmmo_357Magnum_HP"
+          or defName="MakeAmmo_357SIG_AP"
+          or defName="MakeAmmo_357SIG_FMJ"
+          or defName="MakeAmmo_357SIG_HP"
+          or defName="MakeAmmo_35x228mmNATO_AP"
+          or defName="MakeAmmo_35x228mmNATO_HE"
+          or defName="MakeAmmo_35x228mmNATO_Incendiary"
+          or defName="MakeAmmo_35x228mmNATO_Sabot"
+          or defName="MakeAmmo_380ACP_AP"
+          or defName="MakeAmmo_380ACP_FMJ"
+          or defName="MakeAmmo_380ACP_HP"
+          or defName="MakeAmmo_3855Winchester_AP"
+          or defName="MakeAmmo_3855Winchester_FMJ"
+          or defName="MakeAmmo_3855Winchester_HE"
+          or defName="MakeAmmo_3855Winchester_HP"
+          or defName="MakeAmmo_3855Winchester_Incendiary"
+          or defName="MakeAmmo_3855Winchester_Sabot"
+          or defName="MakeAmmo_38ACP_AP"
+          or defName="MakeAmmo_38ACP_FMJ"
+          or defName="MakeAmmo_38ACP_HP"
+          or defName="MakeAmmo_38SW_AP"
+          or defName="MakeAmmo_38SW_FMJ"
+          or defName="MakeAmmo_38SW_HP"
+          or defName="MakeAmmo_38Special_AP"
+          or defName="MakeAmmo_38Special_FMJ"
+          or defName="MakeAmmo_38Special_HP"
+          or defName="MakeAmmo_38Super_AP"
+          or defName="MakeAmmo_38Super_FMJ"
+          or defName="MakeAmmo_38Super_HP"
+          or defName="MakeAmmo_408CheyenneTactical_AP"
+          or defName="MakeAmmo_408CheyenneTactical_FMJ"
+          or defName="MakeAmmo_408CheyenneTactical_HE"
+          or defName="MakeAmmo_408CheyenneTactical_Incendiary"
+          or defName="MakeAmmo_408CheyenneTactical_Sabot"
+          or defName="MakeAmmo_40SW_AP"
+          or defName="MakeAmmo_40SW_FMJ"
+          or defName="MakeAmmo_40SW_HP"
+          or defName="MakeAmmo_40x311mmR_AP"
+          or defName="MakeAmmo_40x311mmR_HE"
+          or defName="MakeAmmo_40x311mmR_Incendiary"
+          or defName="MakeAmmo_40x311mmR_Sabot"
+          or defName="MakeAmmo_410Bore_Beanbag"
+          or defName="MakeAmmo_410Bore_Buck"
+          or defName="MakeAmmo_410Bore_ElectroSlug"
+          or defName="MakeAmmo_410Bore_Slug"
+          or defName="MakeAmmo_41Rimfire_AP"
+          or defName="MakeAmmo_41Rimfire_FMJ"
+          or defName="MakeAmmo_41Rimfire_HP"
+          or defName="MakeAmmo_44-40Winchester_AP"
+          or defName="MakeAmmo_44-40Winchester_FMJ"
+          or defName="MakeAmmo_44-40Winchester_HE"
+          or defName="MakeAmmo_44-40Winchester_HP"
+          or defName="MakeAmmo_44-40Winchester_Incendiary"
+          or defName="MakeAmmo_44-40Winchester_Sabot"
+          or defName="MakeAmmo_44Magnum_AP"
+          or defName="MakeAmmo_44Magnum_FMJ"
+          or defName="MakeAmmo_44Magnum_HP"
+          or defName="MakeAmmo_44SWSpecial_AP"
+          or defName="MakeAmmo_44SWSpecial_FMJ"
+          or defName="MakeAmmo_44SWSpecial_HP"
+          or defName="MakeAmmo_454Casull_AP"
+          or defName="MakeAmmo_454Casull_FMJ"
+          or defName="MakeAmmo_454Casull_HP"
+          or defName="MakeAmmo_455Webley_AP"
+          or defName="MakeAmmo_455Webley_FMJ"
+          or defName="MakeAmmo_455Webley_HP"
+          or defName="MakeAmmo_4570Gov_AP"
+          or defName="MakeAmmo_4570Gov_FMJ"
+          or defName="MakeAmmo_4570Gov_HE"
+          or defName="MakeAmmo_4570Gov_HP"
+          or defName="MakeAmmo_4570Gov_Incendiary"
+          or defName="MakeAmmo_4570Gov_Sabot"
+          or defName="MakeAmmo_458SOCOM_AP"
+          or defName="MakeAmmo_458SOCOM_FMJ"
+          or defName="MakeAmmo_458SOCOM_HE"
+          or defName="MakeAmmo_458SOCOM_HP"
+          or defName="MakeAmmo_458SOCOM_Incendiary"
+          or defName="MakeAmmo_458SOCOM_Sabot"
+          or defName="MakeAmmo_45ACP_AP"
+          or defName="MakeAmmo_45ACP_FMJ"
+          or defName="MakeAmmo_45ACP_HP"
+          or defName="MakeAmmo_45Colt_AP"
+          or defName="MakeAmmo_45Colt_FMJ"
+          or defName="MakeAmmo_45Colt_HP"
+          or defName="MakeAmmo_45Schofield_AP"
+          or defName="MakeAmmo_45Schofield_FMJ"
+          or defName="MakeAmmo_45Schofield_HP"
+          or defName="MakeAmmo_460SWMagnum_AP"
+          or defName="MakeAmmo_460SWMagnum_FMJ"
+          or defName="MakeAmmo_460SWMagnum_HP"
+          or defName="MakeAmmo_46x30mm_AP"
+          or defName="MakeAmmo_46x30mm_FMJ"
+          or defName="MakeAmmo_46x30mm_HP"
+          or defName="MakeAmmo_470NitroExpress_AP"
+          or defName="MakeAmmo_470NitroExpress_FMJ"
+          or defName="MakeAmmo_470NitroExpress_HE"
+          or defName="MakeAmmo_470NitroExpress_Incendiary"
+          or defName="MakeAmmo_470NitroExpress_Sabot"
+          or defName="MakeAmmo_473x33mmCaseless_AP"
+          or defName="MakeAmmo_473x33mmCaseless_FMJ"
+          or defName="MakeAmmo_473x33mmCaseless_HE"
+          or defName="MakeAmmo_473x33mmCaseless_HP"
+          or defName="MakeAmmo_473x33mmCaseless_Incendiary"
+          or defName="MakeAmmo_473x33mmCaseless_Sabot"
+          or defName="MakeAmmo_485x49mm_AP"
+          or defName="MakeAmmo_485x49mm_FMJ"
+          or defName="MakeAmmo_485x49mm_HE"
+          or defName="MakeAmmo_485x49mm_HP"
+          or defName="MakeAmmo_485x49mm_Incendiary"
+          or defName="MakeAmmo_485x49mm_Sabot"
+          or defName="MakeAmmo_500SWMagnum_AP"
+          or defName="MakeAmmo_500SWMagnum_FMJ"
+          or defName="MakeAmmo_500SWMagnum_HP"
+          or defName="MakeAmmo_50AE_AP"
+          or defName="MakeAmmo_50AE_FMJ"
+          or defName="MakeAmmo_50AE_HP"
+          or defName="MakeAmmo_50BMG_AP"
+          or defName="MakeAmmo_50BMG_FMJ"
+          or defName="MakeAmmo_50BMG_HE"
+          or defName="MakeAmmo_50BMG_Incendiary"
+          or defName="MakeAmmo_50BMG_Sabot"
+          or defName="MakeAmmo_50Beowulf_AP"
+          or defName="MakeAmmo_50Beowulf_FMJ"
+          or defName="MakeAmmo_50Beowulf_HE"
+          or defName="MakeAmmo_50Beowulf_HP"
+          or defName="MakeAmmo_50Beowulf_Incendiary"
+          or defName="MakeAmmo_50Beowulf_Sabot"
+          or defName="MakeAmmo_50JDJ_HE"
+          or defName="MakeAmmo_50JDJ_Incendiary"
+          or defName="MakeAmmo_50JDJ_Sabot"
+          or defName="MakeAmmo_545x39mmSoviet_AP"
+          or defName="MakeAmmo_545x39mmSoviet_FMJ"
+          or defName="MakeAmmo_545x39mmSoviet_HE"
+          or defName="MakeAmmo_545x39mmSoviet_HP"
+          or defName="MakeAmmo_545x39mmSoviet_Incendiary"
+          or defName="MakeAmmo_545x39mmSoviet_Sabot"
+          or defName="MakeAmmo_556x45mmNATO_AP"
+          or defName="MakeAmmo_556x45mmNATO_FMJ"
+          or defName="MakeAmmo_556x45mmNATO_HE"
+          or defName="MakeAmmo_556x45mmNATO_HP"
+          or defName="MakeAmmo_556x45mmNATO_Incendiary"
+          or defName="MakeAmmo_556x45mmNATO_Sabot"
+          or defName="MakeAmmo_55Boys_AP"
+          or defName="MakeAmmo_55Boys_FMJ"
+          or defName="MakeAmmo_55Boys_HE"
+          or defName="MakeAmmo_55Boys_Incendiary"
+          or defName="MakeAmmo_55Boys_Sabot"
+          or defName="MakeAmmo_5656Spencer_AP"
+          or defName="MakeAmmo_5656Spencer_FMJ"
+          or defName="MakeAmmo_5656Spencer_HE"
+          or defName="MakeAmmo_5656Spencer_HP"
+          or defName="MakeAmmo_5656Spencer_Incendiary"
+          or defName="MakeAmmo_5656Spencer_Sabot"
+          or defName="MakeAmmo_58x21mmDAP92_AP"
+          or defName="MakeAmmo_58x21mmDAP92_FMJ"
+          or defName="MakeAmmo_58x21mmDAP92_HP"
+          or defName="MakeAmmo_58x42mmDBP10_AP"
+          or defName="MakeAmmo_58x42mmDBP10_FMJ"
+          or defName="MakeAmmo_58x42mmDBP10_HE"
+          or defName="MakeAmmo_58x42mmDBP10_HP"
+          or defName="MakeAmmo_58x42mmDBP10_Incendiary"
+          or defName="MakeAmmo_58x42mmDBP10_Sabot"
+          or defName="MakeAmmo_5x50mmCaseless_Sabot"
+          or defName="MakeAmmo_600NitroExpress_AP"
+          or defName="MakeAmmo_600NitroExpress_FMJ"
+          or defName="MakeAmmo_600NitroExpress_HE"
+          or defName="MakeAmmo_600NitroExpress_Incendiary"
+          or defName="MakeAmmo_600NitroExpress_Sabot"
+          or defName="MakeAmmo_65x48mmCreedmoor_AP"
+          or defName="MakeAmmo_65x48mmCreedmoor_FMJ"
+          or defName="MakeAmmo_65x48mmCreedmoor_HE"
+          or defName="MakeAmmo_65x48mmCreedmoor_HP"
+          or defName="MakeAmmo_65x48mmCreedmoor_Incendiary"
+          or defName="MakeAmmo_65x48mmCreedmoor_Sabot"
+          or defName="MakeAmmo_65x50mmSRArisaka_AP"
+          or defName="MakeAmmo_65x50mmSRArisaka_FMJ"
+          or defName="MakeAmmo_65x50mmSRArisaka_HE"
+          or defName="MakeAmmo_65x50mmSRArisaka_HP"
+          or defName="MakeAmmo_65x50mmSRArisaka_Incendiary"
+          or defName="MakeAmmo_65x50mmSRArisaka_Sabot"
+          or defName="MakeAmmo_65x52mmCarcano_AP"
+          or defName="MakeAmmo_65x52mmCarcano_FMJ"
+          or defName="MakeAmmo_65x52mmCarcano_HE"
+          or defName="MakeAmmo_65x52mmCarcano_HP"
+          or defName="MakeAmmo_65x52mmCarcano_Incendiary"
+          or defName="MakeAmmo_65x52mmCarcano_Sabot"
+          or defName="MakeAmmo_75FK_AP"
+          or defName="MakeAmmo_75FK_FMJ"
+          or defName="MakeAmmo_75FK_HP"
+          or defName="MakeAmmo_75x54mmFrench_AP"
+          or defName="MakeAmmo_75x54mmFrench_FMJ"
+          or defName="MakeAmmo_75x54mmFrench_HE"
+          or defName="MakeAmmo_75x54mmFrench_HP"
+          or defName="MakeAmmo_75x54mmFrench_Incendiary"
+          or defName="MakeAmmo_75x54mmFrench_Sabot"
+          or defName="MakeAmmo_762x25mmTokarev_AP"
+          or defName="MakeAmmo_762x25mmTokarev_FMJ"
+          or defName="MakeAmmo_762x25mmTokarev_HP"
+          or defName="MakeAmmo_762x38mmR_AP"
+          or defName="MakeAmmo_762x38mmR_FMJ"
+          or defName="MakeAmmo_762x38mmR_HP"
+          or defName="MakeAmmo_762x39mmSoviet_AP"
+          or defName="MakeAmmo_762x39mmSoviet_FMJ"
+          or defName="MakeAmmo_762x39mmSoviet_HE"
+          or defName="MakeAmmo_762x39mmSoviet_HP"
+          or defName="MakeAmmo_762x39mmSoviet_Incendiary"
+          or defName="MakeAmmo_762x39mmSoviet_Sabot"
+          or defName="MakeAmmo_762x51mmNATO_AP"
+          or defName="MakeAmmo_762x51mmNATO_FMJ"
+          or defName="MakeAmmo_762x51mmNATO_HE"
+          or defName="MakeAmmo_762x51mmNATO_HP"
+          or defName="MakeAmmo_762x51mmNATO_Incendiary"
+          or defName="MakeAmmo_762x51mmNATO_Sabot"
+          or defName="MakeAmmo_762x54mmR_AP"
+          or defName="MakeAmmo_762x54mmR_FMJ"
+          or defName="MakeAmmo_762x54mmR_HE"
+          or defName="MakeAmmo_762x54mmR_HP"
+          or defName="MakeAmmo_762x54mmR_Incendiary"
+          or defName="MakeAmmo_762x54mmR_Sabot"
+          or defName="MakeAmmo_763x25mmMauser_AP"
+          or defName="MakeAmmo_763x25mmMauser_FMJ"
+          or defName="MakeAmmo_763x25mmMauser_HP"
+          or defName="MakeAmmo_765x20mmLongue_AP"
+          or defName="MakeAmmo_765x20mmLongue_FMJ"
+          or defName="MakeAmmo_765x20mmLongue_HP"
+          or defName="MakeAmmo_77x58mmArisaka_AP"
+          or defName="MakeAmmo_77x58mmArisaka_FMJ"
+          or defName="MakeAmmo_77x58mmArisaka_HE"
+          or defName="MakeAmmo_77x58mmArisaka_HP"
+          or defName="MakeAmmo_77x58mmArisaka_Incendiary"
+          or defName="MakeAmmo_77x58mmArisaka_Sabot"
+          or defName="MakeAmmo_792x33mmKurz_AP"
+          or defName="MakeAmmo_792x33mmKurz_FMJ"
+          or defName="MakeAmmo_792x33mmKurz_HE"
+          or defName="MakeAmmo_792x33mmKurz_HP"
+          or defName="MakeAmmo_792x33mmKurz_Incendiary"
+          or defName="MakeAmmo_792x33mmKurz_Sabot"
+          or defName="MakeAmmo_792x57mmMauser_AP"
+          or defName="MakeAmmo_792x57mmMauser_FMJ"
+          or defName="MakeAmmo_792x57mmMauser_HE"
+          or defName="MakeAmmo_792x57mmMauser_HP"
+          or defName="MakeAmmo_792x57mmMauser_Incendiary"
+          or defName="MakeAmmo_792x57mmMauser_Sabot"
+          or defName="MakeAmmo_792x94mmPatronen_AP"
+          or defName="MakeAmmo_792x94mmPatronen_FMJ"
+          or defName="MakeAmmo_792x94mmPatronen_HE"
+          or defName="MakeAmmo_792x94mmPatronen_Incendiary"
+          or defName="MakeAmmo_792x94mmPatronen_Sabot"
+          or defName="MakeAmmo_86x43mmBlackout_AP"
+          or defName="MakeAmmo_86x43mmBlackout_FMJ"
+          or defName="MakeAmmo_86x43mmBlackout_HE"
+          or defName="MakeAmmo_86x43mmBlackout_HP"
+          or defName="MakeAmmo_86x43mmBlackout_Incendiary"
+          or defName="MakeAmmo_86x43mmBlackout_Sabot"
+          or defName="MakeAmmo_8x22mmNambu_AP"
+          or defName="MakeAmmo_8x22mmNambu_FMJ"
+          or defName="MakeAmmo_8x22mmNambu_HP"
+          or defName="MakeAmmo_8x50mmRLebel_AP"
+          or defName="MakeAmmo_8x50mmRLebel_FMJ"
+          or defName="MakeAmmo_8x50mmRLebel_HE"
+          or defName="MakeAmmo_8x50mmRLebel_HP"
+          or defName="MakeAmmo_8x50mmRLebel_Incendiary"
+          or defName="MakeAmmo_8x50mmRLebel_Sabot"
+          or defName="MakeAmmo_8x50mmRMannlicher_AP"
+          or defName="MakeAmmo_8x50mmRMannlicher_FMJ"
+          or defName="MakeAmmo_8x50mmRMannlicher_HE"
+          or defName="MakeAmmo_8x50mmRMannlicher_HP"
+          or defName="MakeAmmo_8x50mmRMannlicher_Incendiary"
+          or defName="MakeAmmo_8x50mmRMannlicher_Sabot"
+          or defName="MakeAmmo_950JDJ_AP"
+          or defName="MakeAmmo_950JDJ_FMJ"
+          or defName="MakeAmmo_9x18mmMakarov_AP"
+          or defName="MakeAmmo_9x18mmMakarov_FMJ"
+          or defName="MakeAmmo_9x18mmMakarov_HP"
+          or defName="MakeAmmo_9x19mmPara_AP"
+          or defName="MakeAmmo_9x19mmPara_FMJ"
+          or defName="MakeAmmo_9x19mmPara_HP"
+          or defName="MakeAmmo_9x21mmGyurza_AP"
+          or defName="MakeAmmo_9x21mmGyurza_FMJ"
+          or defName="MakeAmmo_9x21mmGyurza_HP"
+          or defName="MakeAmmo_9x39mmSoviet_AP"
+          or defName="MakeAmmo_9x39mmSoviet_FMJ"
+          or defName="MakeAmmo_9x39mmSoviet_HE"
+          or defName="MakeAmmo_9x39mmSoviet_HP"
+          or defName="MakeAmmo_9x39mmSoviet_Incendiary"
+          or defName="MakeAmmo_9x39mmSoviet_Sabot"
+          or defName="MakeAmmo_AntiMateriel_AP"
+          or defName="MakeAmmo_AntiMateriel_FMJ"
+          or defName="MakeAmmo_AntiMateriel_HE"
+          or defName="MakeAmmo_AntiMateriel_Incendiary"
+          or defName="MakeAmmo_AntiMateriel_Sabot"
+          or defName="MakeAmmo_Autocannon_AP"
+          or defName="MakeAmmo_Autocannon_HE"
+          or defName="MakeAmmo_Autocannon_Incendiary"
+          or defName="MakeAmmo_Autocannon_Sabot"
+          or defName="MakeAmmo_FN57x28mm_AP"
+          or defName="MakeAmmo_FN57x28mm_FMJ"
+          or defName="MakeAmmo_FN57x28mm_HP"
+          or defName="MakeAmmo_PistolMagnum_AP"
+          or defName="MakeAmmo_PistolMagnum_FMJ"
+          or defName="MakeAmmo_PistolMagnum_HP"
+          or defName="MakeAmmo_Pistol_AP"
+          or defName="MakeAmmo_Pistol_FMJ"
+          or defName="MakeAmmo_Pistol_HP"
+          or defName="MakeAmmo_RifleIntermediate_AP"
+          or defName="MakeAmmo_RifleIntermediate_FMJ"
+          or defName="MakeAmmo_RifleIntermediate_HE"
+          or defName="MakeAmmo_RifleIntermediate_HP"
+          or defName="MakeAmmo_RifleIntermediate_Incendiary"
+          or defName="MakeAmmo_RifleIntermediate_Sabot"
+          or defName="MakeAmmo_RifleMagnum_AP"
+          or defName="MakeAmmo_RifleMagnum_FMJ"
+          or defName="MakeAmmo_RifleMagnum_HE"
+          or defName="MakeAmmo_RifleMagnum_Incendiary"
+          or defName="MakeAmmo_RifleMagnum_Sabot"
+          or defName="MakeAmmo_Rifle_AP"
+          or defName="MakeAmmo_Rifle_FMJ"
+          or defName="MakeAmmo_Rifle_HE"
+          or defName="MakeAmmo_Rifle_HP"
+          or defName="MakeAmmo_Rifle_Incendiary"
+          or defName="MakeAmmo_Rifle_Sabot"
+          or defName="MakeAmmo_Shotgun_Beanbag"
+          or defName="MakeAmmo_Shotgun_Buck"
+          or defName="MakeAmmo_Shotgun_ElectroSlug"
+          or defName="MakeAmmo_Shotgun_Slug"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 6 launcher AP/AP-I/APHE recipes. Preserve Advanced ammunition on Incendiary/APHE. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_20x42mm_AP"
+        or defName="MakeAmmo_20x42mm_APHE"
+        or defName="MakeAmmo_20x42mm_Incendiary"
+        or defName="MakeAmmo_LauncherGrenade_AP"
+        or defName="MakeAmmo_LauncherGrenade_APHE"
+        or defName="MakeAmmo_LauncherGrenade_Incendiary"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_20x42mm_AP"
+          or defName="MakeAmmo_20x42mm_APHE"
+          or defName="MakeAmmo_20x42mm_Incendiary"
+          or defName="MakeAmmo_LauncherGrenade_AP"
+          or defName="MakeAmmo_LauncherGrenade_APHE"
+          or defName="MakeAmmo_LauncherGrenade_Incendiary"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_20x42mm_AP"
+        or defName="MakeAmmo_20x42mm_APHE"
+        or defName="MakeAmmo_20x42mm_Incendiary"
+        or defName="MakeAmmo_LauncherGrenade_AP"
+        or defName="MakeAmmo_LauncherGrenade_APHE"
+        or defName="MakeAmmo_LauncherGrenade_Incendiary"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_20x42mm_AP"
+          or defName="MakeAmmo_20x42mm_APHE"
+          or defName="MakeAmmo_20x42mm_Incendiary"
+          or defName="MakeAmmo_LauncherGrenade_AP"
+          or defName="MakeAmmo_LauncherGrenade_APHE"
+          or defName="MakeAmmo_LauncherGrenade_Incendiary"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 13 autocannon/20x42mm grenade recipes. Preserve launcher, timed fuze and electronic gates. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_20x42mmGrenade_EMP"
+        or defName="MakeAmmo_20x42mmGrenade_HE"
+        or defName="MakeAmmo_20x42mmGrenade_Smoke"
+        or defName="MakeAmmo_30x113mmBGrenade_EMP"
+        or defName="MakeAmmo_30x113mmBGrenade_HE"
+        or defName="MakeAmmo_30x113mmBGrenade_HEDP"
+        or defName="MakeAmmo_30x113mmBGrenade_HE_TFuzed"
+        or defName="MakeAmmo_30x113mmBGrenade_Smoke"
+        or defName="MakeAmmo_AutocannonGrenade_EMP"
+        or defName="MakeAmmo_AutocannonGrenade_HE"
+        or defName="MakeAmmo_AutocannonGrenade_HEDP"
+        or defName="MakeAmmo_AutocannonGrenade_HE_TFuzed"
+        or defName="MakeAmmo_AutocannonGrenade_Smoke"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_20x42mmGrenade_EMP"
+          or defName="MakeAmmo_20x42mmGrenade_HE"
+          or defName="MakeAmmo_20x42mmGrenade_Smoke"
+          or defName="MakeAmmo_30x113mmBGrenade_EMP"
+          or defName="MakeAmmo_30x113mmBGrenade_HE"
+          or defName="MakeAmmo_30x113mmBGrenade_HEDP"
+          or defName="MakeAmmo_30x113mmBGrenade_HE_TFuzed"
+          or defName="MakeAmmo_30x113mmBGrenade_Smoke"
+          or defName="MakeAmmo_AutocannonGrenade_EMP"
+          or defName="MakeAmmo_AutocannonGrenade_HE"
+          or defName="MakeAmmo_AutocannonGrenade_HEDP"
+          or defName="MakeAmmo_AutocannonGrenade_HE_TFuzed"
+          or defName="MakeAmmo_AutocannonGrenade_Smoke"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_20x42mmGrenade_EMP"
+        or defName="MakeAmmo_20x42mmGrenade_HE"
+        or defName="MakeAmmo_20x42mmGrenade_Smoke"
+        or defName="MakeAmmo_30x113mmBGrenade_EMP"
+        or defName="MakeAmmo_30x113mmBGrenade_HE"
+        or defName="MakeAmmo_30x113mmBGrenade_HEDP"
+        or defName="MakeAmmo_30x113mmBGrenade_HE_TFuzed"
+        or defName="MakeAmmo_30x113mmBGrenade_Smoke"
+        or defName="MakeAmmo_AutocannonGrenade_EMP"
+        or defName="MakeAmmo_AutocannonGrenade_HE"
+        or defName="MakeAmmo_AutocannonGrenade_HEDP"
+        or defName="MakeAmmo_AutocannonGrenade_HE_TFuzed"
+        or defName="MakeAmmo_AutocannonGrenade_Smoke"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_20x42mmGrenade_EMP"
+          or defName="MakeAmmo_20x42mmGrenade_HE"
+          or defName="MakeAmmo_20x42mmGrenade_Smoke"
+          or defName="MakeAmmo_30x113mmBGrenade_EMP"
+          or defName="MakeAmmo_30x113mmBGrenade_HE"
+          or defName="MakeAmmo_30x113mmBGrenade_HEDP"
+          or defName="MakeAmmo_30x113mmBGrenade_HE_TFuzed"
+          or defName="MakeAmmo_30x113mmBGrenade_Smoke"
+          or defName="MakeAmmo_AutocannonGrenade_EMP"
+          or defName="MakeAmmo_AutocannonGrenade_HE"
+          or defName="MakeAmmo_AutocannonGrenade_HEDP"
+          or defName="MakeAmmo_AutocannonGrenade_HE_TFuzed"
+          or defName="MakeAmmo_AutocannonGrenade_Smoke"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 4 57x348mm SR cannon recipes. Preserve heavy weapons, timed fuze and advanced ammo gates. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_57x348mmSR_AP"
+        or defName="MakeAmmo_57x348mmSR_HE"
+        or defName="MakeAmmo_57x348mmSR_HE_TFuzed"
+        or defName="MakeAmmo_57x348mmSR_Sabot"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_57x348mmSR_AP"
+          or defName="MakeAmmo_57x348mmSR_HE"
+          or defName="MakeAmmo_57x348mmSR_HE_TFuzed"
+          or defName="MakeAmmo_57x348mmSR_Sabot"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_57x348mmSR_AP"
+        or defName="MakeAmmo_57x348mmSR_HE"
+        or defName="MakeAmmo_57x348mmSR_HE_TFuzed"
+        or defName="MakeAmmo_57x348mmSR_Sabot"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_57x348mmSR_AP"
+          or defName="MakeAmmo_57x348mmSR_HE"
+          or defName="MakeAmmo_57x348mmSR_HE_TFuzed"
+          or defName="MakeAmmo_57x348mmSR_Sabot"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 6 30x64mm/GAE fuel cell recipes: preserve CE_AdvancedLaunchers and Firefoam. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_30x64mmFuel_Foam"
+        or defName="MakeAmmo_30x64mmFuel_Incendiary"
+        or defName="MakeAmmo_30x64mmFuel_Thermobaric"
+        or defName="MakeAmmo_Fuel_Foam"
+        or defName="MakeAmmo_Fuel_Incendiary"
+        or defName="MakeAmmo_Fuel_Thermobaric"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_30x64mmFuel_Foam"
+          or defName="MakeAmmo_30x64mmFuel_Incendiary"
+          or defName="MakeAmmo_30x64mmFuel_Thermobaric"
+          or defName="MakeAmmo_Fuel_Foam"
+          or defName="MakeAmmo_Fuel_Incendiary"
+          or defName="MakeAmmo_Fuel_Thermobaric"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_30x64mmFuel_Foam"
+        or defName="MakeAmmo_30x64mmFuel_Incendiary"
+        or defName="MakeAmmo_30x64mmFuel_Thermobaric"
+        or defName="MakeAmmo_Fuel_Foam"
+        or defName="MakeAmmo_Fuel_Incendiary"
+        or defName="MakeAmmo_Fuel_Thermobaric"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_30x64mmFuel_Foam"
+          or defName="MakeAmmo_30x64mmFuel_Incendiary"
+          or defName="MakeAmmo_30x64mmFuel_Thermobaric"
+          or defName="MakeAmmo_Fuel_Foam"
+          or defName="MakeAmmo_Fuel_Incendiary"
+          or defName="MakeAmmo_Fuel_Thermobaric"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Signal flares (2). Preserve DisruptorFlares (bioferrite), CE_Launchers (GAE ordinary). -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Flare"
+        or defName="MakeAmmo_FlareBioferrite"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Flare"
+          or defName="MakeAmmo_FlareBioferrite"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Flare"
+        or defName="MakeAmmo_FlareBioferrite"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Flare"
+          or defName="MakeAmmo_FlareBioferrite"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- GAE charged demolition: manufacturing exception. Preserve ChargedShot/CE_AdvancedAmmo. Other charged, laser and plasma excluded. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_ChargedDemolition"][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_ChargedDemolition"][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeAmmo_ChargedDemolition"][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[defName="MakeAmmo_ChargedDemolition"][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Metal black powder (9). Preserve powder gates. MO musket/blunderbuss: DankPyon_Gunpowder. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_BlunderbussShot"
+        or defName="MakeAmmo_CannonBall_Bursting"
+        or defName="MakeAmmo_CannonBall_Grape"
+        or defName="MakeAmmo_CannonBall_Incendiary"
+        or defName="MakeAmmo_CannonBall_Round"
+        or defName="MakeAmmo_MiniCannonBall_Grape"
+        or defName="MakeAmmo_MiniCannonBall_Round"
+        or defName="MakeAmmo_MortarGrenade"
+        or defName="MakeAmmo_MusketBall"
+      ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_BlunderbussShot"
+          or defName="MakeAmmo_CannonBall_Bursting"
+          or defName="MakeAmmo_CannonBall_Grape"
+          or defName="MakeAmmo_CannonBall_Incendiary"
+          or defName="MakeAmmo_CannonBall_Round"
+          or defName="MakeAmmo_MiniCannonBall_Grape"
+          or defName="MakeAmmo_MiniCannonBall_Round"
+          or defName="MakeAmmo_MortarGrenade"
+          or defName="MakeAmmo_MusketBall"
+        ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Smithing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_BlunderbussShot"
+        or defName="MakeAmmo_CannonBall_Bursting"
+        or defName="MakeAmmo_CannonBall_Grape"
+        or defName="MakeAmmo_CannonBall_Incendiary"
+        or defName="MakeAmmo_CannonBall_Round"
+        or defName="MakeAmmo_MiniCannonBall_Grape"
+        or defName="MakeAmmo_MiniCannonBall_Round"
+        or defName="MakeAmmo_MortarGrenade"
+        or defName="MakeAmmo_MusketBall"
+      ][
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_BlunderbussShot"
+          or defName="MakeAmmo_CannonBall_Bursting"
+          or defName="MakeAmmo_CannonBall_Grape"
+          or defName="MakeAmmo_CannonBall_Incendiary"
+          or defName="MakeAmmo_CannonBall_Round"
+          or defName="MakeAmmo_MiniCannonBall_Grape"
+          or defName="MakeAmmo_MiniCannonBall_Round"
+          or defName="MakeAmmo_MortarGrenade"
+          or defName="MakeAmmo_MusketBall"
+        ][
+          not(researchPrerequisite="Smithing")
+          and not(researchPrerequisites/li="Smithing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Smithing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Shared loading bench does not imply Ammunition manufacturing. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Nail"][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_Nail"][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Smithing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeAmmo_Nail"][
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[defName="MakeAmmo_Nail"][
+          not(researchPrerequisite="Smithing")
+          and not(researchPrerequisites/li="Smithing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Smithing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Catapult boulders (4, bulk included). Preserve DankPyon_Tar. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Catapult_Boulder"
+        or defName="MakeAmmo_Catapult_BoulderBulk"
+        or defName="MakeAmmo_Catapult_TarBoulder"
+        or defName="MakeAmmo_Catapult_TarBoulderBulk"
+      ][not(researchPrerequisite="Stonecutting")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Catapult_Boulder"
+          or defName="MakeAmmo_Catapult_BoulderBulk"
+          or defName="MakeAmmo_Catapult_TarBoulder"
+          or defName="MakeAmmo_Catapult_TarBoulderBulk"
+        ][not(researchPrerequisite="Stonecutting")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Stonecutting</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Catapult_Boulder"
+        or defName="MakeAmmo_Catapult_BoulderBulk"
+        or defName="MakeAmmo_Catapult_TarBoulder"
+        or defName="MakeAmmo_Catapult_TarBoulderBulk"
+      ][
+        not(researchPrerequisite="Stonecutting")
+        and not(researchPrerequisites/li="Stonecutting")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Catapult_Boulder"
+          or defName="MakeAmmo_Catapult_BoulderBulk"
+          or defName="MakeAmmo_Catapult_TarBoulder"
+          or defName="MakeAmmo_Catapult_TarBoulderBulk"
+        ][
+          not(researchPrerequisite="Stonecutting")
+          and not(researchPrerequisites/li="Stonecutting")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Stonecutting</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Native/GAE railgun sabots (4). Preserve existing VWE_MassDrivers. No added Ammunition manufacturing. Other railgun recipes excluded from this group. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_12mmRailgun_Sabot"
+        or defName="MakeAmmo_6mmRailgun_Sabot"
+        or defName="MakeAmmo_8mmRailgun_Sabot"
+        or defName="MakeAmmo_RailgunSabot"
+      ][not(researchPrerequisite="Machining")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_12mmRailgun_Sabot"
+          or defName="MakeAmmo_6mmRailgun_Sabot"
+          or defName="MakeAmmo_8mmRailgun_Sabot"
+          or defName="MakeAmmo_RailgunSabot"
+        ][not(researchPrerequisite="Machining")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Machining</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_12mmRailgun_Sabot"
+        or defName="MakeAmmo_6mmRailgun_Sabot"
+        or defName="MakeAmmo_8mmRailgun_Sabot"
+        or defName="MakeAmmo_RailgunSabot"
+      ][
+        not(researchPrerequisite="Machining")
+        and not(researchPrerequisites/li="Machining")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_12mmRailgun_Sabot"
+          or defName="MakeAmmo_6mmRailgun_Sabot"
+          or defName="MakeAmmo_8mmRailgun_Sabot"
+          or defName="MakeAmmo_RailgunSabot"
+        ][
+          not(researchPrerequisite="Machining")
+          and not(researchPrerequisites/li="Machining")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Machining</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- BioferriteIgnition excluded. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Flamethrower_Napalm"
+        or defName="MakeAmmo_Flamethrower_Prometheum"
+      ][not(researchPrerequisite="CE_Launchers")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Flamethrower_Napalm"
+          or defName="MakeAmmo_Flamethrower_Prometheum"
+        ][not(researchPrerequisite="CE_Launchers")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>CE_Launchers</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Flamethrower_Napalm"
+        or defName="MakeAmmo_Flamethrower_Prometheum"
+      ][
+        not(researchPrerequisite="CE_Launchers")
+        and not(researchPrerequisites/li="CE_Launchers")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Flamethrower_Napalm"
+          or defName="MakeAmmo_Flamethrower_Prometheum"
+        ][
+          not(researchPrerequisite="CE_Launchers")
+          and not(researchPrerequisites/li="CE_Launchers")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>CE_Launchers</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_132mmM13_HE"][not(researchPrerequisite="CE_Launchers")][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_132mmM13_HE"][not(researchPrerequisite="CE_Launchers")][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites>
+          <li>CE_Launchers</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeAmmo_132mmM13_HE"][
+        not(researchPrerequisite="CE_Launchers")
+        and not(researchPrerequisites/li="CE_Launchers")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[defName="MakeAmmo_132mmM13_HE"][
+          not(researchPrerequisite="CE_Launchers")
+          and not(researchPrerequisites/li="CE_Launchers")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>CE_Launchers</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_BGM71_HEAT"][not(researchPrerequisite="CE_AdvancedLaunchers")][not(researchPrerequisites)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_BGM71_HEAT"][not(researchPrerequisite="CE_AdvancedLaunchers")][not(researchPrerequisites)]</xpath>
+      <value>
+        <researchPrerequisites>
+          <li>CE_AdvancedLaunchers</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeAmmo_BGM71_HEAT"][
+        not(researchPrerequisite="CE_AdvancedLaunchers")
+        and not(researchPrerequisites/li="CE_AdvancedLaunchers")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[defName="MakeAmmo_BGM71_HEAT"][
+          not(researchPrerequisite="CE_AdvancedLaunchers")
+          and not(researchPrerequisites/li="CE_AdvancedLaunchers")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>CE_AdvancedLaunchers</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Additional ammunition recipes (10): Ammunition manufacturing. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_40x68mmDemo_Thump"
+        or defName="MakeAmmo_EltexCap"
+        or defName="MakeAmmo_M73_HE"
+        or defName="MakeAmmo_PistolMagnum_APS"
+        or defName="MakeAmmo_Pistol_APS"
+        or defName="MakeAmmo_VQEC_CryptoBolt"
+        or defName="MakeAmmo_WarBolter_Frag"
+        or defName="MakeAmmo_WarBolter_HE"
+        or defName="MakeAmmo_WarBolter_HEAT"
+        or defName="MakeAmmo_WarBolter_Incendiary"
+      ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_40x68mmDemo_Thump"
+          or defName="MakeAmmo_EltexCap"
+          or defName="MakeAmmo_M73_HE"
+          or defName="MakeAmmo_PistolMagnum_APS"
+          or defName="MakeAmmo_Pistol_APS"
+          or defName="MakeAmmo_VQEC_CryptoBolt"
+          or defName="MakeAmmo_WarBolter_Frag"
+          or defName="MakeAmmo_WarBolter_HE"
+          or defName="MakeAmmo_WarBolter_HEAT"
+          or defName="MakeAmmo_WarBolter_Incendiary"
+        ][not(researchPrerequisite="Ferny_AmmunitionManufacturing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Ferny_AmmunitionManufacturing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_40x68mmDemo_Thump"
+        or defName="MakeAmmo_EltexCap"
+        or defName="MakeAmmo_M73_HE"
+        or defName="MakeAmmo_PistolMagnum_APS"
+        or defName="MakeAmmo_Pistol_APS"
+        or defName="MakeAmmo_VQEC_CryptoBolt"
+        or defName="MakeAmmo_WarBolter_Frag"
+        or defName="MakeAmmo_WarBolter_HE"
+        or defName="MakeAmmo_WarBolter_HEAT"
+        or defName="MakeAmmo_WarBolter_Incendiary"
+      ][
+        not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+        and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_40x68mmDemo_Thump"
+          or defName="MakeAmmo_EltexCap"
+          or defName="MakeAmmo_M73_HE"
+          or defName="MakeAmmo_PistolMagnum_APS"
+          or defName="MakeAmmo_Pistol_APS"
+          or defName="MakeAmmo_VQEC_CryptoBolt"
+          or defName="MakeAmmo_WarBolter_Frag"
+          or defName="MakeAmmo_WarBolter_HE"
+          or defName="MakeAmmo_WarBolter_HEAT"
+          or defName="MakeAmmo_WarBolter_Incendiary"
+        ][
+          not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+          and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Congreve rockets and LCL musket ammunition (4): basic Smithing. Preserve powder, steel and specialty gates. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_CongreveRocket"
+        or defName="MakeAmmo_ExplodingCGRocket"
+        or defName="MakeAmmo_LCLMusketBuckshot"
+        or defName="MakeAmmo_LCLMusketSabot"
+      ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_CongreveRocket"
+          or defName="MakeAmmo_ExplodingCGRocket"
+          or defName="MakeAmmo_LCLMusketBuckshot"
+          or defName="MakeAmmo_LCLMusketSabot"
+        ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Smithing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_CongreveRocket"
+        or defName="MakeAmmo_ExplodingCGRocket"
+        or defName="MakeAmmo_LCLMusketBuckshot"
+        or defName="MakeAmmo_LCLMusketSabot"
+      ][
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_CongreveRocket"
+          or defName="MakeAmmo_ExplodingCGRocket"
+          or defName="MakeAmmo_LCLMusketBuckshot"
+          or defName="MakeAmmo_LCLMusketSabot"
+        ][
+          not(researchPrerequisite="Smithing")
+          and not(researchPrerequisites/li="Smithing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Smithing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Stone projectiles (2): Stonecutting. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_LCL_StoneBullet"
+        or defName="MakeAmmo_StoneBall_Round"
+      ][not(researchPrerequisite="Stonecutting")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_LCL_StoneBullet"
+          or defName="MakeAmmo_StoneBall_Round"
+        ][not(researchPrerequisite="Stonecutting")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Stonecutting</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_LCL_StoneBullet"
+        or defName="MakeAmmo_StoneBall_Round"
+      ][
+        not(researchPrerequisite="Stonecutting")
+        and not(researchPrerequisites/li="Stonecutting")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_LCL_StoneBullet"
+          or defName="MakeAmmo_StoneBall_Round"
+        ][
+          not(researchPrerequisite="Stonecutting")
+          and not(researchPrerequisites/li="Stonecutting")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Stonecutting</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

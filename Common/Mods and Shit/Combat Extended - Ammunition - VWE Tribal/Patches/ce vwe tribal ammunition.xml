@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Sling ammo -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[defName="VFET_Bow"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[
+              defName="MakeAmmo_SlingBullet_Stone"
+              or defName="MakeAmmo_SlingBullet_Steel"
+              or defName="MakeAmmo_SlingBullet_Plasteel"
+            ]/researchPrerequisite[text()="VFET_Weapons"]
+            | Defs/RecipeDef[
+              defName="MakeAmmo_SlingBullet_Stone"
+              or defName="MakeAmmo_SlingBullet_Steel"
+              or defName="MakeAmmo_SlingBullet_Plasteel"
+            ]/researchPrerequisites/li[text()="VFET_Weapons"]
+          </xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>
+              Defs/RecipeDef[
+                defName="MakeAmmo_SlingBullet_Stone"
+                or defName="MakeAmmo_SlingBullet_Steel"
+                or defName="MakeAmmo_SlingBullet_Plasteel"
+              ]/researchPrerequisite[text()="VFET_Weapons"]
+              | Defs/RecipeDef[
+                defName="MakeAmmo_SlingBullet_Stone"
+                or defName="MakeAmmo_SlingBullet_Steel"
+                or defName="MakeAmmo_SlingBullet_Plasteel"
+              ]/researchPrerequisites/li[text()="VFET_Weapons"]
+            </xpath>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[
+              defName="MakeAmmo_SlingBullet_Stone"
+              or defName="MakeAmmo_SlingBullet_Steel"
+              or defName="MakeAmmo_SlingBullet_Plasteel"
+            ][not(researchPrerequisite="VFET_Bow")][not(researchPrerequisites)]
+          </xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>
+              Defs/RecipeDef[
+                defName="MakeAmmo_SlingBullet_Stone"
+                or defName="MakeAmmo_SlingBullet_Steel"
+                or defName="MakeAmmo_SlingBullet_Plasteel"
+              ][not(researchPrerequisite="VFET_Bow")][not(researchPrerequisites)]
+            </xpath>
+            <value>
+              <researchPrerequisites>
+                <li>VFET_Bow</li>
+              </researchPrerequisites>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[
+              defName="MakeAmmo_SlingBullet_Stone"
+              or defName="MakeAmmo_SlingBullet_Steel"
+              or defName="MakeAmmo_SlingBullet_Plasteel"
+            ][
+              not(researchPrerequisite="VFET_Bow")
+              and not(researchPrerequisites/li="VFET_Bow")
+            ]/researchPrerequisites
+          </xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>
+              Defs/RecipeDef[
+                defName="MakeAmmo_SlingBullet_Stone"
+                or defName="MakeAmmo_SlingBullet_Steel"
+                or defName="MakeAmmo_SlingBullet_Plasteel"
+              ][
+                not(researchPrerequisite="VFET_Bow")
+                and not(researchPrerequisites/li="VFET_Bow")
+              ]/researchPrerequisites
+            </xpath>
+            <value>
+              <li>VFET_Bow</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

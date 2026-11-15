@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/prerequisites/li[text()="PrecisionRifling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/prerequisites/li[text()="PrecisionRifling"]</xpath>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/prerequisites[not(li="Ferny_AmmunitionManufacturing")]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/prerequisites</xpath>
+            <value>
+              <li>Ferny_AmmunitionManufacturing</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/prerequisites/li[text()="GasOperation"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/prerequisites/li[text()="GasOperation"]</xpath>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/prerequisites[not(li="Ferny_AmmunitionManufacturing")]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/prerequisites</xpath>
+            <value>
+              <li>Ferny_AmmunitionManufacturing</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/prerequisites/li[text()="GasOperation"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/prerequisites/li[text()="GasOperation"]</xpath>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/prerequisites[not(li="Ferny_AmmunitionManufacturing")]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="CE_TurretHeavyWeapons"]/prerequisites</xpath>
+            <value>
+              <li>Ferny_AmmunitionManufacturing</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Gunsmithing migration: GAE optional, any additive patch order. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/ThingDef[
+        defName="AmmoBench"
+        or defName="VFES_AmmoCrate"
+      ]/researchPrerequisites[li="Ferny_AmmunitionManufacturing"]/li[text()="Gunsmithing"]
+    </xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>
+        Defs/ThingDef[
+          defName="AmmoBench"
+          or defName="VFES_AmmoCrate"
+        ]/researchPrerequisites[li="Ferny_AmmunitionManufacturing"]/li[text()="Gunsmithing"]
+      </xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/ThingDef[
+        defName="AmmoBench"
+        or defName="VFES_AmmoCrate"
+      ]/researchPrerequisites/li[text()="Gunsmithing"]
+    </xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>
+        Defs/ThingDef[
+          defName="AmmoBench"
+          or defName="VFES_AmmoCrate"
+        ]/researchPrerequisites/li[text()="Gunsmithing"]
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_43cal_NL"
+        or defName="MakeAmmo_DartRifle_NL"
+        or defName="MakeAmmo_LaserChargePack_Mech"
+        or defName="MakeAmmo_MechShell_Incendiary"
+        or defName="MakeAmmo_Mech_Charged"
+        or defName="MakeAmmo_PistolMagnum_AP"
+        or defName="MakeAmmo_PistolMagnum_FMJ"
+        or defName="MakeAmmo_PistolMagnum_HP"
+        or defName="MakeAmmo_Pistol_AP"
+        or defName="MakeAmmo_Pistol_FMJ"
+        or defName="MakeAmmo_Pistol_HP"
+        or defName="MakeAmmo_RifleIntermediate_AP"
+        or defName="MakeAmmo_RifleIntermediate_FMJ"
+        or defName="MakeAmmo_RifleIntermediate_HP"
+        or defName="MakeAmmo_RifleMagnum_AP"
+        or defName="MakeAmmo_RifleMagnum_FMJ"
+        or defName="MakeAmmo_Rifle_AP"
+        or defName="MakeAmmo_Rifle_FMJ"
+        or defName="MakeAmmo_Rifle_HP"
+        or defName="MakeAmmo_Shotgun_Beanbag"
+        or defName="MakeAmmo_Shotgun_Buck"
+        or defName="MakeAmmo_Shotgun_ElectroSlug"
+        or defName="MakeAmmo_Shotgun_Slug"
+        or defName="MakeAmmo_Taser"
+      ][
+        researchPrerequisite="Ferny_AmmunitionManufacturing"
+        or researchPrerequisites/li="Ferny_AmmunitionManufacturing"
+      ]/researchPrerequisite[text()="Gunsmithing"]
+    </xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_43cal_NL"
+          or defName="MakeAmmo_DartRifle_NL"
+          or defName="MakeAmmo_LaserChargePack_Mech"
+          or defName="MakeAmmo_MechShell_Incendiary"
+          or defName="MakeAmmo_Mech_Charged"
+          or defName="MakeAmmo_PistolMagnum_AP"
+          or defName="MakeAmmo_PistolMagnum_FMJ"
+          or defName="MakeAmmo_PistolMagnum_HP"
+          or defName="MakeAmmo_Pistol_AP"
+          or defName="MakeAmmo_Pistol_FMJ"
+          or defName="MakeAmmo_Pistol_HP"
+          or defName="MakeAmmo_RifleIntermediate_AP"
+          or defName="MakeAmmo_RifleIntermediate_FMJ"
+          or defName="MakeAmmo_RifleIntermediate_HP"
+          or defName="MakeAmmo_RifleMagnum_AP"
+          or defName="MakeAmmo_RifleMagnum_FMJ"
+          or defName="MakeAmmo_Rifle_AP"
+          or defName="MakeAmmo_Rifle_FMJ"
+          or defName="MakeAmmo_Rifle_HP"
+          or defName="MakeAmmo_Shotgun_Beanbag"
+          or defName="MakeAmmo_Shotgun_Buck"
+          or defName="MakeAmmo_Shotgun_ElectroSlug"
+          or defName="MakeAmmo_Shotgun_Slug"
+          or defName="MakeAmmo_Taser"
+        ][
+          researchPrerequisite="Ferny_AmmunitionManufacturing"
+          or researchPrerequisites/li="Ferny_AmmunitionManufacturing"
+        ]/researchPrerequisite[text()="Gunsmithing"]
+      </xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_43cal_NL"
+        or defName="MakeAmmo_DartRifle_NL"
+        or defName="MakeAmmo_LaserChargePack_Mech"
+        or defName="MakeAmmo_MechShell_Incendiary"
+        or defName="MakeAmmo_Mech_Charged"
+        or defName="MakeAmmo_PistolMagnum_AP"
+        or defName="MakeAmmo_PistolMagnum_FMJ"
+        or defName="MakeAmmo_PistolMagnum_HP"
+        or defName="MakeAmmo_Pistol_AP"
+        or defName="MakeAmmo_Pistol_FMJ"
+        or defName="MakeAmmo_Pistol_HP"
+        or defName="MakeAmmo_RifleIntermediate_AP"
+        or defName="MakeAmmo_RifleIntermediate_FMJ"
+        or defName="MakeAmmo_RifleIntermediate_HP"
+        or defName="MakeAmmo_RifleMagnum_AP"
+        or defName="MakeAmmo_RifleMagnum_FMJ"
+        or defName="MakeAmmo_Rifle_AP"
+        or defName="MakeAmmo_Rifle_FMJ"
+        or defName="MakeAmmo_Rifle_HP"
+        or defName="MakeAmmo_Shotgun_Beanbag"
+        or defName="MakeAmmo_Shotgun_Buck"
+        or defName="MakeAmmo_Shotgun_ElectroSlug"
+        or defName="MakeAmmo_Shotgun_Slug"
+        or defName="MakeAmmo_Taser"
+      ]/researchPrerequisite[text()="Gunsmithing"]
+    </xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_43cal_NL"
+          or defName="MakeAmmo_DartRifle_NL"
+          or defName="MakeAmmo_LaserChargePack_Mech"
+          or defName="MakeAmmo_MechShell_Incendiary"
+          or defName="MakeAmmo_Mech_Charged"
+          or defName="MakeAmmo_PistolMagnum_AP"
+          or defName="MakeAmmo_PistolMagnum_FMJ"
+          or defName="MakeAmmo_PistolMagnum_HP"
+          or defName="MakeAmmo_Pistol_AP"
+          or defName="MakeAmmo_Pistol_FMJ"
+          or defName="MakeAmmo_Pistol_HP"
+          or defName="MakeAmmo_RifleIntermediate_AP"
+          or defName="MakeAmmo_RifleIntermediate_FMJ"
+          or defName="MakeAmmo_RifleIntermediate_HP"
+          or defName="MakeAmmo_RifleMagnum_AP"
+          or defName="MakeAmmo_RifleMagnum_FMJ"
+          or defName="MakeAmmo_Rifle_AP"
+          or defName="MakeAmmo_Rifle_FMJ"
+          or defName="MakeAmmo_Rifle_HP"
+          or defName="MakeAmmo_Shotgun_Beanbag"
+          or defName="MakeAmmo_Shotgun_Buck"
+          or defName="MakeAmmo_Shotgun_ElectroSlug"
+          or defName="MakeAmmo_Shotgun_Slug"
+          or defName="MakeAmmo_Taser"
+        ]/researchPrerequisite[text()="Gunsmithing"]
+      </xpath>
+      <value>
+        <researchPrerequisite Inherit="False">Ferny_AmmunitionManufacturing</researchPrerequisite>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_43cal_NL"
+        or defName="MakeAmmo_DartRifle_NL"
+        or defName="MakeAmmo_LaserChargePack_Mech"
+        or defName="MakeAmmo_MechShell_Incendiary"
+        or defName="MakeAmmo_Mech_Charged"
+        or defName="MakeAmmo_PistolMagnum_AP"
+        or defName="MakeAmmo_PistolMagnum_FMJ"
+        or defName="MakeAmmo_PistolMagnum_HP"
+        or defName="MakeAmmo_Pistol_AP"
+        or defName="MakeAmmo_Pistol_FMJ"
+        or defName="MakeAmmo_Pistol_HP"
+        or defName="MakeAmmo_RifleIntermediate_AP"
+        or defName="MakeAmmo_RifleIntermediate_FMJ"
+        or defName="MakeAmmo_RifleIntermediate_HP"
+        or defName="MakeAmmo_RifleMagnum_AP"
+        or defName="MakeAmmo_RifleMagnum_FMJ"
+        or defName="MakeAmmo_Rifle_AP"
+        or defName="MakeAmmo_Rifle_FMJ"
+        or defName="MakeAmmo_Rifle_HP"
+        or defName="MakeAmmo_Shotgun_Beanbag"
+        or defName="MakeAmmo_Shotgun_Buck"
+        or defName="MakeAmmo_Shotgun_ElectroSlug"
+        or defName="MakeAmmo_Shotgun_Slug"
+        or defName="MakeAmmo_Taser"
+      ][
+        researchPrerequisite="Ferny_AmmunitionManufacturing"
+        or researchPrerequisites/li="Ferny_AmmunitionManufacturing"
+      ]/researchPrerequisites/li[text()="Gunsmithing"]
+    </xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_43cal_NL"
+          or defName="MakeAmmo_DartRifle_NL"
+          or defName="MakeAmmo_LaserChargePack_Mech"
+          or defName="MakeAmmo_MechShell_Incendiary"
+          or defName="MakeAmmo_Mech_Charged"
+          or defName="MakeAmmo_PistolMagnum_AP"
+          or defName="MakeAmmo_PistolMagnum_FMJ"
+          or defName="MakeAmmo_PistolMagnum_HP"
+          or defName="MakeAmmo_Pistol_AP"
+          or defName="MakeAmmo_Pistol_FMJ"
+          or defName="MakeAmmo_Pistol_HP"
+          or defName="MakeAmmo_RifleIntermediate_AP"
+          or defName="MakeAmmo_RifleIntermediate_FMJ"
+          or defName="MakeAmmo_RifleIntermediate_HP"
+          or defName="MakeAmmo_RifleMagnum_AP"
+          or defName="MakeAmmo_RifleMagnum_FMJ"
+          or defName="MakeAmmo_Rifle_AP"
+          or defName="MakeAmmo_Rifle_FMJ"
+          or defName="MakeAmmo_Rifle_HP"
+          or defName="MakeAmmo_Shotgun_Beanbag"
+          or defName="MakeAmmo_Shotgun_Buck"
+          or defName="MakeAmmo_Shotgun_ElectroSlug"
+          or defName="MakeAmmo_Shotgun_Slug"
+          or defName="MakeAmmo_Taser"
+        ][
+          researchPrerequisite="Ferny_AmmunitionManufacturing"
+          or researchPrerequisites/li="Ferny_AmmunitionManufacturing"
+        ]/researchPrerequisites/li[text()="Gunsmithing"]
+      </xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_43cal_NL"
+        or defName="MakeAmmo_DartRifle_NL"
+        or defName="MakeAmmo_LaserChargePack_Mech"
+        or defName="MakeAmmo_MechShell_Incendiary"
+        or defName="MakeAmmo_Mech_Charged"
+        or defName="MakeAmmo_PistolMagnum_AP"
+        or defName="MakeAmmo_PistolMagnum_FMJ"
+        or defName="MakeAmmo_PistolMagnum_HP"
+        or defName="MakeAmmo_Pistol_AP"
+        or defName="MakeAmmo_Pistol_FMJ"
+        or defName="MakeAmmo_Pistol_HP"
+        or defName="MakeAmmo_RifleIntermediate_AP"
+        or defName="MakeAmmo_RifleIntermediate_FMJ"
+        or defName="MakeAmmo_RifleIntermediate_HP"
+        or defName="MakeAmmo_RifleMagnum_AP"
+        or defName="MakeAmmo_RifleMagnum_FMJ"
+        or defName="MakeAmmo_Rifle_AP"
+        or defName="MakeAmmo_Rifle_FMJ"
+        or defName="MakeAmmo_Rifle_HP"
+        or defName="MakeAmmo_Shotgun_Beanbag"
+        or defName="MakeAmmo_Shotgun_Buck"
+        or defName="MakeAmmo_Shotgun_ElectroSlug"
+        or defName="MakeAmmo_Shotgun_Slug"
+        or defName="MakeAmmo_Taser"
+      ]/researchPrerequisites/li[text()="Gunsmithing"]
+    </xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_43cal_NL"
+          or defName="MakeAmmo_DartRifle_NL"
+          or defName="MakeAmmo_LaserChargePack_Mech"
+          or defName="MakeAmmo_MechShell_Incendiary"
+          or defName="MakeAmmo_Mech_Charged"
+          or defName="MakeAmmo_PistolMagnum_AP"
+          or defName="MakeAmmo_PistolMagnum_FMJ"
+          or defName="MakeAmmo_PistolMagnum_HP"
+          or defName="MakeAmmo_Pistol_AP"
+          or defName="MakeAmmo_Pistol_FMJ"
+          or defName="MakeAmmo_Pistol_HP"
+          or defName="MakeAmmo_RifleIntermediate_AP"
+          or defName="MakeAmmo_RifleIntermediate_FMJ"
+          or defName="MakeAmmo_RifleIntermediate_HP"
+          or defName="MakeAmmo_RifleMagnum_AP"
+          or defName="MakeAmmo_RifleMagnum_FMJ"
+          or defName="MakeAmmo_Rifle_AP"
+          or defName="MakeAmmo_Rifle_FMJ"
+          or defName="MakeAmmo_Rifle_HP"
+          or defName="MakeAmmo_Shotgun_Beanbag"
+          or defName="MakeAmmo_Shotgun_Buck"
+          or defName="MakeAmmo_Shotgun_ElectroSlug"
+          or defName="MakeAmmo_Shotgun_Slug"
+          or defName="MakeAmmo_Taser"
+        ]/researchPrerequisites/li[text()="Gunsmithing"]
+      </xpath>
+      <value>
+        <li>Ferny_AmmunitionManufacturing</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

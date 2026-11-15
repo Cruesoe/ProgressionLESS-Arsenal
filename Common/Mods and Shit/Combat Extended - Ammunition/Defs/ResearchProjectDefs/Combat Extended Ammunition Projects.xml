@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Ferny_AmmunitionManufacturing</defName>
+    <label>ammunition manufacturing</label>
+    <description>Build a loading bench and manufacture standard cartridges and shotgun shells.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ferny_Arsenal</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>7.70</researchViewY>
+    <prerequisites>
+      <li>Machining</li>
+      <li>CE_Gunpowder</li>
+    </prerequisites>
+    <generalRules>
+      <rulesStrings>
+        <li>subject-&gt;ammunition manufacturing</li>
+        <li>subject_story-&gt;worked at an ammunition workshop</li>
+        <li>subject_gerund-&gt;manufacturing cartridges</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>
