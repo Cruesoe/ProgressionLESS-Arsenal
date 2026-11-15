@@ -15,13 +15,17 @@
             </researchPrerequisites>
           </value>
         </li>
-        <li Class="PatchOperationReplace">
+        <!-- Generic Ammo Experience removes matchlocks -->
+        <li Class="PatchOperationConditional">
           <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/prerequisites</xpath>
-          <value>
-            <prerequisites>
-              <li>Ferny_Cannon</li>
-            </prerequisites>
-          </value>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/prerequisites</xpath>
+            <value>
+              <prerequisites>
+                <li>Ferny_Cannon</li>
+              </prerequisites>
+            </value>
+          </match>
         </li>
       </operations>
     </match>

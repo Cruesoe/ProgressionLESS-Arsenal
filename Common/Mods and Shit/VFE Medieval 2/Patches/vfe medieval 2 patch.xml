@@ -65,43 +65,51 @@
               <researchPrerequisite>Ferny_Longbow</researchPrerequisite>
             </value>
           </Operation>
-          <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/label</xpath>
-            <value>
-              <label>hand cannon</label>
-            </value>
-          </Operation>
-          <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/description</xpath>
-            <value>
-              <description>Craft crude handheld gunpowder tubes that launch devastating shot at short range.</description>
-            </value>
-          </Operation>
-          <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/baseCost</xpath>
-            <value>
-              <baseCost>500</baseCost>
-            </value>
-          </Operation>
-          <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/generalRules</xpath>
-            <value>
-              <generalRules>
-                <rulesStrings>
-                  <li>subject-&gt;hand cannons</li>
-                  <li>subject_story-&gt;made crude handheld gunpowder weapons reliable enough for the field</li>
-                  <li>subject_story-&gt;brought thunderous short-range firearms into battle</li>
-                  <li>subject_story-&gt;learned to cast and brace early portable gun barrels</li>
-                  <li>subject_gerund-&gt;crafting hand cannons</li>
-                </rulesStrings>
-              </generalRules>
-            </value>
-          </Operation>
-          <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="VFEM2_Gun_HandCannon"]/recipeMaker/researchPrerequisite</xpath>
-            <value>
-              <researchPrerequisite>VFEM2_Matchlocks</researchPrerequisite>
-            </value>
+          <!-- Generic Ammo Experience removes matchlocks and moves its items to CE's Gunpowder -->
+          <Operation Class="PatchOperationConditional">
+            <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]</xpath>
+            <match Class="PatchOperationSequence">
+              <operations>
+                <li Class="PatchOperationReplace">
+                  <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/label</xpath>
+                  <value>
+                    <label>hand cannon</label>
+                  </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                  <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/description</xpath>
+                  <value>
+                    <description>Craft crude handheld gunpowder tubes that launch devastating shot at short range.</description>
+                  </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                  <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/baseCost</xpath>
+                  <value>
+                    <baseCost>500</baseCost>
+                  </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                  <xpath>Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]/generalRules</xpath>
+                  <value>
+                    <generalRules>
+                      <rulesStrings>
+                        <li>subject-&gt;hand cannons</li>
+                        <li>subject_story-&gt;made crude handheld gunpowder weapons reliable enough for the field</li>
+                        <li>subject_story-&gt;brought thunderous short-range firearms into battle</li>
+                        <li>subject_story-&gt;learned to cast and brace early portable gun barrels</li>
+                        <li>subject_gerund-&gt;crafting hand cannons</li>
+                      </rulesStrings>
+                    </generalRules>
+                  </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                  <xpath>Defs/ThingDef[defName="VFEM2_Gun_HandCannon"]/recipeMaker/researchPrerequisite</xpath>
+                  <value>
+                    <researchPrerequisite>VFEM2_Matchlocks</researchPrerequisite>
+                  </value>
+                </li>
+              </operations>
+            </match>
           </Operation>
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_Gun_Arquebus"]/recipeMaker/researchPrerequisite</xpath>
