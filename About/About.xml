@@ -28,7 +28,9 @@
 
 Overhauls weapon progression.
 
-The "LESS" is less research: Progression: Arsenal adds up to 346 research projects depending on your mods. This fork groups them into at most 125, such as Swords, Revolvers, Gun turrets and Charge pistols. Everything stays in the same era, and still needs the other research it did before.
+With Combat Extended, ammunition unlocks through research too: Ammunition manufacturing, after Machining and Gunpowder, unlocks the loading bench and standard cartridges, and specialty ammo unlocks with its weapons. Based on CE Progression Ammunition by Pluri.
+
+The "LESS" is less research: Progression: Arsenal adds up to 346 research projects depending on your mods. This fork groups them into at most 126, such as Swords, Revolvers, Gun turrets and Charge pistols. Everything stays in the same era, and still needs the other research it did before.
 
 Forked from Progression: Arsenal by ferny.
 Huge thanks to ferny for the original mod and all the Progression work this builds on. Replaces the original; do not use both.
@@ -94,5 +96,6 @@ For a really good modpack, check out The Progression Modpack on the Steam Worksh
     <li>notdvd.eventide</li>
     <li>VanillaExpanded.VWEBF</li>
     <li>CETeam.CombatExtended</li>
+    <li>Rosalina.Mating.Press</li>
   </loadAfter>
 </ModMetaData>

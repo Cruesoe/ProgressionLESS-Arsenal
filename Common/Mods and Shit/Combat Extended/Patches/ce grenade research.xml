@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Molotovs: molotov cocktails replace GAE basic explosives -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>
+          Defs/RecipeDef[defName="MakeMolotovCocktail"]/researchPrerequisite[text()="SEX_Plosives"]
+          | Defs/RecipeDef[defName="MakeMolotovCocktail"]/researchPrerequisites/li[text()="SEX_Plosives"]
+        </xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>
+            Defs/RecipeDef[defName="MakeMolotovCocktail"]/researchPrerequisite[text()="SEX_Plosives"]
+            | Defs/RecipeDef[defName="MakeMolotovCocktail"]/researchPrerequisites/li[text()="SEX_Plosives"]
+          </xpath>
+        </match>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>
+          Defs/RecipeDef[defName="MakeMolotovCocktail"][
+            not(researchPrerequisite="Ferny_MolotovCocktails")
+            and not(researchPrerequisites/li="Ferny_MolotovCocktails")
+          ]
+        </xpath>
+        <match Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="MakeMolotovCocktail"]/researchPrerequisites</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeMolotovCocktail"]/researchPrerequisites</xpath>
+            <value>
+              <li>Ferny_MolotovCocktails</li>
+            </value>
+          </match>
+
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeMolotovCocktail"]</xpath>
+            <value>
+              <researchPrerequisites>
+                <li>Ferny_MolotovCocktails</li>
+              </researchPrerequisites>
+            </value>
+          </nomatch>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+
+  <!-- Frag grenades: retain CE Machining -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeFragGrenade"][
+        not(researchPrerequisite="Ferny_FragGrenades")
+        and not(researchPrerequisites/li="Ferny_FragGrenades")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeFragGrenade"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeFragGrenade"]/researchPrerequisites</xpath>
+        <value>
+          <li>Ferny_FragGrenades</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeFragGrenade"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Ferny_FragGrenades</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <!-- Tear gas grenades -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_SmokeGrenades"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]/researchPrerequisite[text()="VWE_NonLethal"]
+            | Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+          </xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>
+              Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]/researchPrerequisite[text()="VWE_NonLethal"]
+              | Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+            </xpath>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"][
+              not(researchPrerequisite="Ferny_SmokeGrenades")
+              and not(researchPrerequisites/li="Ferny_SmokeGrenades")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_SmokeGrenades</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeVWENLTearGasGrenade"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_SmokeGrenades</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_SmokeGrenades"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisite[text()="VWE_NonLethal"]
+            | Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisites/li[text()="VWE_NonLethal"]
+          </xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>
+              Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisite[text()="VWE_NonLethal"]
+              | Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisites/li[text()="VWE_NonLethal"]
+            </xpath>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker[
+              not(researchPrerequisite="Ferny_SmokeGrenades")
+              and not(researchPrerequisites/li="Ferny_SmokeGrenades")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_SmokeGrenades</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_SmokeGrenades</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Spacer Arsenal grenades: CE crafts them with its own recipes -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeContact"][
+        not(researchPrerequisite="Ferny_PlasmaGrenades")
+        and not(researchPrerequisites/li="Ferny_PlasmaGrenades")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeContact"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeContact"]/researchPrerequisites</xpath>
+        <value>
+          <li>Ferny_PlasmaGrenades</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeContact"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Ferny_PlasmaGrenades</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"][
+        not(researchPrerequisite="Ferny_PlasmaGrenades")
+        and not(researchPrerequisites/li="Ferny_PlasmaGrenades")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"]/researchPrerequisites</xpath>
+        <value>
+          <li>Ferny_PlasmaGrenades</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Ferny_PlasmaGrenades</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"][
+        not(researchPrerequisite="Ferny_FragGrenades")
+        and not(researchPrerequisites/li="Ferny_FragGrenades")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"]/researchPrerequisites</xpath>
+        <value>
+          <li>Ferny_FragGrenades</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadePlasma"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Ferny_FragGrenades</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeThump"][
+        not(researchPrerequisite="Ferny_PlasmaBlaster")
+        and not(researchPrerequisites/li="Ferny_PlasmaBlaster")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeThump"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeThump"]/researchPrerequisites</xpath>
+        <value>
+          <li>Ferny_PlasmaBlaster</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeDV_Weapon_GrenadeThump"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Ferny_PlasmaBlaster</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>

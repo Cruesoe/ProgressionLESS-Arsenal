@@ -77,6 +77,13 @@
     <li IfModActive="oskarpotocki.vfe.medieval2,VanillaExpanded.vwe" IfModNotActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Heavy Maces</li>
     <li IfModNotActive="dankpyon.medieval.overhaul,oskarpotocki.vfe.medieval2,VanillaExpanded.vwe">Common/Mods and Shit/Maces</li>
     <li IfModActive="RedMattis.BigSmall.Core" IfModNotActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Big and Small</li>
+    <!-- Combat Extended: grenade projects on CE's grenade recipes; ammunition research stays off when CE Progression Ammunition does it -->
+    <li IfModActive="CETeam.CombatExtended">Common/Mods and Shit/Combat Extended</li>
+    <li IfModActive="VanillaExpanded.vwe,VanillaExpanded.VWENL,det.vanillaarsenal" IfModActiveAll="CETeam.CombatExtended">Common/Mods and Shit/Combat Extended - Smoke Grenades</li>
+    <li IfModActive="CETeam.CombatExtended" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition</li>
+    <li IfModActiveAll="CETeam.CombatExtended,Rosalina.Mating.Press" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - Generic Ammo Experience</li>
+    <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal</li>
+    <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo,Rosalina.Mating.Press">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal Without Generic Ammo Experience</li>
   </v1.6>
   <v1.7>
     <!-- Listed first so its patches run after every other folder's -->
@@ -156,5 +163,12 @@
     <li IfModActive="oskarpotocki.vfe.medieval2,VanillaExpanded.vwe" IfModNotActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Heavy Maces</li>
     <li IfModNotActive="dankpyon.medieval.overhaul,oskarpotocki.vfe.medieval2,VanillaExpanded.vwe">Common/Mods and Shit/Maces</li>
     <li IfModActive="RedMattis.BigSmall.Core" IfModNotActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Big and Small</li>
+    <!-- Combat Extended: grenade projects on CE's grenade recipes; ammunition research stays off when CE Progression Ammunition does it -->
+    <li IfModActive="CETeam.CombatExtended">Common/Mods and Shit/Combat Extended</li>
+    <li IfModActive="VanillaExpanded.vwe,VanillaExpanded.VWENL,det.vanillaarsenal" IfModActiveAll="CETeam.CombatExtended">Common/Mods and Shit/Combat Extended - Smoke Grenades</li>
+    <li IfModActive="CETeam.CombatExtended" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition</li>
+    <li IfModActiveAll="CETeam.CombatExtended,Rosalina.Mating.Press" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - Generic Ammo Experience</li>
+    <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal</li>
+    <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo,Rosalina.Mating.Press">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal Without Generic Ammo Experience</li>
   </v1.7>
 </loadFolders>

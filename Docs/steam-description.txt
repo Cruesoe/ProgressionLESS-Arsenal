@@ -6,11 +6,12 @@
 [list]
 [*]Overhauls weapon progression, so every weapon, turret and piece of combat gear unlocks in its proper tech era.
 [*]Everything lives on its own Arsenal research tab, with tribal weapons on the VFE Tribals tab.
+[*]With Combat Extended, ammunition is part of the tree: [b]Ammunition manufacturing[/b], after Machining and Gunpowder, unlocks the loading bench and standard cartridges and shells, and specialty ammo (arrows, darts, tear gas, Forsaken arrows and more) unlocks with its weapons. Based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3826731197]CE Progression Ammunition[/url] by Pluri.
 [*]Covers everything from clubs and slings to longswords, muskets, sniper rifles, warcaskets, turrets and spacer charge, laser and gauss weapons.
 [/list]
 
 [h2]Why "LESS"?[/h2]
-Progression: Arsenal adds up to [b]346 research projects[/b] depending on your mods. This fork groups them into [b]at most 125[/b] weapon families:
+Progression: Arsenal adds up to [b]346 research projects[/b] depending on your mods. This fork groups them into [b]at most 126[/b] weapon families:
 [list]
 [*][b]Tribal:[/b] Melee weapons, Ranged weapons, Heavy tribal weapons, Megafauna bows
 [*][b]Neolithic:[/b] Hatchets, Axes, Smithed blades, String instruments
@@ -38,6 +39,7 @@ Keeps all of the original's mod support:
 [*]Mythic Ages, Biomes! Mushkin, Rainbow Forest, Firefoam Things, Ancient Mining Industry, Reel's Turret Pipes, and As Above So Below 2
 [*]Ushanka's Glittertech Expansion and Biological Warfare, Fireworks, and Bionic modularity
 [*]Eventide, Medic, Shipcracker and Toxin warcaskets
+[*]Combat Extended, including Generic Ammo Experience; its grenades unlock with the matching Arsenal projects
 [*]Both Progression: Furniture and ProgressionLESS: Furniture
 [/list]
 

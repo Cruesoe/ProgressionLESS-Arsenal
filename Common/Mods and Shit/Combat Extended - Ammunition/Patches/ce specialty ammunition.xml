@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Metal primitive ammo -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Arrow_Iron"
+        or defName="MakeAmmo_Arrow_Steel"
+        or defName="MakeAmmo_Arrow_Plasteel"
+        or defName="MakeAmmo_Arrow_Flame"
+        or defName="MakeAmmo_Arrow_Venom"
+        or defName="MakeAmmo_GreatArrow_Iron"
+        or defName="MakeAmmo_GreatArrow_Steel"
+        or defName="MakeAmmo_GreatArrow_Plasteel"
+        or defName="MakeAmmo_GreatArrow_Flame"
+        or defName="MakeAmmo_GreatArrow_Venom"
+        or defName="MakeAmmo_CrossbowBolt_Iron"
+        or defName="MakeAmmo_CrossbowBolt_Steel"
+        or defName="MakeAmmo_CrossbowBolt_Plasteel"
+        or defName="MakeAmmo_CrossbowBolt_Flame"
+        or defName="MakeAmmo_CrossbowBolt_Venom"
+        or defName="MakeAmmo_SlingBullet_Steel"
+        or defName="MakeAmmo_SlingBullet_Plasteel"
+      ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Arrow_Iron"
+          or defName="MakeAmmo_Arrow_Steel"
+          or defName="MakeAmmo_Arrow_Plasteel"
+          or defName="MakeAmmo_Arrow_Flame"
+          or defName="MakeAmmo_Arrow_Venom"
+          or defName="MakeAmmo_GreatArrow_Iron"
+          or defName="MakeAmmo_GreatArrow_Steel"
+          or defName="MakeAmmo_GreatArrow_Plasteel"
+          or defName="MakeAmmo_GreatArrow_Flame"
+          or defName="MakeAmmo_GreatArrow_Venom"
+          or defName="MakeAmmo_CrossbowBolt_Iron"
+          or defName="MakeAmmo_CrossbowBolt_Steel"
+          or defName="MakeAmmo_CrossbowBolt_Plasteel"
+          or defName="MakeAmmo_CrossbowBolt_Flame"
+          or defName="MakeAmmo_CrossbowBolt_Venom"
+          or defName="MakeAmmo_SlingBullet_Steel"
+          or defName="MakeAmmo_SlingBullet_Plasteel"
+        ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Smithing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_Arrow_Iron"
+        or defName="MakeAmmo_Arrow_Steel"
+        or defName="MakeAmmo_Arrow_Plasteel"
+        or defName="MakeAmmo_Arrow_Flame"
+        or defName="MakeAmmo_Arrow_Venom"
+        or defName="MakeAmmo_GreatArrow_Iron"
+        or defName="MakeAmmo_GreatArrow_Steel"
+        or defName="MakeAmmo_GreatArrow_Plasteel"
+        or defName="MakeAmmo_GreatArrow_Flame"
+        or defName="MakeAmmo_GreatArrow_Venom"
+        or defName="MakeAmmo_CrossbowBolt_Iron"
+        or defName="MakeAmmo_CrossbowBolt_Steel"
+        or defName="MakeAmmo_CrossbowBolt_Plasteel"
+        or defName="MakeAmmo_CrossbowBolt_Flame"
+        or defName="MakeAmmo_CrossbowBolt_Venom"
+        or defName="MakeAmmo_SlingBullet_Steel"
+        or defName="MakeAmmo_SlingBullet_Plasteel"
+      ][
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_Arrow_Iron"
+          or defName="MakeAmmo_Arrow_Steel"
+          or defName="MakeAmmo_Arrow_Plasteel"
+          or defName="MakeAmmo_Arrow_Flame"
+          or defName="MakeAmmo_Arrow_Venom"
+          or defName="MakeAmmo_GreatArrow_Iron"
+          or defName="MakeAmmo_GreatArrow_Steel"
+          or defName="MakeAmmo_GreatArrow_Plasteel"
+          or defName="MakeAmmo_GreatArrow_Flame"
+          or defName="MakeAmmo_GreatArrow_Venom"
+          or defName="MakeAmmo_CrossbowBolt_Iron"
+          or defName="MakeAmmo_CrossbowBolt_Steel"
+          or defName="MakeAmmo_CrossbowBolt_Plasteel"
+          or defName="MakeAmmo_CrossbowBolt_Flame"
+          or defName="MakeAmmo_CrossbowBolt_Venom"
+          or defName="MakeAmmo_SlingBullet_Steel"
+          or defName="MakeAmmo_SlingBullet_Plasteel"
+        ][
+          not(researchPrerequisite="Smithing")
+          and not(researchPrerequisites/li="Smithing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Smithing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Ordinary arrows, including MO iron -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/*[defName="VFET_Bow"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[
+              defName="MakeAmmo_Arrow_Stone"
+              or defName="MakeAmmo_Arrow_Iron"
+              or defName="MakeAmmo_Arrow_Steel"
+              or defName="MakeAmmo_Arrow_Plasteel"
+              or defName="MakeAmmo_Arrow_Flame"
+              or defName="MakeAmmo_Arrow_Venom"
+            ][not(researchPrerequisite="VFET_Bow")][not(researchPrerequisites)]
+          </xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>
+              Defs/RecipeDef[
+                defName="MakeAmmo_Arrow_Stone"
+                or defName="MakeAmmo_Arrow_Iron"
+                or defName="MakeAmmo_Arrow_Steel"
+                or defName="MakeAmmo_Arrow_Plasteel"
+                or defName="MakeAmmo_Arrow_Flame"
+                or defName="MakeAmmo_Arrow_Venom"
+              ][not(researchPrerequisite="VFET_Bow")][not(researchPrerequisites)]
+            </xpath>
+            <value>
+              <researchPrerequisites>
+                <li>VFET_Bow</li>
+              </researchPrerequisites>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[
+              defName="MakeAmmo_Arrow_Stone"
+              or defName="MakeAmmo_Arrow_Iron"
+              or defName="MakeAmmo_Arrow_Steel"
+              or defName="MakeAmmo_Arrow_Plasteel"
+              or defName="MakeAmmo_Arrow_Flame"
+              or defName="MakeAmmo_Arrow_Venom"
+            ][
+              not(researchPrerequisite="VFET_Bow")
+              and not(researchPrerequisites/li="VFET_Bow")
+            ]/researchPrerequisites
+          </xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>
+              Defs/RecipeDef[
+                defName="MakeAmmo_Arrow_Stone"
+                or defName="MakeAmmo_Arrow_Iron"
+                or defName="MakeAmmo_Arrow_Steel"
+                or defName="MakeAmmo_Arrow_Plasteel"
+                or defName="MakeAmmo_Arrow_Flame"
+                or defName="MakeAmmo_Arrow_Venom"
+              ][
+                not(researchPrerequisite="VFET_Bow")
+                and not(researchPrerequisites/li="VFET_Bow")
+              ]/researchPrerequisites
+            </xpath>
+            <value>
+              <li>VFET_Bow</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Pila -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeAmmo_Pilum"][
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_Pilum"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Pilum"]/researchPrerequisites</xpath>
+        <value>
+          <li>Smithing</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Pilum"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Smithing</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/ThingDef[defName="Pila"]/recipeMaker[
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Pila"]/recipeMaker/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Pila"]/recipeMaker/researchPrerequisites</xpath>
+        <value>
+          <li>Smithing</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Pila"]/recipeMaker</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Smithing</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <!-- Throwing knives -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>
+          Defs/RecipeDef[defName="MakeVWEThrowingKnives"][
+            not(researchPrerequisite="Smithing")
+            and not(researchPrerequisites/li="Smithing")
+          ]
+        </xpath>
+        <match Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="MakeVWEThrowingKnives"]/researchPrerequisites</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeVWEThrowingKnives"]/researchPrerequisites</xpath>
+            <value>
+              <li>Smithing</li>
+            </value>
+          </match>
+
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeVWEThrowingKnives"]</xpath>
+            <value>
+              <researchPrerequisites>
+                <li>Smithing</li>
+              </researchPrerequisites>
+            </value>
+          </nomatch>
+        </match>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>
+          Defs/RecipeDef[defName="MakeVWEThrowingKnives"][
+            not(researchPrerequisite="Ferny_Knife")
+            and not(researchPrerequisites/li="Ferny_Knife")
+          ]
+        </xpath>
+        <match Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="MakeVWEThrowingKnives"]/researchPrerequisites</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeVWEThrowingKnives"]/researchPrerequisites</xpath>
+            <value>
+              <li>Ferny_Knife</li>
+            </value>
+          </match>
+
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="MakeVWEThrowingKnives"]</xpath>
+            <value>
+              <researchPrerequisites>
+                <li>Ferny_Knife</li>
+              </researchPrerequisites>
+            </value>
+          </nomatch>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+
+  <!-- Rubber ammunition -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_RubberPistol"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisite[text()="VWE_NonLethal"]
+            | Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+          </xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>
+              Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisite[text()="VWE_NonLethal"]
+              | Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+            </xpath>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_43cal_NL"][
+              not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+              and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_AmmunitionManufacturing</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_AmmunitionManufacturing</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_43cal_NL"][
+              not(researchPrerequisite="Ferny_RubberPistol")
+              and not(researchPrerequisites/li="Ferny_RubberPistol")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_RubberPistol</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_43cal_NL"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_RubberPistol</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Tranquilizer darts -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_RubberPistol"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisite[text()="VWE_NonLethal"]
+            | Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+          </xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>
+              Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisite[text()="VWE_NonLethal"]
+              | Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+            </xpath>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"][
+              not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+              and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_AmmunitionManufacturing</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_AmmunitionManufacturing</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"][
+              not(researchPrerequisite="Ferny_RubberPistol")
+              and not(researchPrerequisites/li="Ferny_RubberPistol")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_RubberPistol</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_DartRifle_NL"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_RubberPistol</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Taser ammunition -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_RubberPistol"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisite[text()="VWE_NonLethal"]
+            | Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+          </xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>
+              Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisite[text()="VWE_NonLethal"]
+              | Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisites/li[text()="VWE_NonLethal"]
+            </xpath>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_Taser"][
+              not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+              and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_AmmunitionManufacturing</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_Taser"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_AmmunitionManufacturing</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_Taser"][
+              not(researchPrerequisite="Ferny_RubberPistol")
+              and not(researchPrerequisites/li="Ferny_RubberPistol")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_Taser"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_RubberPistol</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_Taser"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_RubberPistol</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Tear gas cartridges -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_TearGasLauncher"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"][
+              not(researchPrerequisite="Ferny_AmmunitionManufacturing")
+              and not(researchPrerequisites/li="Ferny_AmmunitionManufacturing")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_AmmunitionManufacturing</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_AmmunitionManufacturing</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"][
+              not(researchPrerequisite="Ferny_TearGasLauncher")
+              and not(researchPrerequisites/li="Ferny_TearGasLauncher")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_TearGasLauncher</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_40x46mmGrenade_CN"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_TearGasLauncher</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Giant arrows -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_BigSmall_GiantArrow_Stone"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+      ][not(researchPrerequisite="Greatbow")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_BigSmall_GiantArrow_Stone"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+        ][not(researchPrerequisite="Greatbow")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Greatbow</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_BigSmall_GiantArrow_Stone"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+      ][
+        not(researchPrerequisite="Greatbow")
+        and not(researchPrerequisites/li="Greatbow")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_BigSmall_GiantArrow_Stone"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+        ][
+          not(researchPrerequisite="Greatbow")
+          and not(researchPrerequisites/li="Greatbow")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Greatbow</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Metal giant arrowheads -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+      ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+        ][not(researchPrerequisite="Smithing")][not(researchPrerequisites)]
+      </xpath>
+      <value>
+        <researchPrerequisites>
+          <li>Smithing</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[
+        defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+        or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+      ][
+        not(researchPrerequisite="Smithing")
+        and not(researchPrerequisites/li="Smithing")
+      ]/researchPrerequisites
+    </xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>
+        Defs/RecipeDef[
+          defName="MakeAmmo_BigSmall_GiantArrow_Steel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Plasteel"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Flame"
+          or defName="MakeAmmo_BigSmall_GiantArrow_Venom"
+        ][
+          not(researchPrerequisite="Smithing")
+          and not(researchPrerequisites/li="Smithing")
+        ]/researchPrerequisites
+      </xpath>
+      <value>
+        <li>Smithing</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Forsaken arrows -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Crossbow"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"][
+              not(researchPrerequisite="Electricity")
+              and not(researchPrerequisites/li="Electricity")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]/researchPrerequisites</xpath>
+              <value>
+                <li>Electricity</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Electricity</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"][
+              not(researchPrerequisite="Ferny_Crossbow")
+              and not(researchPrerequisites/li="Ferny_Crossbow")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]/researchPrerequisites</xpath>
+              <value>
+                <li>Ferny_Crossbow</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Ferny_Crossbow</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>
+            Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"][
+              not(researchPrerequisite="Smithing")
+              and not(researchPrerequisites/li="Smithing")
+            ]
+          </xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]/researchPrerequisites</xpath>
+              <value>
+                <li>Smithing</li>
+              </value>
+            </match>
+
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Smithing</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Nerve spiker bolts -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="BioferriteExtraction"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>
+        Defs/RecipeDef[defName="MakeAmmo_NerveSpikerBolt"][
+          not(researchPrerequisite="BioferriteExtraction")
+          and not(researchPrerequisites/li="BioferriteExtraction")
+        ]
+      </xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_NerveSpikerBolt"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_NerveSpikerBolt"]/researchPrerequisites</xpath>
+          <value>
+            <li>BioferriteExtraction</li>
+          </value>
+        </match>
+
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_NerveSpikerBolt"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>BioferriteExtraction</li>
+            </researchPrerequisites>
+          </value>
+        </nomatch>
+      </match>
+    </match>
+  </Operation>
+</Patch>

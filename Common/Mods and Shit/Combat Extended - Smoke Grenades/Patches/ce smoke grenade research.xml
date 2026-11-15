@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Smoke grenades: retain CE Machining -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>
+      Defs/RecipeDef[defName="MakeSmokeGrenade"][
+        not(researchPrerequisite="Ferny_SmokeGrenades")
+        and not(researchPrerequisites/li="Ferny_SmokeGrenades")
+      ]
+    </xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/RecipeDef[defName="MakeSmokeGrenade"]/researchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeSmokeGrenade"]/researchPrerequisites</xpath>
+        <value>
+          <li>Ferny_SmokeGrenades</li>
+        </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeSmokeGrenade"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>Ferny_SmokeGrenades</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>
