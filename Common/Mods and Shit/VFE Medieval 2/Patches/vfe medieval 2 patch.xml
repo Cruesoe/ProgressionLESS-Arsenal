@@ -111,11 +111,15 @@
               </operations>
             </match>
           </Operation>
-          <Operation Class="PatchOperationReplace">
+          <!-- The Generic Ammo Experience removes the arquebus when Black powder extras for Combat Extended is active -->
+          <Operation Class="PatchOperationConditional">
             <xpath>Defs/ThingDef[defName="VFEM2_Gun_Arquebus"]/recipeMaker/researchPrerequisite</xpath>
-            <value>
-              <researchPrerequisite>Ferny_Arquebus</researchPrerequisite>
-            </value>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="VFEM2_Gun_Arquebus"]/recipeMaker/researchPrerequisite</xpath>
+              <value>
+                <researchPrerequisite>Ferny_Arquebus</researchPrerequisite>
+              </value>
+            </match>
           </Operation>
           <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="VFEM2_Gun_Musket"]/recipeMaker/researchPrerequisite</xpath>
