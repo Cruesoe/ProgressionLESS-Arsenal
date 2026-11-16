@@ -15,13 +15,13 @@
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="MA_DuskSpear"]/recipeMaker</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="MA_GnautHornMace"]/recipeMaker</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationAdd">

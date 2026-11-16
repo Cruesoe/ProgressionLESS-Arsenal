@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+                <!-- Tribal melee weapons fold into VFE Tribals' weapons -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Weapons"]/description</xpath>
+                    <value>
+                        <description>Introduce basic weaponry for defense against enemies: simple clubs, shivs, axes, maces and spears from wood, bone and stone.</description>
+                    </value>
+                </Operation>
                 <!-- Tribal ranged weapons (slings, throwing shards) fold into VFE Tribals' bow -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Bow"]/label</xpath>
@@ -18,13 +25,13 @@
                     <match Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker/researchPrerequisite</xpath>
                         <value>
-                            <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                            <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                         </value>
                     </match>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker</xpath>
                         <value>
-                            <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                            <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                         </value>
                     </nomatch>
                 </Operation>

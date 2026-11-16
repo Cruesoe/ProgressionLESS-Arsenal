@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <VFETribals.TribalResearchProjectDef MayRequire="oskarpotocki.vfe.tribals">
-    <defName>Ferny_Club</defName>
-    <label>melee weapons</label>
-    <description>Craft simple clubs, shivs, axes, maces and spears from wood, bone and stone.</description>
-    <baseCost>15</baseCost>
-    <techLevel>Animal</techLevel>
-    <tab>VFET_Basics</tab>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
-    <prerequisites>
-      <li>VFET_Weapons</li>
-    </prerequisites>
-  </VFETribals.TribalResearchProjectDef>
-
-
   <VFETribals.TribalResearchProjectDef MayRequire="oskarpotocki.vfe.tribals" MayRequireAnyOf="vanillaexpanded.vwetb,veterano.mythicages.megafaunabestiary">
     <defName>Ferny_HeavyClub</defName>
     <label>heavy tribal weapons</label>
@@ -26,7 +11,7 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>3.50</researchViewY>
     <prerequisites>
-      <li>Ferny_Club</li>
+      <li>VFET_Weapons</li>
     </prerequisites>
   </VFETribals.TribalResearchProjectDef>
 
@@ -40,7 +25,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.10</researchViewY>
     <prerequisites>
-      <li MayRequire="VanillaExpanded.VWETB,OskarPotocki.VFE.Tribals">Ferny_Club</li>
+      <li MayRequire="VanillaExpanded.VWETB,OskarPotocki.VFE.Tribals">VFET_Weapons</li>
     </prerequisites>
   </ResearchProjectDef>
 
