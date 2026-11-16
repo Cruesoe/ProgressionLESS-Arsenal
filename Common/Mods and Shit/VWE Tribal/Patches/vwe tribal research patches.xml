@@ -21,19 +21,19 @@
                             <li Class="PatchOperationReplace">
                                 <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_LightClub"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationReplace">
                                 <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_TribalAxe"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationReplace">
                                 <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_Shiv"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <researchPrerequisite>Ferny_Club</researchPrerequisite>
+                                    <researchPrerequisite>VFET_Weapons</researchPrerequisite>
                                 </value>
                             </li>
                             <li Class="PatchOperationReplace">
