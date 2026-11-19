@@ -82,6 +82,7 @@
     <li IfModActive="VanillaExpanded.vwe,VanillaExpanded.VWENL,det.vanillaarsenal" IfModActiveAll="CETeam.CombatExtended">Common/Mods and Shit/Combat Extended - Smoke Grenades</li>
     <li IfModActive="CETeam.CombatExtended" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition</li>
     <li IfModActive="Rosalina.Mating.Press" IfModNotActive="VanillaExpanded.VWEMS">Common/Mods and Shit/Generic Ammo Experience Without VWE Makeshift</li>
+    <li IfModActive="WhoUp.TweakingThey.BalanceRn">Common/Mods and Shit/Buffs n Nerfs Sling Bullets</li>
     <li IfModActiveAll="CETeam.CombatExtended,Rosalina.Mating.Press" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - Generic Ammo Experience</li>
     <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal</li>
     <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo,Rosalina.Mating.Press">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal Without Generic Ammo Experience</li>
@@ -169,6 +170,7 @@
     <li IfModActive="VanillaExpanded.vwe,VanillaExpanded.VWENL,det.vanillaarsenal" IfModActiveAll="CETeam.CombatExtended">Common/Mods and Shit/Combat Extended - Smoke Grenades</li>
     <li IfModActive="CETeam.CombatExtended" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition</li>
     <li IfModActive="Rosalina.Mating.Press" IfModNotActive="VanillaExpanded.VWEMS">Common/Mods and Shit/Generic Ammo Experience Without VWE Makeshift</li>
+    <li IfModActive="WhoUp.TweakingThey.BalanceRn">Common/Mods and Shit/Buffs n Nerfs Sling Bullets</li>
     <li IfModActiveAll="CETeam.CombatExtended,Rosalina.Mating.Press" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - Generic Ammo Experience</li>
     <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal</li>
     <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo,Rosalina.Mating.Press">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal Without Generic Ammo Experience</li>

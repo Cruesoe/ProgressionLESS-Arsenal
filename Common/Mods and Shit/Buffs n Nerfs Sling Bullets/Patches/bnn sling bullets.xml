@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Buffs 'n Nerfs puts every sling bullet recipe on the crafting spot; CE's ammo injector only adds them when a weapon uses sling ammo, so without one, take them off -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef/comps/li[ammoSet="AmmoSet_SlingBullet" or ammoSet="AmmoSet_GenericSlings"]</xpath>
+    <nomatch Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_SlingBullet_Stone" or defName="MakeAmmo_SlingBullet_Stone_Blocks" or defName="MakeAmmo_SlingBullet_Steel" or defName="MakeAmmo_SlingBullet_Plasteel"]/recipeUsers/li[text()="CraftingSpot"]</xpath>
+    </nomatch>
+  </Operation>
+</Patch>
