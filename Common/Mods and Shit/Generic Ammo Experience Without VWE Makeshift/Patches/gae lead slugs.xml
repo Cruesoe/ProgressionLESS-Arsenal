@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Lead slugs are only fired by VWE Makeshift guns, and the recipe's only research gate (VWE_MakeshiftWeapons) comes from that mod; without it, take the recipe off the crafting spot -->
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/RecipeDef[defName="SEX_MakeAmmo_LeadSlug"]/recipeUsers/li[text()="CraftingSpot"]</xpath>
+  </Operation>
+</Patch>
