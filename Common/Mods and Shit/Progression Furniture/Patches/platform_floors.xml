@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+  <!-- Platform needs Floors with Progression: Furniture, or Carpentry with ProgressionLESS: Furniture, which folds Floors into Carpentry -->
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="VFES_Platform"]</xpath>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="VFES_Platform"]/researchPrerequisites</xpath>
-          <value>
-            <researchPrerequisites Inherit="False">
-              <li>Ferny_Floors</li>
-            </researchPrerequisites>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Ferny_Floors"]/description</xpath>
-          <value>
-            <description>Build floors, bridges, decks and platforms.</description>
-          </value>
-        </li>
-      </operations>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/ResearchProjectDef[defName="Ferny_Floors"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="VFES_Platform"]/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites Inherit="False">
+                <li>Ferny_Floors</li>
+              </researchPrerequisites>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="Ferny_Floors"]/description</xpath>
+            <value>
+              <description>Build floors, bridges, decks and platforms.</description>
+            </value>
+          </li>
+        </operations>
+      </match>
+      <nomatch Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFES_Platform"]/researchPrerequisites</xpath>
+        <value>
+          <researchPrerequisites Inherit="False">
+            <li>Ferny_Column</li>
+          </researchPrerequisites>
+        </value>
+      </nomatch>
     </match>
   </Operation>
 </Patch>
