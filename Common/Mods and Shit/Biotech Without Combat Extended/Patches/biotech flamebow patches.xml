@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker/researchPrerequisite</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite>Ferny_Flamebow</researchPrerequisite>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker[not(@IsNull)]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker</xpath>
+        <value>
+          <researchPrerequisite>Ferny_Flamebow</researchPrerequisite>
+        </value>
+      </match>
+    </nomatch>
+  </Operation>
+</Patch>
