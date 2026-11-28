@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_AntiAir"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_MinigunTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Turret_Minigun"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_MinigunTurret</li></researchPrerequisites></value></Operation>
+  <Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="VFES_Complex_Minigun"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="False"><li>Ferny_MinigunTurret</li></researchPrerequisites></value></Operation>
+</Patch>
