@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- The longsword moves to swords, so vanilla's Long blades is removed when nothing is left that unlocks with it -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs[not(*[researchPrerequisites/li="LongBlades" or researchPrerequisite="LongBlades" or recipeMaker[not(@IsNull)]/researchPrerequisite="LongBlades" or recipeMaker[not(@IsNull)]/researchPrerequisites/li="LongBlades" or plant/sowResearchPrerequisites/li="LongBlades"])]/ResearchProjectDef[defName="LongBlades"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Projects that followed Long blades follow swords instead -->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="LongBlades"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="LongBlades"]</xpath>
+            <value>
+              <li>Ferny_Longsword</li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="LongBlades"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="LongBlades"]</xpath>
+            <value>
+              <li>Ferny_Longsword</li>
+            </value>
+          </match>
+        </li>
+        <!-- Node Research seeds its Weapons group with Long blades -->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/BetterResearchMenu.ResearchClusterDef/seeds/li[text()="LongBlades"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/BetterResearchMenu.ResearchClusterDef/seeds/li[text()="LongBlades"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

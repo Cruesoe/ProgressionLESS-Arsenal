@@ -16,6 +16,42 @@
           <researchPrerequisite>Ferny_Flamebow</researchPrerequisite>
         </value>
       </match>
+      <!-- Biotech makes the flamebow uncraftable (recipeMaker IsNull); give it the short bow's recipe and cost -->
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker[@IsNull="True"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker</xpath>
+              <value>
+                <recipeMaker>
+                  <researchPrerequisite>Ferny_Flamebow</researchPrerequisite>
+                  <recipeUsers>
+                    <li>CraftingSpot</li>
+                  </recipeUsers>
+                  <skillRequirements>
+                    <Crafting>2</Crafting>
+                  </skillRequirements>
+                </recipeMaker>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Flamebow"]/statBases</xpath>
+              <value>
+                <WorkToMake>2400</WorkToMake>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Flamebow"]</xpath>
+              <value>
+                <costList>
+                  <WoodLog>30</WoodLog>
+                </costList>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </nomatch>
     </nomatch>
   </Operation>
 </Patch>

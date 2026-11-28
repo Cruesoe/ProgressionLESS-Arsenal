@@ -1,8 +1,12 @@
 <loadFolders>
   <v1.6>
-    <!-- Listed first so its patches run after every other folder's -->
+    <!-- Listed first so it runs after Merged and every other folder, once every item has moved -->
+    <li IfModNotActive="dankpyon.medieval.overhaul">Common/Mods and Shit/LongBladesWithoutMedievalOverhaul</li>
+    <!-- Listed before the rest so its patches run after every other folder's -->
     <li>Common/Merged</li>
     <li>/</li>
+    <!-- Above Common so the multi-barrel turrets move after the VFE Security folders' patches, as they did from Common -->
+    <li IfModActive="vanillaexpanded.vfesecurity">Common/Mods and Shit/VFESecurityMultibarrel</li>
     <li>Common</li>
     <li IfModActive="oskarpotocki.vfe.classical">Common/Mods and Shit/VFE Classical</li>
     <li IfModActive="oskarpotocki.vfe.mechanoid">Common/Mods and Shit/VFE Mechanoids</li>
@@ -89,9 +93,13 @@
     <li IfModActiveAll="CETeam.CombatExtended,OskarPotocki.VFE.Tribals,VanillaExpanded.VWETB" IfModNotActive="ceprogression.ammo,Rosalina.Mating.Press">Common/Mods and Shit/Combat Extended - Ammunition - VWE Tribal Without Generic Ammo Experience</li>
   </v1.6>
   <v1.7>
-    <!-- Listed first so its patches run after every other folder's -->
+    <!-- Listed first so it runs after Merged and every other folder, once every item has moved -->
+    <li IfModNotActive="dankpyon.medieval.overhaul">Common/Mods and Shit/LongBladesWithoutMedievalOverhaul</li>
+    <!-- Listed before the rest so its patches run after every other folder's -->
     <li>Common/Merged</li>
     <li>/</li>
+    <!-- Above Common so the multi-barrel turrets move after the VFE Security folders' patches, as they did from Common -->
+    <li IfModActive="vanillaexpanded.vfesecurity">Common/Mods and Shit/VFESecurityMultibarrel</li>
     <li>Common</li>
     <li IfModActive="oskarpotocki.vfe.classical">Common/Mods and Shit/VFE Classical</li>
     <li IfModActive="oskarpotocki.vfe.mechanoid">Common/Mods and Shit/VFE Mechanoids</li>

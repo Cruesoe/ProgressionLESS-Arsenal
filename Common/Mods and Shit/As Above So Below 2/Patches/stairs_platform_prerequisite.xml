@@ -24,25 +24,51 @@
           </li>
         </operations>
       </match>
-      <nomatch Class="PatchOperationSequence">
-        <operations>
-          <li Class="PatchOperationReplace">
-            <xpath>Defs/ResearchProjectDef[defName="AB2_Stairs"]/prerequisites</xpath>
-            <value>
-              <prerequisites>
-                <li>Ferny_Floors</li>
-              </prerequisites>
-            </value>
-          </li>
-          <li Class="PatchOperationReplace">
-            <xpath>Defs/ResearchProjectDef[defName="AB2_Ladders"]/prerequisites</xpath>
-            <value>
-              <prerequisites>
-                <li>Ferny_Floors</li>
-              </prerequisites>
-            </value>
-          </li>
-        </operations>
+      <nomatch Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="Ferny_Floors"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef[defName="AB2_Stairs"]/prerequisites</xpath>
+              <value>
+                <prerequisites>
+                  <li>Ferny_Floors</li>
+                </prerequisites>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ResearchProjectDef[defName="AB2_Ladders"]/prerequisites</xpath>
+              <value>
+                <prerequisites>
+                  <li>Ferny_Floors</li>
+                </prerequisites>
+              </value>
+            </li>
+          </operations>
+        </match>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>Defs/ResearchProjectDef[defName="Ferny_Column"]</xpath>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AB2_Stairs"]/prerequisites</xpath>
+                <value>
+                  <prerequisites>
+                    <li>Ferny_Column</li>
+                  </prerequisites>
+                </value>
+              </li>
+              <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AB2_Ladders"]/prerequisites</xpath>
+                <value>
+                  <prerequisites>
+                    <li>Ferny_Column</li>
+                  </prerequisites>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </nomatch>
       </nomatch>
     </match>
   </Operation>

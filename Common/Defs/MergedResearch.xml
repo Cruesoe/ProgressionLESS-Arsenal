@@ -40,6 +40,7 @@
     <researchViewY>2.10</researchViewY>
     <prerequisites>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Ferny_Hatchet</li>
+      <li>Smithing</li>
     </prerequisites>
   </ResearchProjectDef>
 
